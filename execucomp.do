@@ -2,19 +2,24 @@
 * Amir Kazempour 
 * July, 2021
 
-* Version 0.0.2
+* Version 0.0.3
 
 * testing version change in github, delete
 * Run on the raw executive compensation file, downloaded from WRDS. 
-
+* use "/Users/amir/Data/execucomp_92-21.dta"
 
 * variable names in the new data file are all capitalized. include the following line if capitalized var names appear in the raw data
 
+
+
+
 *rename *, lower
-rename exec_fullname exec_name
+*run the following if name not changed in the original file 
+* rename exec_fullname exec_name
 
 * calculating CEO's tenure Cox tsspell
-
+* run the following line if not installed previously
+* ssc install tsspell
 sort co_per_rol year
 xtset co_per_rol year
 tsfill
@@ -24,6 +29,7 @@ rename _seq tenure
 
 
 * create an indicator for CEOs to show according to the count of their appearance in the data to date. starting from 92. 
+
 drop if missing(execid)
 
 
@@ -134,8 +140,9 @@ gen atcolastyear=0
 
 bysort execid co_per_rol (year): replace atcolastyear=1 if _n>1
 
-
-merge m:1 gvkey year using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/annuals_SP.dta"
+* annual_SP is the fundamental annual file
+* TO DO: bring back data prep for the file in here. 
+merge m:1 gvkey year using "/Users/amir/Data/annuals_SP"
 
 drop if _merge ==2
 
