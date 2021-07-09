@@ -2,9 +2,12 @@
 * Amir Kazempour 
 * July, 2021
 
-* Version 0.0.5
+* Version 0.0.6
 
-* testing version change in github, delete
+* checking number of ceos with missing history
+
+
+
 * Run on the raw executive compensation file, downloaded from WRDS. 
 use "/Users/amir/Data/execucomp_92-21.dta", replace
 
@@ -126,7 +129,12 @@ bysort execid (gvkey year):replace boardbceo=2 if mfirm>1 & boardbceo[_n-1]==2 &
 * how many ceos have been at another companies 
 sort execid co_per_rol year 
 gen exec_past=0
-bysort execid (year co_per_rol): replace exec_past=1 if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+*bysort execid (year co_per_rol): replace exec_past=1 if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+
+*the line below instead of the one above should bring the number of missing to 82
+*changing the sorting order co_per_rol and year 
+* the might be a lower co_per_rol for a later role, so this would miscalculate the number of ceos with missing history
+bysort execid (co_per_rol year): replace exec_past=1 if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
 bysort execid co_per_rol (year): replace exec_past=1 if exec_past[_n-1]==1 & year>=year[_n-1] 
 
 
@@ -154,7 +162,7 @@ bysort execid (year co_per_rol): replace joinedco=year[1]
 
 
 /* jeremy's email*/
-*count if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1)
+count if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1)
 
 * export excel execid exec_name gvkey coname year using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/missing.xls" if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1), firstrow(variables)
 
