@@ -19,7 +19,7 @@ use "/Users/amir/Data/execucomp_92-21.dta", replace
 
 *rename *, lower
 *run the following if name not changed in the original file 
-* rename exec_fullname exec_name
+rename exec_fullname exec_name
 
 * calculating CEO's tenure Cox tsspell
 
@@ -137,7 +137,11 @@ gen exec_past=0
 bysort execid (co_per_rol year): replace exec_past=1 if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
 bysort execid co_per_rol (year): replace exec_past=1 if exec_past[_n-1]==1 & year>=year[_n-1] 
 
-
+/* creating another variable to track which ceos were over counted, 
+that is they had past record but were counted in the missing list */
+gen exec_past_correct=0
+bysort execid (year co_per_rol): replace exec_past_correct=1 if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+bysort execid co_per_rol (year): replace exec_past_correct=1 if exec_past_correct[_n-1]==1 & year>=year[_n-1] 
 
 
 *distinct execid if ceoann=="CEO" & (exec_past==1 | boardbceo>0) & year == 2013
@@ -159,11 +163,38 @@ gen joinedco =0
 
 bysort execid (year co_per_rol): replace joinedco=year[1]
 
+*list exec_name execid coname gvkey year if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1)
 
 
 /* jeremy's email*/
 count if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1)
+* 82 
 
+count if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past_correct==1)
+*76 
+
+* finding the difference between the two nd list them 
+list exec_name execid coname gvkey year if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1) & (boardbceo >0 | exec_past_correct==1)
+
+/*
+       +--------------------------------------------------------------------------+
+        |           exec_name   execid                      coname    gvkey   year |
+        |--------------------------------------------------------------------------|
+  3958. |    Leslie H. Wexner    00555                L BRANDS INC   006733   2019 |
+ 54166. |      Alan B. Miller    08337   UNIVERSAL HEALTH SVCS INC   011032   2019 |
+120871. | Richard A. Gonzalez    18569                  ABBVIE INC   016101   2019 |
+192763. |    Gary R. Heminger    29019     MARATHON PETROLEUM CORP   186989   2019 |
+228713. | Ronald S. Nersesian    34854   KEYSIGHT TECHNOLOGIES INC   020232   2019 |
+        |--------------------------------------------------------------------------|
+301185. |   Lorenzo Simonelli    55154             BAKER HUGHES CO   032106   2019 |
+        +--------------------------------------------------------------------------+
+
+		
+	*/
+	
+	
+	
+	
 * export excel execid exec_name gvkey coname year using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/missing.xls" if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1), firstrow(variables)
 
 
