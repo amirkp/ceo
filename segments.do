@@ -8,7 +8,7 @@
 * download data from Compustat Historical Segments on WRDS
 
 
-use "/Users/amir/Data/segments_all.dta",replace
+use "/Users/amir/Data/segments.dta",replace
 * keep the earliest reporting for the data point, 
 * This is supposed to be the most consistent, given that companies may change segment reporting over time
 keep if srcdate==datadate
@@ -101,7 +101,7 @@ drop _merge
 rename description SICdesc
 
 
-
+	
 
 
 

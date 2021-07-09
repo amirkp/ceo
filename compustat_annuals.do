@@ -1,4 +1,4 @@
-* Employee and assets on COMPUSTAT ANNUALS
+* Employee and assets and other data on COMPUSTAT ANNUALS
 
 keep gvkey fyear conm act emp tic
 rename fyear year
