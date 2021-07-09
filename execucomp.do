@@ -6,7 +6,7 @@
 
 * testing version change in github, delete
 * Run on the raw executive compensation file, downloaded from WRDS. 
-* use "/Users/amir/Data/execucomp_92-21.dta"
+use "/Users/amir/Data/execucomp_92-21.dta", replace
 
 * variable names in the new data file are all capitalized. include the following line if capitalized var names appear in the raw data
 
@@ -150,7 +150,6 @@ drop if _merge ==2
 gen joinedco =0 
 
 bysort execid (year co_per_rol): replace joinedco=year[1]
-
 
 
 
