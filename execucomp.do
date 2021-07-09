@@ -2,7 +2,7 @@
 * Amir Kazempour 
 * July, 2021
 
-* Version 0.0.3
+* Version 0.0.5
 
 * testing version change in github, delete
 * Run on the raw executive compensation file, downloaded from WRDS. 
@@ -10,16 +10,16 @@
 
 * variable names in the new data file are all capitalized. include the following line if capitalized var names appear in the raw data
 
-
-
+* run the following line if not installed previously
+* ssc install tsspell
+* ssc install egenmore
 
 *rename *, lower
 *run the following if name not changed in the original file 
 * rename exec_fullname exec_name
 
 * calculating CEO's tenure Cox tsspell
-* run the following line if not installed previously
-* ssc install tsspell
+
 sort co_per_rol year
 xtset co_per_rol year
 tsfill
