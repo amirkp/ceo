@@ -2,8 +2,9 @@
 * Amir Kazempour 
 * July, 2021
 
-* Version 0.0.1
+* Version 0.0.2
 
+* testing version change in github, delete
 * Run on the raw executive compensation file, downloaded from WRDS. 
 
 
