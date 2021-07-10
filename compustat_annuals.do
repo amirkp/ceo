@@ -48,24 +48,9 @@ merge m:1 tic using "/Users/amir/github/ceo/Misc Data/SP500.dta"
 drop if _merge==2 
 drop _merge
 
-* Haven't looked at stuff from here on 
 
 
+drop if year== 1975
+*(3,687 observations deleted)
 
-
-
-bysort gvkey year: gen obid = _n
-bysort gvkey year: gen tobid = _N
-
-drop if obid ==1 & tobid ==2
-drop obid tobid 
-
-
-
-
-merge m:1 gvkey year using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/fundamentals_old.dta", keepusing(at sale ceq csho dp oibdp txdb prcc_f size1 size2 size3 size4)
-
- drop if _merge ==2 
-*(88,750 observations deleted)
-
-
+*gvkey year is id 
