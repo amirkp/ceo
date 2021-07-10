@@ -53,4 +53,8 @@ drop _merge
 drop if year== 1975
 *(3,687 observations deleted)
 
+
+save fundamentals_tomerge, replace
 *gvkey year is id 
+
+
