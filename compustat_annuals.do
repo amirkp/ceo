@@ -2,6 +2,8 @@
 
 
 *changing the names of CRSP-Compustat variables to be consistent with execucomp
+use "/Users/amir/Data/fundamentals.dta",replace
+
 rename fyear year
 rename GVKEY gvkey 
 
@@ -35,14 +37,21 @@ bysort gvkey (year): gen outcome2 = (oibdp - dp)
 bysort gvkey (year): gen outcome3 = sale
 bysort gvkey (year): gen outcome4 = csho*prcc_f
 
-keep gvkey year tic conm at emp ibc ni revt sale prcc_f csho tic
+
+keep gvkey year tic conm at emp ibc ni revt sale prcc_f csho tic size1 size2 size3 size4 size5 outcome1 outcome2 outcome3 outcome4 
+
 
 duplicates drop
-/*Duplicates in terms of all variables
 
-(12,448 observations deleted)*/
 
-drop if missing(emp) 
+merge m:1 tic using "/Users/amir/github/ceo/Misc Data/SP500.dta"
+drop if _merge==2 
+drop _merge
+
+* Haven't looked at stuff from here on 
+
+
+
 
 
 bysort gvkey year: gen obid = _n
@@ -52,7 +61,7 @@ drop if obid ==1 & tobid ==2
 drop obid tobid 
 
 
-merge m:1 tic using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/SP500.dta"
+
 
 merge m:1 gvkey year using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/fundamentals_old.dta", keepusing(at sale ceq csho dp oibdp txdb prcc_f size1 size2 size3 size4)
 
