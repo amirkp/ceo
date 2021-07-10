@@ -6,7 +6,7 @@
 
 * testing version change in github, delete
 * Run on the raw executive compensation file, downloaded from WRDS. 
-use "/Users/amir/Data/execucomp_92-21.dta", replace
+use "/Users/amir/Data/execucomp.dta", replace
 
 * variable names in the new data file are all capitalized. include the following line if capitalized var names appear in the raw data
 
@@ -140,6 +140,11 @@ gen atcolastyear=0
 
 bysort execid co_per_rol (year): replace atcolastyear=1 if _n>1
 
+save execucomp_tomerge, replace
+
+
+/*
+
 * annual_SP is the fundamental annual file
 * TO DO: bring back data prep for the file in here. 
 merge m:1 gvkey year using "/Users/amir/Data/annuals_SP"
@@ -152,10 +157,11 @@ gen joinedco =0
 bysort execid (year co_per_rol): replace joinedco=year[1]
 
 
-
 /* jeremy's email*/
 *count if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1)
 
 * export excel execid exec_name gvkey coname year using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/missing.xls" if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1), firstrow(variables)
 
 
+*/
+*/

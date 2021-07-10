@@ -91,7 +91,7 @@ drop if year==2020
 
 destring SICS2d, replace
 
-merge m:1 SICS2d using "//Users/amir/github/ceo/Misc Data/SIC2d.dta"
+merge m:1 SICS2d using "/Users/amir/github/ceo/Misc Data/SIC2d.dta"
 
 **AFTER MERGE* 
 keep if _merge ==3
@@ -99,6 +99,8 @@ keep if _merge ==3
 
 drop _merge
 rename description SICdesc
+
+save segments_tomerge, replace
 
 
 	
