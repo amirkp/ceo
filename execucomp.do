@@ -16,7 +16,7 @@ use "/Users/amir/Data/execucomp.dta", replace
 
 *rename *, lower
 *run the following if name not changed in the original file 
-* rename exec_fullname exec_name
+rename exec_fullname exec_name
 
 * calculating CEO's tenure Cox tsspell
 
@@ -31,7 +31,7 @@ rename _seq tenure
 * create an indicator for CEOs to show according to the count of their appearance in the data to date. starting from 92. 
 
 drop if missing(execid)
-
+drop spindex spcode
 
 bysort gvkey year: egen nceoy = max(ceoann=="CEO") 
 
