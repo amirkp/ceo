@@ -164,4 +164,3 @@ bysort execid (year co_per_rol): replace joinedco=year[1]
 
 
 */
-*/
