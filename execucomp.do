@@ -8,6 +8,27 @@
 * Run on the raw executive compensation file, downloaded from WRDS. 
 use "/Users/amir/Data/execucomp.dta", replace
 
+
+
+
+* dealing with an inconsistent execid for John C. Plant
+/*. list gvkey execid coname year   if exec_fullname =="John C. Plant"
+
+        +-----------------------------------------------+
+        |  gvkey   execid                 coname   year |
+        |-----------------------------------------------|
+120998. | 010301    20932                TRW INC   1999 |
+121004. | 010301    20932                TRW INC   2000 |
+121010. | 010301    20932                TRW INC   2001 |
+216408. | 028192    59000   HOWMET AEROSPACE INC   2019 |
+        +-----------------------------------------------+
+*/
+
+replace execid ="20932" if exec_fullname =="John C. Plant"
+
+
+
+
 * variable names in the new data file are all capitalized. include the following line if capitalized var names appear in the raw data
 
 * run the following line if not installed previously
