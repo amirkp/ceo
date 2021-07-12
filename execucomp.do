@@ -37,7 +37,7 @@ replace execid ="20932" if exec_fullname =="John C. Plant"
 
 *rename *, lower
 *run the following if name not changed in the original file 
-* rename exec_fullname exec_name
+rename exec_fullname exec_name
 
 * calculating CEO's tenure Cox tsspell
 

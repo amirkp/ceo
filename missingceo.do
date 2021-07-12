@@ -23,6 +23,10 @@ list coname exec_name  if !missing(O) & missing(date1to)
 
 count if !(!missing(O) | founder==1) & missing(salesifmissinggveky)
 *12 observations are not founders but no gvkey in the data and no other record for them 
+
+
+
+list coname exec_name  if !(!missing(O) | founder==1) & missing(salesifmissinggveky) & FinalStat!="NO" & FinalStat!="FIXED"
 /*
      +----------------------------------------------------------------+
      |                    coname                            exec_name |
@@ -33,15 +37,16 @@ count if !(!missing(O) | founder==1) & missing(salesifmissinggveky)
  22. |      HOWMET AEROSPACE INC                        John C. Plant |execid fix it 
  32. |         IRON MOUNTAIN INC   William L. Meaney, BSc, MEng, MSIA |NO
      |----------------------------------------------------------------|
- 33. |                DOVER CORP                 Richard Joseph Tobin |
- 42. |      ALIGN TECHNOLOGY INC                      Joseph M. Hogan |
- 45. | KEYSIGHT TECHNOLOGIES INC                  Ronald S. Nersesian |
- 47. |       GILEAD SCIENCES INC                      Daniel P. O'Day |
- 49. |               TRIMBLE INC                   Steven W. Berglund |
+ 33. |                DOVER CORP                 Richard Joseph Tobin |Fixed 
+ 42. |      ALIGN TECHNOLOGY INC                      Joseph M. Hogan |Fixed
+ 45. | KEYSIGHT TECHNOLOGIES INC                  Ronald S. Nersesian |Fixed
+ 47. |       GILEAD SCIENCES INC                      Daniel P. O'Day |Fixed
+ 49. |               TRIMBLE INC                   Steven W. Berglund |NO 
      |----------------------------------------------------------------|
- 56. |             CELANESE CORP                     Lori J. Ryerkerk |
- 72. |   SBA COMMUNICATIONS CORP                    Jeffrey A. Stoops |
-     +----------------------------------------------------------------+
+ 56. |             CELANESE CORP                     Lori J. Ryerkerk |Fixed (Dutch Shell gvkey added)
+ 72. |   SBA COMMUNICATIONS CORP                    Jeffrey A. Stoops | Fixed
+      +----------------------------------------------------------------+
 */
 
-list coname exec_name  if !(!missing(O) | founder==1) & missing(salesifmissinggveky)
+
+count if !(!missing(O) | founder==1) & missing(salesifmissinggveky) & FinalStat!="NO" 
