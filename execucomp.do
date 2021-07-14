@@ -181,13 +181,6 @@ bysort execid co_per_rol (year): replace _year_last=_year_last[_n-1] if !missing
 
 
 
-gen atcolastyear=0 
-
-bysort execid co_per_rol (year): replace atcolastyear=1 if _n>1
-
-
-
-
 
 
 
@@ -199,7 +192,23 @@ drop if _seq >1
 * (10 observations deleted)
 drop _seq
 
+
+
+merge 1:1 gvkey execid year using "/Users/amir/Data/missing_ceo.dta", keepusing(past_gvkey past_year char_stat)
+drop _merge
+
+
+
+
+
+
+
+
+
+
+
 save execucomp_tomerge, replace
+
 
 
 * isid gvkey execid year

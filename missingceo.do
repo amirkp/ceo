@@ -125,6 +125,8 @@ replace char_stat=2 if founder ==1
 
 rename O past_gvkey
 rename date1to past_year
+replace past_year = . if FinalStat=="NO" |founder ==1
+replace past_gvkey = "" if FinalStat=="NO" |founder ==1
 
 keep gvkey execid year past_gvkey past_year char_stat
 
@@ -137,7 +139,7 @@ keep gvkey execid year past_gvkey past_year char_stat
 
 save missing_ceo, replace
 
-
+/*
 
 use "/Users/amir/Data/execucomp_tomerge.dta", replace
 bysort gvkey execid year (co_per_rol): gen _seq=_n
@@ -169,3 +171,4 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/missing_ceo.dta", keepusing(
 
 
 
+*/

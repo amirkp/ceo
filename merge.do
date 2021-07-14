@@ -83,6 +83,46 @@ count if year ==2019 & ceoann=="CEO" & SP500==1 & !missing(HHI_prev)
 count if year ==2019 & ceoann=="CEO" & SP500==1 & (missing(_gvkey) &missing(_gvkey_last )& missing(past_gvkey))
 
 
+*need to create variables that point to the gvkey and year of the past experience. 
+* currently there are multiple variables created in different data preparation stages for different purposes
+* now we create two variables ex_gvkey, ex_year, they simply point to the gvkey and the year of the past experience. We then use these two variables to populate the scale and scope variables for CEOs from the dataset. 
+*(i) _gvkey, _year, (created from serving on board before CEO variable)
+*(ii) _gvkey_last, _year_last, (created from the past experience varibale potentially from the previous firms)
+*(iii) past_gvkey, past_year coming from manual data collection. 
+* proceed in the following order:
+* populate the variables from (i) 
+* if still missing, from (ii) 
+* if still missing, from (iii)
+
+gen ex_gvkey=""
+gen ex_year=.
+
+*(25,387 real changes made)
+
+
+replace ex_gvkey=_gvkey
+replace ex_year=_year 
+
+
+replace ex_gvkey=_gvkey_last if missing(ex_gvkey)
+replace ex_year=_year_last if missing(ex_year)
+*(23,982 real changes made)
+
+replace ex_gvkey=past_gvkey if missing(ex_gvkey)
+replace ex_year=past_year if missing(ex_year)
+*(48 real changes made)
+
+*count if year ==2019 & ceoann=="CEO" & SP500==1 & missing(ex_year)
+*27
+
+*list ex_gvkey  ex_year  if year ==2019 & ceoann=="CEO" & SP500==1 & char_stat !=2 &char_stat !=1
+
+
+keep if gvkey 
+
+
+
+
 
 
 
