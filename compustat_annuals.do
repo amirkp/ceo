@@ -8,14 +8,14 @@ rename fyear year
 rename GVKEY gvkey 
 
 
-
+/*
 drop if missing(csho) 		//look into this later. many are listed multiple times/ check Berkshire Hathaway
 * (1,660 observations deleted)
 drop if missing(prcc_f)
 *(1,660 observations deleted)
 drop if missing(at)
 *(19,178 observations deleted)
-
+*/
 
 
 *Gabaix and Landier (2008)
@@ -53,6 +53,15 @@ drop _merge
 drop if year== 1975
 *(3,687 observations deleted)
 
+
+
+* need to add observation for ROCHE AG; it is reported in the segment file but not in here
+set obs `=_N+1'
+replace gvkey="025648" if _n==_N
+replace emp=94.4 if _n==_N
+replace sale =60482 if _n==_N
+replace year =2018 if _n==_N
+replace SP500=1 if _n==_N
 
 save fundamentals_tomerge, replace
 *gvkey year is id 

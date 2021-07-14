@@ -116,13 +116,70 @@ replace ex_year=past_year if missing(ex_year)
 *27
 
 *list ex_gvkey  ex_year  if year ==2019 & ceoann=="CEO" & SP500==1 & char_stat !=2 &char_stat !=1
+drop _merge
+save merged_dta, replace
+
+keep gvkey execid year ex_gvkey ex_year
+drop if missing(execid)
+
+*isid gvkey execid year
 
 
-keep if gvkey 
+*changing the name of gvkey and year, so we can merge using ex_gvkey ex_year 
+rename gvkey gvkey_tmp
+rename year year_tmp 
 
 
+rename ex_gvkey gvkey
+rename ex_year year
+
+merge m:1 gvkey year using "/Users/amir/Data/fundamentals_tomerge.dta", keepusing(sale emp)
+/*
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                       502,695
+        from master                   265,282  (_merge==1
+> )
+        from using                    237,413  (_merge==2
+> )
+
+    matched                            46,545  (_merge==3
+> )
+    -----------------------------------------
+
+*/
+
+drop if _merge==2
+
+drop _merge 
+rename gvkey ex_gvkey
+rename year ex_year
 
 
+rename gvkey_tmp gvkey
+rename year_tmp year
 
+rename emp ex_emp_ceo
+rename sale ex_sale_ceo
 
+keep gvkey year execid ex_sale_ceo ex_emp_ceo 
+merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 
+*list conm exec_name ex_gvkey ex_year char_stat if  year ==2019 & ceoann=="CEO" & SP500==1 & (missing(ex_sale_ceo)|missing(emp)) &char_stat ==0
+/* check these guys
+        +---------------------------------------------------------------------------------+
+        |                     conm              exec_name   ex_gvkey   ex_year   char_s~t |
+        |---------------------------------------------------------------------------------|
+ 31559. |        DXC TECHNOLOGY CO     Michael J. Salvino     014357      2016          0 |Fixed the number
+
+ 39849. |               DOVER CORP   Richard Joseph Tobin     063914      2018          0 |CNH Global was under a different name in 2018 (changed name) fixed in the file. 
+ 62121. |    HUNTINGTON BANCSHARES    Stephen D. Steinour     021825      2008          0 |was private in 2008, I will set the year to the first year available 
+178073. |                NEWS CORP      Robert J. Thomson     018043      2012          0 |dropped, no records
+200190. |      GILEAD SCIENCES INC        Daniel P. O'Day     025648      2018          0 |Roche not in fun
+        |---------------------------------------------------------------------------------|
+222832. |     REGENCY CENTERS CORP   Martin E. Stein, Jr.     029099      1993          0 |
+230412. |       INGERSOLL RAND INC         Vicente Reynal     030098      2016          0 |Ingersol
+267456. | COGNIZANT TECH SOLUTIONS        Brian Humphries     026156      2012          0 |HP
+273604. |  SBA COMMUNICATIONS CORP      Jeffrey A. Stoops       5188      2002          0 |
+        +---------------------------------------------------------------------------------+
+*/ 
