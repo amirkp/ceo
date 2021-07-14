@@ -25,6 +25,7 @@ use "/Users/amir/Data/fundamentals_tomerge.dta",replace
 
 merge 1:1 gvkey year using "/Users/amir/Data/segments_final.dta"
 
+drop _merge
 *count if year==2019 & SP500==1 & _merge==1
 
 /* These are the companies with missing records in the segments file
@@ -61,4 +62,27 @@ mostly financial firms and banks
         |---------------------------------------|
 148629. | CITIZENS FINANCIAL GROUP INC   021825 |
 202512. |        BOSTON PROPERTIES INC   064925 |
+
 */
+
+merge 1:m gvkey year using "/Users/amir/Data/execucomp_tomerge.dta"
+/*
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                       276,437
+        from master                   273,962  (_merge==1)
+        from using                      2,475  (_merge==2)
+
+    matched                           309,352  (_merge==3)
+    -----------------------------------------
+
+*/
+
+count if year ==2019 & ceoann=="CEO" & SP500==1 & !missing(HHI_prev)
+
+count if year ==2019 & ceoann=="CEO" & SP500==1 & (missing(_gvkey) &missing(_gvkey_last )& missing(past_gvkey))
+
+
+
+
+

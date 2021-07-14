@@ -57,6 +57,7 @@ list coname exec_name  if !(!missing(O) | founder==1) & missing(salesifmissinggv
 
 count if !(!missing(O) | founder==1) & missing(salesifmissinggveky) & FinalStat!="NO" 
 
+*use "/Users/amir/Data/execucomp_tomerge.dta", replace
 
 
 /*
@@ -99,6 +100,72 @@ count if founder==1
 
 This would account for all the missing cases. 
 
+*/
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+
+
+
+/*
+
+Next would be to keep 
+- an indicator of the above three cases, 
+- last year of work at the position 
+- gvkey 
+
+*/
+
+gen char_stat = 0 
+
+replace char_stat=1 if FinalStat=="NO" 
+replace char_stat=2 if founder ==1
+
+rename O past_gvkey
+rename date1to past_year
+
+keep gvkey execid year past_gvkey past_year char_stat
+
+/*
+
+. count if missing(past_gvkey) & char_stat ==0
+  0
+*/
+
+
+save missing_ceo, replace
+
+
+
+use "/Users/amir/Data/execucomp_tomerge.dta", replace
+bysort gvkey execid year (co_per_rol): gen _seq=_n
+drop if _seq >1
+* (10 observations deleted)
+drop _seq
+
+* isid gvkey execid year
+
+
+merge 1:1 gvkey execid year using "/Users/amir/Data/missing_ceo.dta", keepusing(past_gvkey past_year char_stat)
+/*
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                       311,752
+        from master                   311,752  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                75  (_merge==3)
+    -----------------------------------------
 
 
 */
+
+
+
+
+
+
+
+
