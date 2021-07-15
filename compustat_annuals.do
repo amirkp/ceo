@@ -63,6 +63,16 @@ replace sale =60482 if _n==_N
 replace year =2018 if _n==_N
 replace SP500=1 if _n==_N
 
+
+
+*linear interpolation for employee values missing in a sequence
+
+bys gvkey (year):ipolate emp year , gen(emp1)
+rename emp empdrop
+rename emp1 emp
+drop empdrop
+
+
 save fundamentals_tomerge, replace
 *gvkey year is id 
 

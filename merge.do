@@ -183,3 +183,33 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 273604. |  SBA COMMUNICATIONS CORP      Jeffrey A. Stoops       5188      2002          0 |
         +---------------------------------------------------------------------------------+
 */ 
+
+
+
+* The above CEOs are fixed. 
+
+*Now we have the following coming from the data itself, but we do not have past history for them in the fundamentals file: 
+/*
+        +-----------------------------------------------------------------------------------------------------------------------+
+        |                         conm                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
+        |-----------------------------------------------------------------------------------------------------------------------|
+ 10511. |          AVERY DENNISON CORP                 Mitchell R. Butier     001913      2015          .     5966.9          . |
+ 74723. |                 L BRANDS INC                   Leslie H. Wexner     063643      1995          .          .          . |
+ 85773. |                  VIATRIS INC                     Heather Bresch     007637      2011          .   6129.825          . |
+156439. |             DUKE REALTY CORP                    James B. Connor     013510      2015          .    950.795          . |
+158635. |                   ZOETIS INC                    Juan Ramn Alaix     013721      2011          .          .          . |
+        |-----------------------------------------------------------------------------------------------------------------------|
+185486. | CITIZENS FINANCIAL GROUP INC            Bruce Winfield Van Saun     021825      2013          .          .          . |
+211793. |                 FORTIVE CORP                      James A. Lico     026590      2014          .          .          . |
+237715. |              BAKER HUGHES CO                  Lorenzo Simonelli     001976      2017          .          .          . |
+238049. |                  CORTEVA INC              James C. Collins, Jr.     035168      2018          .          .          . |
+265324. |                    AMCOR PLC   Ronald Stephen Delia, B.Sc., MBA     100243      2015          .          .          . |
+        |-----------------------------------------------------------------------------------------------------------------------|
+278304. |    EDWARDS LIFESCIENCES CORP               Michael A. Mussallem     133366      1999          .          .          . |
+291740. |     MARKETAXESS HOLDINGS INC             Richard Mitchell McVey     002968      2000          0      58934          . |
+296761. |     AMERIPRISE FINANCIAL INC                James M. Cracchiolo     164708      2004          .          .          . |
+305425. |      ACTIVISION BLIZZARD INC                   Robert A. Kotick     001111      2008          .          .          . |
+        +-----------------------------------------------------------------------------------------------------------------------+
+
+*/
+
