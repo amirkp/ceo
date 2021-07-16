@@ -500,8 +500,8 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 
     matched                           311,827  (_merge==3)
     -----------------------------------------
-
 */
+
 
 
 
