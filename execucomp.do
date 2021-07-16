@@ -201,10 +201,66 @@ drop _merge
 
 
 
+/*
 
 
+       +-----------------------------------------------------------------------------------------------------------------------+
+        |                         conm                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
+        |-----------------------------------------------------------------------------------------------------------------------|
+ 74723. |                 L BRANDS INC                   Leslie H. Wexner     063643      1995          .          .          . | change to 1996
+158635. |                   ZOETIS INC                    Juan Ramn Alaix     013721      2011          .          .          . | change to 2013 
+185486. | CITIZENS FINANCIAL GROUP INC            Bruce Winfield Van Saun     021825      2013          .          .          . | change to 2014 
+211793. |                 FORTIVE CORP                      James A. Lico     026590      2014          .          .          . | chnage to 2016 
+237715. |              BAKER HUGHES CO                  Lorenzo Simonelli     001976      2017          .          .          . | change to GE in 2017
+        |-----------------------------------------------------------------------------------------------------------------------|
+238049. |                  CORTEVA INC              James C. Collins, Jr.     035168      2018          .          .          . |change ex_gvkey to 004060 (dupont) and year =2016 (Bloomberg)
+265324. |                    AMCOR PLC   Ronald Stephen Delia, B.Sc., MBA     100243      2015          .          .          . |change ex_year to 2006
+278304. |    EDWARDS LIFESCIENCES CORP               Michael A. Mussallem     133366      1999          .          .          . | change ex_gvkey to 002086, change year to 1999
+296761. |     AMERIPRISE FINANCIAL INC                James M. Cracchiolo     164708      2004          .          .          . |change gvkey to 001447, year to 2005
+305425. |      ACTIVISION BLIZZARD INC                   Robert A. Kotick     001111      2008          .          .          . | Cchange year to 2007 
+        +-----------------------------------------------------------------------------------------------------------------------+
 
+        +----------------------------------------------------------------------------------------------------------------------------------+
+        |                         conm   co_per~l                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
+        |----------------------------------------------------------------------------------------------------------------------------------|
+ 74723. |                 L BRANDS INC       1329                   Leslie H. Wexner     063643      1995          .          .          . |
+158635. |                   ZOETIS INC      47879                    Juan Ramn Alaix     013721      2011          .          .          . |
+185486. | CITIZENS FINANCIAL GROUP INC      52186            Bruce Winfield Van Saun     021825      2013          .          .          . |change to 2014
+211793. |                 FORTIVE CORP      53683                      James A. Lico     026590      2014          .          .          . |chnage to 2016 
+237715. |              BAKER HUGHES CO      60148                  Lorenzo Simonelli     001976      2017          .          .          . |change to GE in 2017
+        |----------------------------------------------------------------------------------------------------------------------------------|
+238049. |                  CORTEVA INC      63410              James C. Collins, Jr.     035168      2018          .          .          . |change ex_gvkey to 004060 (dupont) and year =2016 (Bloomberg)
+265324. |                    AMCOR PLC      62690   Ronald Stephen Delia, B.Sc., MBA     100243      2015          .          .          . |change ex_year to 2006
+278304. |    EDWARDS LIFESCIENCES CORP      21690               Michael A. Mussallem     133366      1999          .          .          . |change ex_gvkey to 002086, change year to 1999
+296761. |     AMERIPRISE FINANCIAL INC      35939                James M. Cracchiolo     164708      2004          .          .          . |change gvkey to 001447, year to 2005
+305425. |      ACTIVISION BLIZZARD INC      51675                   Robert A. Kotick     001111      2008          .          .          . |change year to 2007 
+        +----------------------------------------------------------------------------------------------------------------------------------+
 
+*/
+
+replace ex_year=1996 if co_per_rol==1329 & year==2019
+
+replace ex_year=2013 if co_per_rol==47879 & year==2019
+
+replace ex_year=2014 if co_per_rol==52186 & year==2019
+
+replace ex_year=2016 if co_per_rol==53683 & year==2019
+
+replace ex_gvkey="005047" if co_per_rol==60148 & year==2019
+replace ex_year=2017 if co_per_rol==60148 & year==2019
+
+replace ex_gvkey="004060" if co_per_rol==63410 & year==2019
+replace ex_year=2019 if co_per_rol==63410 & year==2019
+
+replace ex_year=2006 if co_per_rol==62690 & year==2019
+
+replace ex_gvkey="002086" if co_per_rol==21690 & year==2019
+replace ex_year=1999 if co_per_rol==21690 & year==2019
+
+replace ex_gvkey="001447" if co_per_rol==35939 & year==2019
+replace ex_year=2005 if co_per_rol==35939 & year==2019
+
+replace ex_year=2007 if co_per_rol==51675 & year==2019
 
 
 save execucomp_tomerge, replace

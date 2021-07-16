@@ -16,6 +16,15 @@ duplicates drop
 * create a variable for last year's HHI and nseg as company's characteristic
 bysort gvkey (year):gen HHI_prev = HHI[_n-1]
 bysort gvkey (year):gen nseg_prev = nseg[_n-1]
+use "/Users/amir/Data/segments_tomerge.dta",replace
+
+keep gvkey year HHI nseg conm
+duplicates drop
+*(104,261 observations deleted)
+
+* create a variable for last year's HHI and nseg as company's characteristic
+bysort gvkey (year):gen HHI_prev = HHI[_n-1]
+bysort gvkey (year):gen nseg_prev = nseg[_n-1]
 
 
 
@@ -65,6 +74,39 @@ mostly financial firms and banks
 
 */
 
+/*
+        +---------------------------------------------------------------------------------+
+        | execid                 exec_name    gvkey   year                    ex_conm_ceo |
+        |---------------------------------------------------------------------------------|
+264840. |  20948         Charles W. Scharf   002019   2017   BANK OF NEW YORK MELLON CORP |
+266999. |  43625    Richard Mitchell McVey   002968   2000            JPMORGAN CHASE & CO |
+267002. |  03766               James Dimon   002968   2005            JPMORGAN CHASE & CO |
+267865. |  36815     Curtis Chatman Farmer   003231   2018                   COMERICA INC |
+270864. |  33048       Donald C. Wood, CPA   004605   2003   FEDERAL REALTY INVESTMENT TR |
+        |---------------------------------------------------------------------------------|
+270998. |  27451     Gregory D. Carmichael   004640   2015            FIFTH THIRD BANCORP |
+271060. |  35764       John M. Turner, Jr.   004674   2018         REGIONS FINANCIAL CORP |
+271205. |  30821         Ren F. Jones, CPA   004699   2017                M & T BANK CORP |
+271244. |  21046             Andrew Cecere   004723   2016                     US BANCORP |
+274987. |  29522            Steven J. Kean   006310   2014              KINDER MORGAN INC |
+        |---------------------------------------------------------------------------------|
+278046. |  25970     Brian Thomas Moynihan   007647   2009           BANK OF AMERICA CORP |
+279015. |  42590         Michael G. OGrady   007982   2017            NORTHERN TRUST CORP |
+279660. |  24423        William S. Demchak   008245   2012   PNC FINANCIAL SVCS GROUP INC |
+283243. |  23128            Beth E. Mooney   009783   2010                        KEYCORP |
+283704. |  23041     Ronald Philip OHanley   010035   2018              STATE STREET CORP |
+        |---------------------------------------------------------------------------------|
+287589. |  07587      Harris Henry Simmons   011687   1986        ZIONS BANCORPORATION NA |
+287739. |  10662         Kelly Stuart King   011856   2008          TRUIST FINANCIAL CORP |
+292717. |  21673            John P. Barnes   016245   2010       PEOPLE'S UNITED FINL INC |
+293316. |  26254         Gregory W. Becker   017120   2010            SVB FINANCIAL GROUP |
+294489. |  36912       Stephen D. Steinour   021825   2014   CITIZENS FINANCIAL GROUP INC |
+        |---------------------------------------------------------------------------------|
+294490. |  14582   Bruce Winfield Van Saun   021825   2014   CITIZENS FINANCIAL GROUP INC |
+301019. |  26553    Michael J. Schall, CPA   030293   2010           ESSEX PROPERTY TRUST |
+304749. |  37577        Strauss H. Zelnick   064630   2010     TAKE-TWO INTERACTIVE SFTWR |
+        +---------------------------------------------------------------------------------+
+*/
 merge 1:m gvkey year using "/Users/amir/Data/execucomp_tomerge.dta"
 /*
     Result                           # of obs.
@@ -112,6 +154,71 @@ replace ex_gvkey=past_gvkey if missing(ex_gvkey)
 replace ex_year=past_year if missing(ex_year)
 *(48 real changes made)
 
+
+
+/*
+
+
+       +-----------------------------------------------------------------------------------------------------------------------+
+        |                         conm                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
+        |-----------------------------------------------------------------------------------------------------------------------|
+ 74723. |                 L BRANDS INC                   Leslie H. Wexner     063643      1995          .          .          . | change to 1996
+158635. |                   ZOETIS INC                    Juan Ramn Alaix     013721      2011          .          .          . | change to 2013 
+185486. | CITIZENS FINANCIAL GROUP INC            Bruce Winfield Van Saun     021825      2013          .          .          . | change to 2014 
+211793. |                 FORTIVE CORP                      James A. Lico     026590      2014          .          .          . | chnage to 2016 
+237715. |              BAKER HUGHES CO                  Lorenzo Simonelli     001976      2017          .          .          . | change to GE in 2017
+        |-----------------------------------------------------------------------------------------------------------------------|
+238049. |                  CORTEVA INC              James C. Collins, Jr.     035168      2018          .          .          . |change ex_gvkey to 004060 (dupont) and year =2016 (Bloomberg)
+265324. |                    AMCOR PLC   Ronald Stephen Delia, B.Sc., MBA     100243      2015          .          .          . |change ex_year to 2006
+278304. |    EDWARDS LIFESCIENCES CORP               Michael A. Mussallem     133366      1999          .          .          . | change ex_gvkey to 002086, change year to 1999
+296761. |     AMERIPRISE FINANCIAL INC                James M. Cracchiolo     164708      2004          .          .          . |change gvkey to 001447, year to 2005
+305425. |      ACTIVISION BLIZZARD INC                   Robert A. Kotick     001111      2008          .          .          . | Cchange year to 2007 
+        +-----------------------------------------------------------------------------------------------------------------------+
+
+        +----------------------------------------------------------------------------------------------------------------------------------+
+        |                         conm   co_per~l                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
+        |----------------------------------------------------------------------------------------------------------------------------------|
+ 74723. |                 L BRANDS INC       1329                   Leslie H. Wexner     063643      1995          .          .          . |
+158635. |                   ZOETIS INC      47879                    Juan Ramn Alaix     013721      2011          .          .          . |
+185486. | CITIZENS FINANCIAL GROUP INC      52186            Bruce Winfield Van Saun     021825      2013          .          .          . |change to 2014
+211793. |                 FORTIVE CORP      53683                      James A. Lico     026590      2014          .          .          . |chnage to 2016 
+237715. |              BAKER HUGHES CO      60148                  Lorenzo Simonelli     001976      2017          .          .          . |change to GE in 2017
+        |----------------------------------------------------------------------------------------------------------------------------------|
+238049. |                  CORTEVA INC      63410              James C. Collins, Jr.     035168      2018          .          .          . |change ex_gvkey to 004060 (dupont) and year =2016 (Bloomberg)
+265324. |                    AMCOR PLC      62690   Ronald Stephen Delia, B.Sc., MBA     100243      2015          .          .          . |change ex_year to 2006
+278304. |    EDWARDS LIFESCIENCES CORP      21690               Michael A. Mussallem     133366      1999          .          .          . |change ex_gvkey to 002086, change year to 1999
+296761. |     AMERIPRISE FINANCIAL INC      35939                James M. Cracchiolo     164708      2004          .          .          . |change gvkey to 001447, year to 2005
+305425. |      ACTIVISION BLIZZARD INC      51675                   Robert A. Kotick     001111      2008          .          .          . |change year to 2007 
+        +----------------------------------------------------------------------------------------------------------------------------------+
+
+*/
+
+replace ex_year=1996 if co_per_rol==1329 & year==2019
+
+replace ex_year=2013 if co_per_rol==47879 & year==2019
+
+replace ex_year=2014 if co_per_rol==52186 & year==2019
+
+replace ex_year=2016 if co_per_rol==53683 & year==2019
+
+replace ex_gvkey="005047" if co_per_rol==60148 & year==2019
+replace ex_year=2017 if co_per_rol==60148 & year==2019
+
+replace ex_gvkey="004060" if co_per_rol==63410 & year==2019
+replace ex_year=2019 if co_per_rol==63410 & year==2019
+
+replace ex_year=2006 if co_per_rol==62690 & year==2019
+
+replace ex_gvkey="002086" if co_per_rol==21690 & year==2019
+replace ex_year=1999 if co_per_rol==21690 & year==2019
+
+replace ex_gvkey="001447" if co_per_rol==35939 & year==2019
+replace ex_year=2005 if co_per_rol==35939 & year==2019
+
+replace ex_year=2007 if co_per_rol==51675 & year==2019
+
+
+
 *count if year ==2019 & ceoann=="CEO" & SP500==1 & missing(ex_year)
 *27
 
@@ -133,18 +240,15 @@ rename year year_tmp
 rename ex_gvkey gvkey
 rename ex_year year
 
-merge m:1 gvkey year using "/Users/amir/Data/fundamentals_tomerge.dta", keepusing(sale emp)
+merge m:1 gvkey year using "/Users/amir/Data/fundamentals_tomerge.dta", keepusing(conm sale emp)
 /*
     Result                           # of obs.
     -----------------------------------------
-    not matched                       502,695
-        from master                   265,282  (_merge==1
-> )
-        from using                    237,413  (_merge==2
-> )
+    not matched                       525,432
+        from master                   265,226  (_merge==1)
+        from using                    260,206  (_merge==2)
 
-    matched                            46,545  (_merge==3
-> )
+    matched                            46,601  (_merge==3)
     -----------------------------------------
 
 */
@@ -161,8 +265,8 @@ rename year_tmp year
 
 rename emp ex_emp_ceo
 rename sale ex_sale_ceo
-
-keep gvkey year execid ex_sale_ceo ex_emp_ceo 
+rename conm ex_conm_ceo
+keep gvkey year execid ex_sale_ceo ex_emp_ceo  ex_conm_ceo
 merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 
 *list conm exec_name ex_gvkey ex_year char_stat if  year ==2019 & ceoann=="CEO" & SP500==1 & (missing(ex_sale_ceo)|missing(emp)) &char_stat ==0
@@ -190,6 +294,7 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 
 *Now we have the following coming from the data itself, but we do not have past history for them in the fundamentals file: 
 /*
+list conm exec_name ex_gvkey ex_year char_stat ex_sale_ceo ex_emp_ceo if  year ==2019 & ceoann=="CEO" & SP500==1 & (missing(ex_sale_ceo) | missing(ex_emp)) & !inlist(char_stat, 1,2)
         +-----------------------------------------------------------------------------------------------------------------------+
         |                         conm                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
         |-----------------------------------------------------------------------------------------------------------------------|
@@ -211,5 +316,193 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 305425. |      ACTIVISION BLIZZARD INC                   Robert A. Kotick     001111      2008          .          .          . |
         +-----------------------------------------------------------------------------------------------------------------------+
 
+		
+		
+		
+		updated list after fixing missing employee: 
+		. list conm exec_name ex_gvkey ex_year char_stat ex_sale_ceo ex_emp_ceo if  year ==2019 & ceoann=="CEO" & SP500==1 & (missing(ex_sale_ceo) | missing(ex_emp)) & !inlist(char_stat, 1,2)
+
+        +-----------------------------------------------------------------------------------------------------------------------+
+        |                         conm                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
+        |-----------------------------------------------------------------------------------------------------------------------|
+ 74723. |                 L BRANDS INC                   Leslie H. Wexner     063643      1995          .          .          . | change to 1996
+158635. |                   ZOETIS INC                    Juan Ramn Alaix     013721      2011          .          .          . | change to 2013 
+185486. | CITIZENS FINANCIAL GROUP INC            Bruce Winfield Van Saun     021825      2013          .          .          . | change to 2014 
+211793. |                 FORTIVE CORP                      James A. Lico     026590      2014          .          .          . | chnage to 2016 
+237715. |              BAKER HUGHES CO                  Lorenzo Simonelli     001976      2017          .          .          . | change to GE in 2017
+        |-----------------------------------------------------------------------------------------------------------------------|
+238049. |                  CORTEVA INC              James C. Collins, Jr.     035168      2018          .          .          . |change ex_gvkey to 004060 (dupont) and year =2016 (Bloomberg)
+265324. |                    AMCOR PLC   Ronald Stephen Delia, B.Sc., MBA     100243      2015          .          .          . |change ex_year to 2006
+278304. |    EDWARDS LIFESCIENCES CORP               Michael A. Mussallem     133366      1999          .          .          . | change ex_gvkey to 002086, change year to 1999
+296761. |     AMERIPRISE FINANCIAL INC                James M. Cracchiolo     164708      2004          .          .          . |change gvkey to 001447, year to 2005
+305425. |      ACTIVISION BLIZZARD INC                   Robert A. Kotick     001111      2008          .          .          . | Cchange year to 2007 
+        +-----------------------------------------------------------------------------------------------------------------------+
+
+        +----------------------------------------------------------------------------------------------------------------------------------+
+        |                         conm   co_per~l                          exec_name   ex_gvkey   ex_year   char_s~t   ex_sal~o   ex_emp~o |
+        |----------------------------------------------------------------------------------------------------------------------------------|
+ 74723. |                 L BRANDS INC       1329                   Leslie H. Wexner     063643      1995          .          .          . |
+158635. |                   ZOETIS INC      47879                    Juan Ramn Alaix     013721      2011          .          .          . |
+185486. | CITIZENS FINANCIAL GROUP INC      52186            Bruce Winfield Van Saun     021825      2013          .          .          . |
+211793. |                 FORTIVE CORP      53683                      James A. Lico     026590      2014          .          .          . |
+237715. |              BAKER HUGHES CO      60148                  Lorenzo Simonelli     001976      2017          .          .          . |
+        |----------------------------------------------------------------------------------------------------------------------------------|
+238049. |                  CORTEVA INC      63410              James C. Collins, Jr.     035168      2018          .          .          . |
+265324. |                    AMCOR PLC      62690   Ronald Stephen Delia, B.Sc., MBA     100243      2015          .          .          . |
+278304. |    EDWARDS LIFESCIENCES CORP      21690               Michael A. Mussallem     133366      1999          .          .          . |
+296761. |     AMERIPRISE FINANCIAL INC      35939                James M. Cracchiolo     164708      2004          .          .          . |
+305425. |      ACTIVISION BLIZZARD INC      51675                   Robert A. Kotick     001111      2008          .          .          . |
+        +----------------------------------------------------------------------------------------------------------------------------------+
+
+*new update: after making changes: 
+
+. count if  year ==2019 & ceoann=="CEO" & SP500==1 & (missing(ex_sale_ceo) | missing(ex_emp)) & !inlist(char_stat, 1,2)
+  0
+
+
 */
+drop _merge
+save merged_dta, replace
+
+
+*merging again with segment file this time for ceo type 
+keep gvkey execid exec_name year ex_gvkey ex_year ceoann SP500 char_stat ex_conm_ceo
+
+drop if missing(execid)
+
+*isid gvkey execid year
+
+
+*changing the name of gvkey and year, so we can merge using ex_gvkey ex_year 
+rename gvkey gvkey_tmp
+rename year year_tmp 
+
+
+rename ex_gvkey gvkey
+rename ex_year year
+
+merge m:1 gvkey year using "/Users/amir/Data/segments_final.dta", keepusing(HHI nseg)
+/*
+
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                       550,135
+        from master                   265,915  (_merge==1)
+        from using                    284,220  (_merge==2)
+
+    matched                            45,912  (_merge==3)
+    -----------------------------------------
+
+. 
+
+
+
+these are execs with missing segment datta for the firm where they worked at last
+
+list execid exec_name gvkey year if year_tmp ==2019 & SP500==1 & ceoann =="CEO" & !inlist(char_stat, 1,2) & _merge!=3
+
+        +--------------------------------------------------+
+        | execid                 exec_name    gvkey   year |
+        |--------------------------------------------------|
+264840. |  20948         Charles W. Scharf   002019   2017 |
+266999. |  43625    Richard Mitchell McVey   002968   2000 |
+267007. |  03766               James Dimon   002968   2005 |
+267865. |  36815     Curtis Chatman Farmer   003231   2018 |
+270864. |  33048       Donald C. Wood, CPA   004605   2003 |
+        |--------------------------------------------------|
+270998. |  27451     Gregory D. Carmichael   004640   2015 |
+271060. |  35764       John M. Turner, Jr.   004674   2018 |
+271205. |  30821         Ren F. Jones, CPA   004699   2017 |
+271245. |  21046             Andrew Cecere   004723   2016 |
+274990. |  29522            Steven J. Kean   006310   2014 |
+        |--------------------------------------------------|
+278051. |  25970     Brian Thomas Moynihan   007647   2009 |
+279016. |  42590         Michael G. OGrady   007982   2017 |
+279659. |  24423        William S. Demchak   008245   2012 |
+283241. |  23128            Beth E. Mooney   009783   2010 |
+283704. |  23041     Ronald Philip OHanley   010035   2018 |
+        |--------------------------------------------------|
+287589. |  07587      Harris Henry Simmons   011687   1986 |
+287736. |  10662         Kelly Stuart King   011856   2008 |
+292710. |  21673            John P. Barnes   016245   2010 |
+293313. |  26254         Gregory W. Becker   017120   2010 |
+294489. |  14582   Bruce Winfield Van Saun   021825   2014 |
+        |--------------------------------------------------|
+294490. |  36912       Stephen D. Steinour   021825   2014 |
+301018. |  26553    Michael J. Schall, CPA   030293   2010 |
+304750. |  37577        Strauss H. Zelnick   064630   2010 |
+        +--------------------------------------------------+
+
+*/
+*list execid exec_name gvkey year ex_conm_ceo if year_tmp ==2019 & SP500==1 & ceoann =="CEO" & !inlist(char_stat, 1,2) & _merge!=3
+
+
+/*
+        +---------------------------------------------------------------------------------+
+        | execid                 exec_name    gvkey   year                    ex_conm_ceo |
+        |---------------------------------------------------------------------------------|
+264840. |  20948         Charles W. Scharf   002019   2017   BANK OF NEW YORK MELLON CORP |
+266999. |  43625    Richard Mitchell McVey   002968   2000            JPMORGAN CHASE & CO |
+267002. |  03766               James Dimon   002968   2005            JPMORGAN CHASE & CO |
+267865. |  36815     Curtis Chatman Farmer   003231   2018                   COMERICA INC |
+270864. |  33048       Donald C. Wood, CPA   004605   2003   FEDERAL REALTY INVESTMENT TR |
+        |---------------------------------------------------------------------------------|
+270998. |  27451     Gregory D. Carmichael   004640   2015            FIFTH THIRD BANCORP |
+271060. |  35764       John M. Turner, Jr.   004674   2018         REGIONS FINANCIAL CORP |
+271205. |  30821         Ren F. Jones, CPA   004699   2017                M & T BANK CORP |
+271244. |  21046             Andrew Cecere   004723   2016                     US BANCORP |
+274987. |  29522            Steven J. Kean   006310   2014              KINDER MORGAN INC |
+        |---------------------------------------------------------------------------------|
+278046. |  25970     Brian Thomas Moynihan   007647   2009           BANK OF AMERICA CORP |
+279015. |  42590         Michael G. OGrady   007982   2017            NORTHERN TRUST CORP |
+279660. |  24423        William S. Demchak   008245   2012   PNC FINANCIAL SVCS GROUP INC |
+283243. |  23128            Beth E. Mooney   009783   2010                        KEYCORP |
+283704. |  23041     Ronald Philip OHanley   010035   2018              STATE STREET CORP |
+        |---------------------------------------------------------------------------------|
+287589. |  07587      Harris Henry Simmons   011687   1986        ZIONS BANCORPORATION NA |
+287739. |  10662         Kelly Stuart King   011856   2008          TRUIST FINANCIAL CORP |
+292717. |  21673            John P. Barnes   016245   2010       PEOPLE'S UNITED FINL INC |
+293316. |  26254         Gregory W. Becker   017120   2010            SVB FINANCIAL GROUP |
+294489. |  36912       Stephen D. Steinour   021825   2014   CITIZENS FINANCIAL GROUP INC |
+        |---------------------------------------------------------------------------------|
+294490. |  14582   Bruce Winfield Van Saun   021825   2014   CITIZENS FINANCIAL GROUP INC |
+301019. |  26553    Michael J. Schall, CPA   030293   2010           ESSEX PROPERTY TRUST |
+304749. |  37577        Strauss H. Zelnick   064630   2010     TAKE-TWO INTERACTIVE SFTWR |
+        +---------------------------------------------------------------------------------+
+		
+	These are just not reported in the data
+*/
+
+*merge m:1 gvkey year using "/Users/amir/Data/segments_final.dta", keepusing(HHI nseg)
+
+
+
+
+
+rename HHI ex_HHI_ceo
+rename nseg ex_nseg_ceo
+drop if _merge==2 
+
+rename gvkey ex_gvkey
+rename year ex_year
+rename gvkey_tmp gvkey 
+rename year_tmp year 
+
+keep gvkey year execid ex_HHI_ceo ex_nseg_ceo
+merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
+/*
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                       295,071
+        from master                         0  (_merge==1)
+        from using                    295,071  (_merge==2)
+
+    matched                           311,827  (_merge==3)
+    -----------------------------------------
+
+*/
+
+
+
 
