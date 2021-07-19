@@ -114,7 +114,7 @@ gen boardbceo =0
 
 gen _gvkey =""
 gen _year=.
-
+gen _pastposition=""
 
 
 * do not include year 1993, since many firms do not report CEO status on the first year of dataset which is 1992 
@@ -122,7 +122,7 @@ gen _year=.
 bysort execid (gvkey year):replace boardbceo=1 if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
 bysort execid (gvkey year):replace _gvkey=gvkey[_n-1] if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
 bysort execid (gvkey year):replace _year=year[_n-1] if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
-
+bysort execid (gvkey year):replace _pastposition=ceoann[_n-1] if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
 
 
 *use the following instead if want to account for becoming ceo the year after joining company 
@@ -138,6 +138,7 @@ bysort execid (gvkey year):replace _year=year[_n-1] if (mfirm ==1 & ex_seq>1 & c
 bysort execid (gvkey year):replace boardbceo=1 if mfirm==1 & boardbceo[_n-1]==1 & ceoann=="CEO" & gvkey== gvkey[_n-1] 
 bysort execid (gvkey year):replace _gvkey=_gvkey[_n-1] if (mfirm ==1 & !missing(_gvkey[_n-1]) & ceoann=="CEO" & gvkey== gvkey[_n-1] )
 bysort execid (gvkey year):replace _year=_year[_n-1] if (mfirm ==1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _pastposition=_pastposition[_n-1] if (mfirm ==1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
 
 
 
@@ -145,14 +146,15 @@ bysort execid (gvkey year):replace _year=_year[_n-1] if (mfirm ==1 & !missing(_y
 bysort execid (gvkey year):replace boardbceo=2 if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1]) 
 bysort execid (gvkey year):replace _gvkey=gvkey[_n-1] if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
 bysort execid (gvkey year):replace _year=year[_n-1] if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _pastposition=ceoann[_n-1] if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
 
 *(1202 real changes made)
 
 * make the rest also equal 2 
 bysort execid (gvkey year):replace boardbceo=2 if mfirm>1 & boardbceo[_n-1]==2 & ceoann=="CEO" & gvkey== gvkey[_n-1] 
-
 bysort execid (gvkey year):replace _gvkey=_gvkey[_n-1] if (mfirm >1 & !missing(_gvkey[_n-1]) & ceoann=="CEO" & gvkey== gvkey[_n-1] )
 bysort execid (gvkey year):replace _year=_year[_n-1] if (mfirm >1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _pastposition=_pastposition[_n-1] if (mfirm >1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
 
 
 *(4302 real changes made)
@@ -160,15 +162,17 @@ bysort execid (gvkey year):replace _year=_year[_n-1] if (mfirm >1 & !missing(_ye
 
 
 * goal 2: create an indicator whether the CEO shows at ANOTHER firm in any capacity prior to year t 
+* we would like to know the ceostatus at another company as well, i.e. whether the CEO was a ceo or just an executive at another company
 * how many ceos have been at another companies 
 sort execid co_per_rol year 
 gen exec_past=0
 gen _gvkey_last =""
 gen _year_last =. 
 bysort execid (year co_per_rol): replace exec_past=1 if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
-
 bysort execid (year co_per_rol): replace _gvkey_last=gvkey[_n-1] if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
 bysort execid (year co_per_rol): replace _year_last=year[_n-1] if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+bysort execid (year co_per_rol): replace _pastposition=ceoann[_n-1] if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+
 
 bysort execid co_per_rol (year): replace exec_past=1 if exec_past[_n-1]==1 & year>=year[_n-1] 
 bysort execid co_per_rol (year): replace _gvkey_last=_gvkey_last[_n-1] if !missing(_gvkey_last[_n-1]) & year>=year[_n-1]-1 

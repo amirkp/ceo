@@ -13,7 +13,7 @@ keep gvkey year HHI nseg conm
 duplicates drop
 *(104,261 observations deleted)
 
-* create a variable for last year's HHI and nseg as company's characteristic
+* create a variable for last year's HHI and nseg as company's  scope characteristic
 bysort gvkey (year):gen HHI_prev = HHI[_n-1]
 bysort gvkey (year):gen nseg_prev = nseg[_n-1]
 use "/Users/amir/Data/segments_tomerge.dta",replace
@@ -108,6 +108,7 @@ mostly financial firms and banks
         +---------------------------------------------------------------------------------+
 */
 merge 1:m gvkey year using "/Users/amir/Data/execucomp_tomerge.dta"
+
 /*
     Result                           # of obs.
     -----------------------------------------
@@ -120,9 +121,9 @@ merge 1:m gvkey year using "/Users/amir/Data/execucomp_tomerge.dta"
 
 */
 
-count if year ==2019 & ceoann=="CEO" & SP500==1 & !missing(HHI_prev)
+*count if year ==2019 & ceoann=="CEO" & SP500==1 & !missing(HHI_prev)
 
-count if year ==2019 & ceoann=="CEO" & SP500==1 & (missing(_gvkey) &missing(_gvkey_last )& missing(past_gvkey))
+*count if year ==2019 & ceoann=="CEO" & SP500==1 & (missing(_gvkey) &missing(_gvkey_last )& missing(past_gvkey))
 
 
 *need to create variables that point to the gvkey and year of the past experience. 
@@ -502,7 +503,17 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
     -----------------------------------------
 */
 
+*count  if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) & !inlist(char_stat, 1,2)
 
 
 
+*corr emp ex_emp_ceo if year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) & !inlist(char_stat, 1,2)
+
+*list exec_name conm ex_conm_ceo ex_year if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) & !inlist(char_stat, 1,2)
+
+keep if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) & !inlist(char_stat, 1,2) & gvkey ==ex_xgvkey
+
+keep exec_name execid ex_gvkey ex_year conm
+
+save current_ceo, replace 
 
