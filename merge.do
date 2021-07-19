@@ -511,9 +511,30 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 
 *list exec_name conm ex_conm_ceo ex_year if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) & !inlist(char_stat, 1,2)
 
-keep if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) & !inlist(char_stat, 1,2) & gvkey ==ex_xgvkey
+keep if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) 
+drop _merge
 
-keep exec_name execid ex_gvkey ex_year conm
+la var ex_HHI_ceo "CEO Experience HHI" 
+la var ex_nseg_ceo "CEO Experience Number of Segments"
+la var ex_conm_ceo "CEO Experience Company Name"
+la var ex_sale_ceo "CEO Experience Sale/Turnover (Net)"
+la var ex_emp_ceo "CEO Experience Number of Employees"
 
-save current_ceo, replace 
+la var HHI_prev "Company's Previous Year HHI"
+la var nseg_prev "Company's Previous Year Number of Segments"
+
+
+la var size1 "csho*prcc_f+at+ceq+txdb"
+la var size2 "oibdp-dp"
+la var size3 "sale"
+la var size4 "csho*prcc_f"
+la var size5 "emp"
+
+la var outcome1 "csho*prcc_f+at+ceq+txdb"
+la var outcome2 "oibdp-dp"
+la var outcome3 "sale"
+la var outcome4 "csho*prcc_f"
+*keep exec_name execid ex_gvkey ex_year conm
+
+*save current_ceo, replace 
 
