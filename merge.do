@@ -3,14 +3,20 @@
 
 *Load executive compensation data 
 *use "/Users/amir/Data/execucomp_tomerge.dta", replace
+cd "/Users/amir/Data"
 
 
-
+*gai file, drop one obs with missing execid 
+use "/Users/amir/github/ceo/Misc Data/gai1992-2016.dta",replace 
+drop if missing(execid)
+drop if missing(gvkey)
+save "/Users/amir/github/ceo/Misc Data/gai1992-2016.dta",replace
 * we use segments file to merge ceo with segments then we should just keep one 
+
 use "/Users/amir/Data/segments_tomerge.dta",replace
 
-keep gvkey year HHI nseg conm
-duplicates drop
+keep gvkey year HHI  nseg conm
+duplicates drop 
 *(104,261 observations deleted)
 
 * create a variable for last year's HHI and nseg as company's  scope characteristic
@@ -18,7 +24,7 @@ bysort gvkey (year):gen HHI_prev = HHI[_n-1]
 bysort gvkey (year):gen nseg_prev = nseg[_n-1]
 use "/Users/amir/Data/segments_tomerge.dta",replace
 
-keep gvkey year HHI nseg conm
+keep gvkey year HHI  nseg conm
 duplicates drop
 *(104,261 observations deleted)
 
@@ -511,7 +517,9 @@ merge 1:1 gvkey execid year using "/Users/amir/Data/merged_dta.dta"
 
 *list exec_name conm ex_conm_ceo ex_year if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) & !inlist(char_stat, 1,2)
 
-keep if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) 
+
+
+*keep if  year ==2019 & ceoann=="CEO" & SP500==1 & !(missing(HHI) | missing(ex_HHI_ceo) | missing(ex_emp)| missing(emp) ) 
 drop _merge
 
 la var ex_HHI_ceo "CEO Experience HHI" 
@@ -534,6 +542,43 @@ la var outcome1 "csho*prcc_f+at+ceq+txdb"
 la var outcome2 "oibdp-dp"
 la var outcome3 "sale"
 la var outcome4 "csho*prcc_f"
+
+destring execid, replace
+gen gvkey_str=gvkey
+
+destring execid, replace
+destring gvkey, replace
+
+
+
+
+
+merge 1:1 gvkey execid year using "/Users/amir/github/ceo/Misc Data/gai1992-2016.dta", keepusing(GAI)
+keep if _merge==3
+
+
+// *For Jeremy's email
+// listsome gvkey conm year execid HHI GAI sale emp  if year==2015 & ceoann=="CEO" & !missing(emp) & !missing(HHI) & !missing(sale) & !missing(GAI)
+//
+//
+//
+//
+// // destring ex_year, replace
+// // merge m:m execid ex_year using "/Users/amir/github/ceo/Misc Data/gai1992-2016.dta", keepusing(GAI)
+// // keep if _merge==3not
+//
+// drop _merge
+// gen negsale=-sale
+// bys year (negsale): gen salerank =_n
+//
+// gen negat=-at
+// bys year (negat): gen atrank =_n
+//
+// bys year: corr GAI HHI if salerank<501
+// bys year: corr GAI HHI if salerank<1001
+
+
+
 *keep exec_name execid ex_gvkey ex_year conm
 
 *save current_ceo, replace 
