@@ -8,6 +8,27 @@
 * Run on the raw executive compensation file, downloaded from WRDS. 
 use "/Users/amir/Data/execucomp.dta", replace
 
+
+
+
+* dealing with an inconsistent execid for John C. Plant
+/*. list gvkey execid coname year   if exec_fullname =="John C. Plant"
+
+        +-----------------------------------------------+
+        |  gvkey   execid                 coname   year |
+        |-----------------------------------------------|
+120998. | 010301    20932                TRW INC   1999 |
+121004. | 010301    20932                TRW INC   2000 |
+121010. | 010301    20932                TRW INC   2001 |
+216408. | 028192    59000   HOWMET AEROSPACE INC   2019 |
+        +-----------------------------------------------+
+*/
+
+replace execid ="20932" if exec_fullname =="John C. Plant"
+
+
+
+
 * variable names in the new data file are all capitalized. include the following line if capitalized var names appear in the raw data
 
 * run the following line if not installed previously
@@ -91,9 +112,18 @@ bysort execid (year): egen mfirm = nvals(co_per_rol)
 *board before ceo on own company 
 gen boardbceo =0 
 
+gen _gvkey =""
+gen _year=.
+gen _pastposition=""
+
+
 * do not include year 1993, since many firms do not report CEO status on the first year of dataset which is 1992 
 
 bysort execid (gvkey year):replace boardbceo=1 if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _gvkey=gvkey[_n-1] if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _year=year[_n-1] if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _pastposition=ceoann[_n-1] if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+
 
 *use the following instead if want to account for becoming ceo the year after joining company 
 *bysort execid (gvkey year):replace boardbceo=1 if (mfirm ==1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] & (year >= (year(becameceo)+1) | missing(becameceo)))
@@ -103,31 +133,50 @@ bysort execid (gvkey year):replace boardbceo=1 if (mfirm ==1 & ex_seq>1 & ceoann
 
 *(1605 real changes made)
 
-
-
-
 * keep the indiciator 1 if they stay CEO in subsequent years
  
 bysort execid (gvkey year):replace boardbceo=1 if mfirm==1 & boardbceo[_n-1]==1 & ceoann=="CEO" & gvkey== gvkey[_n-1] 
+bysort execid (gvkey year):replace _gvkey=_gvkey[_n-1] if (mfirm ==1 & !missing(_gvkey[_n-1]) & ceoann=="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _year=_year[_n-1] if (mfirm ==1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _pastposition=_pastposition[_n-1] if (mfirm ==1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
+
 
 
 * boardbceo=1 if ceo was on the board but not ceo at current company but also other companies
 bysort execid (gvkey year):replace boardbceo=2 if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1]) 
+bysort execid (gvkey year):replace _gvkey=gvkey[_n-1] if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _year=year[_n-1] if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _pastposition=ceoann[_n-1] if (mfirm >1 & ex_seq>1 & ceoann=="CEO" & ceoann[_n-1]!="CEO" & gvkey== gvkey[_n-1] )
+
 *(1202 real changes made)
 
 * make the rest also equal 2 
 bysort execid (gvkey year):replace boardbceo=2 if mfirm>1 & boardbceo[_n-1]==2 & ceoann=="CEO" & gvkey== gvkey[_n-1] 
+bysort execid (gvkey year):replace _gvkey=_gvkey[_n-1] if (mfirm >1 & !missing(_gvkey[_n-1]) & ceoann=="CEO" & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _year=_year[_n-1] if (mfirm >1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
+bysort execid (gvkey year):replace _pastposition=_pastposition[_n-1] if (mfirm >1 & !missing(_year[_n-1]) & ceoann=="CEO"  & gvkey== gvkey[_n-1] )
+
+
 *(4302 real changes made)
 
 
 
-
 * goal 2: create an indicator whether the CEO shows at ANOTHER firm in any capacity prior to year t 
+* we would like to know the ceostatus at another company as well, i.e. whether the CEO was a ceo or just an executive at another company
 * how many ceos have been at another companies 
 sort execid co_per_rol year 
 gen exec_past=0
+gen _gvkey_last =""
+gen _year_last =. 
 bysort execid (year co_per_rol): replace exec_past=1 if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+bysort execid (year co_per_rol): replace _gvkey_last=gvkey[_n-1] if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+bysort execid (year co_per_rol): replace _year_last=year[_n-1] if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+bysort execid (year co_per_rol): replace _pastposition=ceoann[_n-1] if co_per_rol != co_per_rol[_n-1] & year>=year[_n-1]-1 
+
+
 bysort execid co_per_rol (year): replace exec_past=1 if exec_past[_n-1]==1 & year>=year[_n-1] 
+bysort execid co_per_rol (year): replace _gvkey_last=_gvkey_last[_n-1] if !missing(_gvkey_last[_n-1]) & year>=year[_n-1]-1 
+bysort execid co_per_rol (year): replace _year_last=_year_last[_n-1] if !missing(_year_last[_n-1]) & year>=year[_n-1]-1 
 
 
 
@@ -136,11 +185,39 @@ bysort execid co_per_rol (year): replace exec_past=1 if exec_past[_n-1]==1 & yea
 
 
 
-gen atcolastyear=0 
 
-bysort execid co_per_rol (year): replace atcolastyear=1 if _n>1
+
+
+* run the missingceo .do file before continuing 
+
+
+bysort gvkey execid year (co_per_rol): gen _seq=_n
+drop if _seq >1
+* (10 observations deleted)
+drop _seq
+
+
+
+merge 1:1 gvkey execid year using "/Users/amir/Data/missing_ceo.dta", keepusing(past_gvkey past_year char_stat)
+drop _merge
+
+
+
+
 
 save execucomp_tomerge, replace
+
+
+
+* isid gvkey execid year
+
+
+
+
+
+
+
+
 
 
 /*
@@ -163,5 +240,4 @@ bysort execid (year co_per_rol): replace joinedco=year[1]
 * export excel execid exec_name gvkey coname year using "/Volumes/GoogleDrive/My Drive/Courses/coa_paper/CEO Work/Scope Diversification Literature/Data/missing.xls" if SP500==1 & year==2019 & ceoann =="CEO" & !(boardbceo >0 | exec_past==1), firstrow(variables)
 
 
-*/
 */

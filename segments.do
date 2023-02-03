@@ -49,7 +49,7 @@ drop if missing(SICS1)
 gen year =year(datadate)
 
 
-gen SICS2d = substr(SICS1,1,2)
+gen SICS2d = substr(SICS1,1,4)
 la var SICS2d "2 Digit SIC Code"
 
 egen segsale2d =total(sales), by(gvkey year SICS2d)
@@ -59,7 +59,7 @@ keep gvkey year segsale2d SICS2d conm tic snms
 
 duplicates drop gvkey year segsale2d SICS2d conm tic,force
 *(117,385 observations deleted)
-
+*three digit sic version : (84,052 observations deleted)
 
 egen totsale =total(segsale2d), by(gvkey year )
 la var totsale "Total Sales per year "
@@ -91,6 +91,8 @@ drop if year==2020
 
 destring SICS2d, replace
 
+
+/* commented temmp to check for 3d sic
 merge m:1 SICS2d using "/Users/amir/github/ceo/Misc Data/SIC2d.dta"
 
 **AFTER MERGE* 
@@ -99,8 +101,8 @@ keep if _merge ==3
 
 drop _merge
 rename description SICdesc
-
-save segments_tomerge, replace
+*/
+save "/Users/amir/Data/segments_tomerge", replace
 
 
 	
