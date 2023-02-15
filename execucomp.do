@@ -1,8 +1,8 @@
 * Data for Fox, Kazempour, and Tang 
 * Amir Kazempour 
-* July, 2021
 
-* Version 0.0.5
+* Version 0.0.5 July 2021
+* Version 0.6 Feb 2023
 
 * testing version change in github, delete
 * Run on the raw executive compensation file, downloaded from WRDS. 
@@ -12,6 +12,7 @@ use "/Users/amir/Data/execucomp.dta", replace
 
 
 * dealing with an inconsistent execid for John C. Plant
+* execid should be unique for every executive
 /*. list gvkey execid coname year   if exec_fullname =="John C. Plant"
 
         +-----------------------------------------------+
@@ -54,12 +55,27 @@ rename _seq tenure
 drop if missing(execid)
 drop spindex spcode
 
+
+
+
 bysort gvkey year: egen nceoy = max(ceoann=="CEO") 
 
+*. count if nceoy==0
+* 20,965
+* There are companies-year with no CEO identified in the data
+* if executive's becameceo is before the observation year and firm has no CEO identified use the executive as the CEO in for that year 
+
 replace ceoann="CEO" if nceoy==0 & year(becameceo)<=year 
+*(3,414 real changes made)
+
+
 
 *calculate total number of ceo per firm per year
 bysort gvkey year: egen tceon = total(ceoann=="CEO") 
+
+*. count if tceo>1
+*  957
+
 * if more than 1 ceo per firm year then choose the ceo with the latest becameceo date as ceo (if available) 
 bysort gvkey ceo year (becameceo): replace ceoann="" if _n!=_N & ceoann=="CEO"
 
@@ -205,7 +221,7 @@ drop _merge
 
 
 
-save execucomp_tomerge, replace
+save execucomp_tomerge1, replace
 
 
 
