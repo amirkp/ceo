@@ -11,35 +11,24 @@ use "/Users/amir/github/ceo/Misc Data/gai1992-2016.dta",replace
 drop if missing(execid)
 drop if missing(gvkey)
 save "/Users/amir/github/ceo/Misc Data/gai1992-2016.dta",replace
-* we use segments file to merge ceo with segments then we should just keep one 
 
+* we use segments file to merge ceo with segments then we should just keep one 
 use "/Users/amir/Data/segments_tomerge.dta",replace
 
-keep gvkey year HHI  nseg conm
+keep gvkey year HHI conm
 duplicates drop 
 *(104,261 observations deleted)
-
+*(0 )
 * create a variable for last year's HHI and nseg as company's  scope characteristic
 bysort gvkey (year):gen HHI_prev = HHI[_n-1]
-bysort gvkey (year):gen nseg_prev = nseg[_n-1]
-use "/Users/amir/Data/segments_tomerge.dta",replace
-
-keep gvkey year HHI  nseg conm
-duplicates drop
-*(104,261 observations deleted)
-
-* create a variable for last year's HHI and nseg as company's characteristic
-bysort gvkey (year):gen HHI_prev = HHI[_n-1]
-bysort gvkey (year):gen nseg_prev = nseg[_n-1]
-
-
+// bysort gvkey (year):gen nseg_prev = nseg[_n-1]
 
 save segments_final, replace
 
 use "/Users/amir/Data/fundamentals_tomerge.dta",replace
 
 merge 1:1 gvkey year using "/Users/amir/Data/segments_final.dta"
-
+keep if _merge ==3 
 drop _merge
 *count if year==2019 & SP500==1 & _merge==1
 
@@ -114,7 +103,7 @@ mostly financial firms and banks
         +---------------------------------------------------------------------------------+
 */
 merge 1:m gvkey year using "/Users/amir/Data/execucomp_tomerge.dta"
-
+keep if _merge==3 
 /*
     Result                           # of obs.
     -----------------------------------------

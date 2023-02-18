@@ -208,7 +208,7 @@ end
     end
 
     cbf = x-> println("parameter: ", round.(best_candidate(x), digits=3), " n_rep: ", n_rep, " fitness: ", best_fitness(x) )
-    nopts=5
+    nopts=1
     opt_mat =zeros(nopts,length(par_ind)+1)
     
 
@@ -230,10 +230,10 @@ end
 # Parameter estimates 
 
 
-for n_sim =50:25:50
+for n_sim =25:25:25
     for n_firms in [300]
         for data_mode=3:3:3
-                est_pars = pmap(x->replicate_byseed(x, n_firms, n_sim,[ 1.,  1., 1.], 1:7, "median", 60, 60, data_mode), 1:n_reps)
+                est_pars = pmap(x->replicate_byseed(x, n_firms, n_sim,[ 1.,  1., 1.5], 1:7, "median", 3600*2, 1800, data_mode), 1:n_reps)
                 estimation_result = Dict()
                 push!(estimation_result, "beta_hat" => est_pars)
                 bson("/home/ak68/output/est_$(n_firms)_sim_$(n_sim)_dmode_$(data_mode).bson", estimation_result)

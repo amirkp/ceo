@@ -3,6 +3,7 @@
 * 
 * Version 0.1; July, 2021
 * Version 0.2; February, 2023 
+* Version 0.3: February 17, 2023
 *** Second commented output is reported when GEOSEG is included in the sample
 
 
@@ -122,11 +123,11 @@ la var tot_sales_GEO "Total annual Sales GEO side"
 
 
 gen ratio_sales_BUS =sales_BUS/tot_sales_BUS
-la var ratio_sales_BUS "Ratio of BUS Segment Sales per Total Sales"
+la var ratio_sales_BUS "Ratio of Industry Segment Sales per Total Sales"
 
 
 gen ratio_sales_GEO =sales_GEO/tot_sales_GEO
-la var ratio_sales_GEO "Ratio of GEO Segment Sales per Total Sales"
+la var ratio_sales_GEO "Ratio of Geographic Segment Sales per Total Sales"
 
 
 
@@ -146,11 +147,11 @@ la var ratio_sales_GEO "Ratio of GEO Segment Sales per Total Sales"
 ////////////////////////////////////////////////////////////////
 
 egen HHI_BUS = total(ratio_sales_BUS^2), by(gvkey year)
-la var HHI_BUS "Herfindahl–Hirschman Index BUS"
+la var HHI_BUS "Industry Herfindahl–Hirschman Index"
 
 
 egen HHI_GEO = total(ratio_sales_GEO^2), by(gvkey year)
-la var HHI_GEO "Herfindahl–Hirschman Index BUS"
+la var HHI_GEO "Geographic Herfindahl–Hirschman Index"
 
 replace HHI_BUS =1 if HHI_BUS ==0 
 replace HHI_GEO =1 if HHI_GEO ==0
@@ -178,7 +179,7 @@ merge 1:1 tic year using "/Users/amir/Data/SP_historical.dta", keepusing(conm SP
 
 keep if SP500 ==1 
 keep if _merge ==3
-
+drop _merge
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -218,64 +219,64 @@ keep if _merge ==3
 // gen SICS3d = substr(SICS1,1,3)
 // la var SICS2d "2 Digit SIC Code"
 //
-
-
-
-duplicates drop gvkey year geotp segsalegeo segsale2d SICS2d conm tic,force
-*(117,385 observations deleted)
-*three digit sic version : (84,052 observations deleted)
-
-
-* total sale is defined at the total sales for each firm  per 2 digit SIC per year
-egen totsaleseg =total(segsale2d) if !missing(segsale2d), by(gvkey year)
-la var totsaleseg "Total Sales per year SIC SEG "
-
-* total sales for GEOgraphic 
-egen totsalegeo =total(segsalegeo) if !missing(segsalegeo), by(gvkey year)
-la var totsalegeo "Total Sales per year GEO SEG "
-
-
-
-format conm %-20s 
-format snms %-20s 
-
-
-
-sort gvkey year geotp
-
-
-gen segsaleratio =segsale2d/totsaleseg if !missing(totsaleseg) 
-la var segsaleratio "Ratio of Segment Sales per Total Sales"
-replace segsaleratio =segsalegeo/totsalegeo if !missing(totsalegeo)  
-
-*HHI would be the same for all observations of segments in a year 
-egen HHIind = total(segsaleratio^2), by(gvkey year)
-la var HHI "Herfindahl–Hirschman Index Industry"
-
-*HHI would be the same for all observations of segments in a year 
-egen HHI = total(segsaleratio^2), by(gvkey year)
-la var HHI "Herfindahl–Hirschman Index"
-
-format conm %-20s 
-format snms %-20s 
-
-
-
-keep gvkey HHI tic year  conm
-duplicates drop
-
-bysort gvkey year: gen nseg =_N
-la var nseg "Number of Segments"
-
-
-bysort gvkey year: gen fyid =_n
-la var fyid "firm-year id"
-
-drop if year==2020
-*(545 observations deleted)
-
-
-destring SICS2d, replace
+//
+//
+//
+// duplicates drop gvkey year geotp segsalegeo segsale2d SICS2d conm tic,force
+// *(117,385 observations deleted)
+// *three digit sic version : (84,052 observations deleted)
+//
+//
+// * total sale is defined at the total sales for each firm  per 2 digit SIC per year
+// egen totsaleseg =total(segsale2d) if !missing(segsale2d), by(gvkey year)
+// la var totsaleseg "Total Sales per year SIC SEG "
+//
+// * total sales for GEOgraphic 
+// egen totsalegeo =total(segsalegeo) if !missing(segsalegeo), by(gvkey year)
+// la var totsalegeo "Total Sales per year GEO SEG "
+//
+//
+//
+// format conm %-20s 
+// format snms %-20s 
+//
+//
+//
+// sort gvkey year geotp
+//
+//
+// gen segsaleratio =segsale2d/totsaleseg if !missing(totsaleseg) 
+// la var segsaleratio "Ratio of Segment Sales per Total Sales"
+// replace segsaleratio =segsalegeo/totsalegeo if !missing(totsalegeo)  
+//
+// *HHI would be the same for all observations of segments in a year 
+// egen HHIind = total(segsaleratio^2), by(gvkey year)
+// la var HHI "Herfindahl–Hirschman Index Industry"
+//
+// *HHI would be the same for all observations of segments in a year 
+// egen HHI = total(segsaleratio^2), by(gvkey year)
+// la var HHI "Herfindahl–Hirschman Index"
+//
+// format conm %-20s 
+// format snms %-20s 
+//
+//
+//
+// keep gvkey HHI tic year  conm
+// duplicates drop
+//
+// bysort gvkey year: gen nseg =_N
+// la var nseg "Number of Segments"
+//
+//
+// bysort gvkey year: gen fyid =_n
+// la var fyid "firm-year id"
+//
+// drop if year==2020
+// *(545 observations deleted)
+//
+//
+// destring SICS2d, replace
 
 
 /* commented temmp to check for 3d sic
@@ -288,6 +289,9 @@ keep if _merge ==3
 drop _merge
 rename description SICdesc
 */
+
+
+* Latest save: February 17, 2023
 save "/Users/amir/Data/segments_tomerge", replace
 
 
