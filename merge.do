@@ -1,3 +1,8 @@
+* Version 2: February 19, 2023
+
+
+
+
 * merging all three files execucomp, fundamentals, segmentss (tomerge versions)
 
 

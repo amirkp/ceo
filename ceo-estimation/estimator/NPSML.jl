@@ -10,12 +10,12 @@
 ### Amir Kazempour, amirkp@gmail.com
 
 ## uncomment for running on Rice cluster
-using Distributed, ClusterManagers 
-pids = addprocs_slurm(parse(Int, ENV["SLURM_NTASKS"]))
+# using Distributed, ClusterManagers 
+# pids = addprocs_slurm(parse(Int, ENV["SLURM_NTASKS"]))
 
 ## comment the following when running on Rice Cluster
-# using Distributed
-# addprocs(2)
+using Distributed
+addprocs(6)
 
 
 using BSON
@@ -27,6 +27,7 @@ using BSON
     using BlackBoxOptim
     using Assignment
     using Optim
+    using Evolutionary
     include("JV_DGP-LogNormal.jl")
 end
 
@@ -218,7 +219,7 @@ end
             Method = :adaptive_de_rand_1_bin_radiuslimited, 
             TraceInterval=30.0, TraceMode=:compact, MaxTime = bbo_max_time,
             CallbackInterval=100,  MaxSteps=bbo_max_step,
-            CallbackFunction= cbf) 
+            CallbackFunction= cbf, Workers = workers()) 
     
         @show opt2 = Optim.optimize(fun, best_candidate(bbsolution1), time_limit=locT)
         @show opt_mat[i,:] = vcat(Optim.minimizer(opt2), Optim.minimum(opt2))'
@@ -233,7 +234,7 @@ end
 for n_sim =50:25:50
     for n_firms in [300]
         for data_mode=3:3:3
-                est_pars = pmap(x->replicate_byseed(x, n_firms, n_sim,[ 1.,  1., 1.], 1:7, "median", 60, 60, data_mode), 1:n_reps)
+                est_pars = map(x->replicate_byseed(x, n_firms, n_sim,[ 1.,  1., 1.], 1:7, "median", 60, 60, data_mode), 1:n_reps)
                 estimation_result = Dict()
                 push!(estimation_result, "beta_hat" => est_pars)
                 bson("/home/ak68/output/est_$(n_firms)_sim_$(n_sim)_dmode_$(data_mode).bson", estimation_result)
