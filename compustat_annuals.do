@@ -1,21 +1,23 @@
 * Employee and assets and other data on COMPUSTAT ANNUALS
 
-*SP file 500
-import delimited "/Users/amir/Data/SP_Hist.csv", varnames(1) clear 
-drop v1
-gen date2= date(date,"YMD")
-format date2 %td
+* PREPARING SP file 500
+***** NEED TO RUN IT ONLY ONCE TO COMPILE THE RAW SP500 FILE
 
-keep if month(date2)==12
-drop date 
-gen year = year(date2)
-drop date2
-rename name conm
-rename ticker tic
-duplicates drop tic year, force
-replace conm= upper(conm)
-gen SP500=1
-save "/Users/amir/Data/SP_historical", replace
+// import delimited "/Users/amir/Data/SP_Hist.csv", varnames(1) clear 
+// drop v1
+// gen date2= date(date,"YMD")
+// format date2 %td
+//
+// keep if month(date2)==12
+// drop date 
+// gen year = year(date2)
+// drop date2
+// rename name conm
+// rename ticker tic
+// duplicates drop tic year, force
+// replace conm= upper(conm)
+// gen SP500=1
+// save "/Users/amir/Data/SP_historical", replace
 
 
 
@@ -43,13 +45,31 @@ replace txdb = 0 if txdb >= .  //GL(2008)
 replace ceq = 0 if ceq >= .	//GL(2008)
 *(203 real changes made)
 
+
+
+// isid gvkey year 
+*linear interpolation for employee values missing in a sequence
+
+bys gvkey (year):ipolate emp year , gen(emp1)
+
+rename emp empdrop
+rename emp1 emp
+drop empdrop
+
+
 * Size or scale measure are calculated using the firm's last year observed 
 bysort gvkey (year): gen size1 = (csho[_n-1]*prcc_f[_n-1] +at[_n-1] - ceq[_n-1]- txdb[_n-1])
 bysort gvkey (year): gen size2 = (oibdp[_n-1] - dp[_n-1])
 bysort gvkey (year): gen size3 = sale[_n-1]
 bysort gvkey (year): gen size4 = csho[_n-1]*prcc_f[_n-1]
-bysort gvkey (year): gen size5 = emp[n-1]
+bysort gvkey (year): gen size5 = emp[_n-1]
 
+
+la var size1 "Size Market Cap + Assets and Taxes"
+la var size2 "Size Operating Income Net Depreciation"
+la var size3 "Size Sales"
+la var size4 "Size Market Cap"
+la var size5 "Size Employees"
 
 bysort gvkey (year): gen outcome1 = (csho*prcc_f +at - ceq- txdb)
 bysort gvkey (year): gen outcome2 = (oibdp - dp)
@@ -89,13 +109,6 @@ replace year =2018 if _n==_N
 replace SP500=1 if _n==_N
 
 
-*linear interpolation for employee values missing in a sequence
-
-bys gvkey (year):ipolate emp year , gen(emp1)
-
-rename emp empdrop
-rename emp1 emp
-drop empdrop
 
 
 

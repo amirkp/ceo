@@ -177,8 +177,9 @@ isid gvkey year
 
 merge 1:1 tic year using "/Users/amir/Data/SP_historical.dta", keepusing(conm SP500)
 
-keep if SP500 ==1 
-keep if _merge ==3
+// keep if SP500 ==1 
+// keep if _merge ==3
+drop if _merge==2 
 drop _merge
 
 ////////////////////////////////////////////////////////////////

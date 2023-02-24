@@ -20,7 +20,7 @@ save "/Users/amir/github/ceo/Misc Data/gai1992-2016.dta",replace
 * we use segments file to merge ceo with segments then we should just keep one 
 use "/Users/amir/Data/segments_tomerge.dta",replace
 
-keep gvkey year HHI conm
+keep gvkey year HHI HHI_GEO HHI_BUS conm
 duplicates drop 
 *(104,261 observations deleted)
 *(0 )
@@ -107,8 +107,10 @@ mostly financial firms and banks
 304749. |  37577        Strauss H. Zelnick   064630   2010     TAKE-TWO INTERACTIVE SFTWR |
         +---------------------------------------------------------------------------------+
 */
+
 merge 1:m gvkey year using "/Users/amir/Data/execucomp_tomerge.dta"
 keep if _merge==3 
+
 /*
     Result                           # of obs.
     -----------------------------------------
