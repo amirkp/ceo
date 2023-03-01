@@ -122,7 +122,7 @@ gen pGAI = GAI - minGAI
 gen negsale = -sale
 bys year (negsale): gen salesrank = _n
 
-keep if salesrank<100 |SP500 ==1
+keep if salesrank<350 |SP500 ==1
 
 keep if year ==2013 
 
@@ -130,7 +130,7 @@ keep if year ==2013
 keep if logsize5>0
 keep if logtdc1>0 
 
-keep gvkey logsize1 logtdc1 HHI pGAI 
+keep gvkey logsize5 logtdc1 HHI pGAI 
 
 
 save estData, replace

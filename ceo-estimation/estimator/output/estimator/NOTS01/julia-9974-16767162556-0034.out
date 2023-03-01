@@ -1,0 +1,1673 @@
+julia_worker:9388#192.168.150.41
+h = abs.(Optim.minimizer(res_bcv)) = [0.04494462713979592, 0.11815946069151528, 0.12008739210318271]
+Starting optimization with optimizer DiffEvoOpt{FitPopulation{Float64},RadiusLimitedSelector,BlackBoxOptim.AdaptiveDiffEvoRandBin{3},RandomBound{ContinuousRectSearchSpace}}
+0.00 secs, 0 evals, 0 steps
+parameter: [6.68, -6.187, -1.444, 4.727, 4.876, -1.282, 8.145] n_rep: 36 fitness: 90.91409653978954
+ parameter: [-6.0648, -6.6763, 3.3764, 4.0873, -6.7187, 9.0394, 3.032] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [0.2873, -9.9465, 9.4818, -9.3813, 8.6543, -5.7833, -3.3568] function value: 316.07939188464263 Number of zeros: 16
+ parameter: [-6.6429, 8.7824, 8.58, -1.8676, 2.7558, 5.0197, 5.0416] function value: 450.91893853320465 Number of zeros: 300
+31.49 secs, 31 evals, 16 steps, improv/step: 0.813 (last = 0.8125), fitness=8.215661125
+ parameter: [1.2203, 2.6173, 9.8916, -2.8678, 9.654, -4.4112, -2.9158] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-3.9629, -1.2644, 7.8333, 9.0972, 1.9033, 1.4798, 7.5665] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-2.293, 3.7201, -8.4003, -8.5666, 1.6274, -4.3742, -4.3838] function value: 187.00359126309272 Number of zeros: 1
+61.66 secs, 61 evals, 31 steps, improv/step: 0.645 (last = 0.4667), fitness=4.911226180
+ parameter: [4.6388, -6.8628, 9.175, 7.5761, -8.1735, -7.873, 6.2547] function value: 173.58274689029562 Number of zeros: 1
+ parameter: [-7.9118, 7.292, -8.5573, -8.964, 4.0841, 9.2267, -0.6187] function value: 279.73790058734244 Number of zeros: 9
+ parameter: [-4.2748, 3.2362, 7.3362, 7.1128, 8.1816, -4.58, -3.8017] function value: 450.91893853320465 Number of zeros: 300
+92.49 secs, 92 evals, 50 steps, improv/step: 0.580 (last = 0.4737), fitness=4.911226180
+ parameter: [7.1216, -6.4151, -4.5677, 5.1242, -5.4806, 2.4059, 9.3054] function value: 450.91893853320465 Number of zeros: 299
+ parameter: [7.1216, -6.4151, -4.5677, 5.1242, 1.414, 2.4059, 9.3054] function value: 166.5466323678705 Number of zeros: 2
+ parameter: [-9.6499, -7.4414, -6.3715, 8.6463, 6.5756, 3.8626, -7.7614] function value: 450.91893853320465 Number of zeros: 300
+parameter: [6.237, 1.516, 9.698, -5.365, -8.035, 9.1, 8.645] n_rep: 36 fitness: 4.911226180035235
+ parameter: [-7.1891, -9.9465, 9.4818, -9.3813, 8.6543, -9.1652, -3.3568] function value: 467.88695362066596 Number of zeros: 179
+ parameter: [8.436, -5.5134, 3.5125, -0.5016, -0.5994, 6.6874, 5.9734] function value: 145.61778515750987 Number of zeros: 0
+ parameter: [8.436, 6.3706, -2.531, -0.5016, -0.5994, -1.2441, -8.3403] function value: 408.76669227674716 Number of zeros: 81
+ parameter: [-7.9776, -1.2644, -1.1569, -9.265, 3.7485, 2.4106, 8.6342] function value: 243.43129707519873 Number of zeros: 35
+123.29 secs, 123 evals, 68 steps, improv/step: 0.603 (last = 0.6667), fitness=4.911226180
+ parameter: [-0.4641, 3.0983, 4.5771, 8.4354, 6.8122, 6.6907, 6.2685] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [3.6476, 8.3494, -9.4789, 2.8322, 5.1286, 9.4698, -4.7794] function value: 450.7691381503943 Number of zeros: 298
+ parameter: [7.0972, 3.8805, -8.3576, 5.5275, 7.9959, -4.6324, 7.398] function value: 455.7913436175229 Number of zeros: 255
+ parameter: [8.1351, -6.2414, -0.8726, 4.2185, 4.1951, -0.6513, -3.6463] function value: 397.1726031191906 Number of zeros: 88
+ parameter: [8.1351, -6.2414, -0.8726, 4.2185, 4.4198, -0.6513, 7.1908] function value: 63.554143625408834 Number of zeros: 1
+ parameter: [-4.432, -9.362, -7.4438, -1.3699, 6.5756, 9.5028, 0.1058] function value: 450.91893853320465 Number of zeros: 300
+153.32 secs, 153 evals, 86 steps, improv/step: 0.581 (last = 0.5000), fitness=4.911226180
+ parameter: [-9.1772, -5.436, -5.749, -8.1299, -3.108, -2.1353, -6.8797] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [5.214, -7.9993, -3.3889, -0.2256, 7.7353, 9.21, 1.9984] function value: 454.41960986929996 Number of zeros: 267
+ parameter: [5.382, 6.1777, 2.7641, -9.6798, -9.9133, 9.4878, -9.5126] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-0.9236, 7.8847, 1.7768, 1.0623, 2.3171, 5.1151, -5.3176] function value: 28.81000357373084 Number of zeros: 1
+ parameter: [-0.9236, 7.8847, 1.7768, 1.0623, 2.3171, 5.1151, -5.3176] function value: 28.81000357373084 Number of zeros: 1
+183.59 secs, 183 evals, 103 steps, improv/step: 0.534 (last = 0.2941), fitness=3.837248446
+ parameter: [-7.195, -9.5264, 4.8043, -6.2467, 6.8594, -5.3731, -3.0076] function value: 64.04557775684661 Number of zeros: 6
+ parameter: [2.95, 6.5831, -4.0523, -0.4344, -6.4988, -5.1267, -2.6668] function value: 95.42113611511988 Number of zeros: 0
+parameter: [6.134, -2.751, 7.529, -0.964, -8.035, 2.324, 8.393] n_rep: 36 fitness: 3.8372484462682204
+ parameter: [9.8825, 4.8649, 6.8738, 1.1844, -6.2238, -2.1723, -7.3078] function value: 11.439714949793258 Number of zeros: 0
+214.51 secs, 214 evals, 121 steps, improv/step: 0.529 (last = 0.5000), fitness=2.921537394
+ parameter: [4.8599, -4.7534, 5.4445, -6.6307, -2.3282, -8.7586, 8.7105] function value: 450.91893853320465 Number of zeros: 297
+ parameter: [-0.7476, -9.4014, -2.3393, -8.9807, 4.5601, -3.6387, -6.7518] function value: 456.09462134710117 Number of zeros: 261
+ parameter: [5.8248, 3.5777, 9.2407, 7.323, 3.8252, -8.986, -0.2223] function value: 450.91893853320465 Number of zeros: 300
+244.61 secs, 244 evals, 143 steps, improv/step: 0.517 (last = 0.4545), fitness=2.921537394
+ parameter: [5.6128, 8.6931, -4.7687, -0.658, 3.3754, 9.6112, -2.2956] function value: 393.4160498444545 Number of zeros: 44
+ parameter: [0.7274, 0.3077, 3.5949, 4.588, -4.0634, -5.1683, -3.9053] function value: 19.916012622129653 Number of zeros: 0
+ parameter: [-5.9589, 0.5868, 9.1547, 9.3947, -8.8593, -2.2305, -6.4675] function value: 151.7070160138172 Number of zeros: 0
+ parameter: [5.9065, -3.0654, 4.3909, -4.0805, -4.0014, -4.1454, 0.9069] function value: 2.457583653650571 Number of zeros: 0
+ parameter: [-8.4309, -2.2575, -5.2432, -8.6628, -3.0003, 9.3634, 3.6669] function value: 450.91893853320465 Number of zeros: 300
+275.44 secs, 275 evals, 166 steps, improv/step: 0.524 (last = 0.5652), fitness=2.457583654
+ parameter: [4.8599, -4.7534, 5.4445, -6.6307, -2.3282, -8.7586, 8.7105] function value: 450.91893853320465 Number of zeros: 297
+ parameter: [5.1882, 5.0863, 1.616, 1.562, -6.2461, 1.3833, -9.6966] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [8.4903, 2.7167, 0.5178, -8.8917, -3.7962, -0.6254, 9.4549] function value: 310.63926650263903 Number of zeros: 32
+ parameter: [1.1733, 4.24, 8.532, 2.6864, -9.1908, 0.3155, 2.1547] function value: 37.33141807305505 Number of zeros: 2
+ parameter: [1.1733, 4.24, 8.532, -5.2252, -9.1908, 0.3155, 0.2692] function value: 6.884848054356501 Number of zeros: 0
+ parameter: [1.5008, 1.6602, -3.9664, -7.0405, -0.0688, 6.9702, -8.1689] function value: 450.91893853320465 Number of zeros: 300
+parameter: [5.906, -3.065, 4.391, -4.08, -4.001, -4.145, 0.907] n_rep: 36 fitness: 2.457583653650571
+307.47 secs, 307 evals, 185 steps, improv/step: 0.514 (last = 0.4211), fitness=2.457583654
+ parameter: [1.1733, 4.24, 8.532, -5.2252, -9.1908, 0.3155, 0.2692] function value: 6.884848054356501 Number of zeros: 0
+ parameter: [-1.7798, -5.2737, 7.0384, -0.4054, 8.4557, 9.929, 1.2101] function value: 14.34600081727839 Number of zeros: 1
+ parameter: [9.163, 1.4844, 7.0083, 0.6234, 0.5815, 3.2755, -2.3437] function value: 11.77399070773382 Number of zeros: 0
+337.56 secs, 337 evals, 209 steps, improv/step: 0.488 (last = 0.2917), fitness=2.457583654
+ parameter: [-8.4998, -9.5739, -6.0539, 1.4417, 8.1627, -6.6936, 6.9259] function value: 129.14840319310005 Number of zeros: 14
+ parameter: [-5.7898, 9.8384, -1.7921, 9.8781, 2.9631, 8.1192, 0.1671] function value: 35.64915970663133 Number of zeros: 2
+ parameter: [2.7739, -5.7823, -9.9688, 0.4509, 8.7734, 2.731, 6.5373] function value: 100.9158895538996 Number of zeros: 1
+367.64 secs, 367 evals, 229 steps, improv/step: 0.476 (last = 0.3500), fitness=2.457583654
+ parameter: [9.6121, 6.1353, 8.974, 0.5853, -7.7013, 7.1514, -1.2461] function value: 15.350363565833623 Number of zeros: 0
+ parameter: [3.2577, -9.878, -0.6357, -7.5813, -7.2268, -9.0946, -1.6366] function value: 456.3739808499624 Number of zeros: 276
+ parameter: [-7.5351, -5.5944, 3.7497, -1.1841, -1.042, 6.1033, 2.736] function value: 476.30005535890774 Number of zeros: 147
+ parameter: [-9.159, 4.4575, 8.1861, 3.7948, -1.3251, 1.2907, -3.7592] function value: 66.43928436367695 Number of zeros: 3
+399.42 secs, 399 evals, 252 steps, improv/step: 0.476 (last = 0.4783), fitness=2.457583654
+ parameter: [6.9076, -7.3974, 8.7937, -7.337, 6.0811, 6.9584, -2.2643] function value: 23.330582733751054 Number of zeros: 0
+parameter: [5.906, -3.065, 4.391, -4.08, -4.001, -4.145, 0.907] n_rep: 36 fitness: 2.457583653650571
+ parameter: [0.0498, 1.0547, -0.0721, 4.1086, -4.597, 3.7415, 1.496] function value: 470.77434292840337 Number of zeros: 259
+ parameter: [-6.7127, 3.8805, -7.7394, -6.4217, 7.9959, 6.5786, 7.398] function value: 40.06131693651086 Number of zeros: 1
+429.48 secs, 429 evals, 277 steps, improv/step: 0.458 (last = 0.2800), fitness=2.457583654
+ parameter: [-0.2103, -5.7989, 2.565, -8.5294, -4.2628, -2.3222, 3.5042] function value: 70.51353669342942 Number of zeros: 0
+ parameter: [-0.6004, -6.6118, 1.9762, -7.5996, -3.317, -4.4337, 8.5982] function value: 54.43549121331585 Number of zeros: 2
+ parameter: [-0.7147, 1.0529, 4.3928, -5.735, 7.7285, -7.3458, 2.5506] function value: 450.91893853320465 Number of zeros: 300
+460.53 secs, 460 evals, 303 steps, improv/step: 0.439 (last = 0.2308), fitness=2.457583654
+ parameter: [3.8894, 6.8018, -3.111, 9.0516, 3.6411, 6.6826, -9.3144] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [4.4146, -9.9179, -7.0081, 3.1946, 5.6404, 3.4873, 6.5303] function value: 472.77161765588284 Number of zeros: 238
+ parameter: [8.3626, 0.216, -7.5055, -0.6639, 9.2534, -1.6245, -5.3657] function value: 58.87503585345881 Number of zeros: 4
+491.37 secs, 491 evals, 331 steps, improv/step: 0.417 (last = 0.1786), fitness=2.457583654
+ parameter: [-0.4641, 3.0983, 4.5771, 8.4354, 5.3426, 6.4457, 2.1003] function value: 483.5496792963974 Number of zeros: 69
+ parameter: [-0.4641, 3.0983, 4.5771, 8.4354, 0.1138, 6.6907, 2.1003] function value: 7.770926045511956 Number of zeros: 0
+ parameter: [-8.1432, -2.4046, -9.4271, -4.8144, 6.4343, -4.4973, 5.9233] function value: 55.358890787261366 Number of zeros: 2
+ parameter: [-6.2981, 4.6394, -9.1651, 5.5955, 2.6723, -9.2798, -2.1235] function value: 64.18262606768783 Number of zeros: 1
+parameter: [5.906, -3.065, 4.391, -4.08, -4.001, -4.145, 0.907] n_rep: 36 fitness: 2.457583653650571
+ parameter: [9.7834, 1.7456, 9.1954, -1.1347, -4.218, 0.9327, -1.85] function value: 9.853597454326376 Number of zeros: 0
+ parameter: [4.1103, -2.2999, -5.7484, 8.2073, 9.164, -5.8747, -8.146] function value: 67.38526184784753 Number of zeros: 0
+522.08 secs, 522 evals, 357 steps, improv/step: 0.409 (last = 0.3077), fitness=2.457583654
+ parameter: [0.7274, 6.0923, 3.5949, 2.6018, -4.0634, -5.1683, 8.3973] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-5.542, 5.3462, -2.7366, -1.4901, -0.4448, 9.4037, 9.4128] function value: 38.76599871452804 Number of zeros: 1
+ parameter: [-8.3832, -6.3667, -7.8351, -0.1372, 4.9972, -0.1427, -0.6269] function value: 449.6813899151486 Number of zeros: 216
+ parameter: [-4.1867, 4.0628, -2.5082, 0.8834, 3.1481, -1.1625, -6.0627] function value: 69.51590593175727 Number of zeros: 0
+ parameter: [7.1091, 4.8368, -9.9197, 2.3796, 0.528, -7.7617, -4.1569] function value: 105.972212720023 Number of zeros: 8
+ parameter: [-4.7382, -4.0966, -2.2042, 1.6555, 5.3521, 0.6969, -8.6435] function value: 449.5890129300083 Number of zeros: 291
+ parameter: [-4.5264, -1.8659, -4.4793, -5.1906, 5.0986, 7.6061, -3.2045] function value: 450.0565964731312 Number of zeros: 297
+552.99 secs, 553 evals, 382 steps, improv/step: 0.395 (last = 0.2000), fitness=2.457583654
+ parameter: [-0.2308, -3.3264, -1.5315, -4.5361, -1.0445, -5.0243, -4.6395] function value: 516.8004777022535 Number of zeros: 187
+ parameter: [5.4161, -1.6945, -7.3656, -4.119, -8.0544, -9.8121, 2.4338] function value: 227.41783692616193 Number of zeros: 12
+ parameter: [9.8157, 4.0896, 2.9507, -6.9936, -8.6651, 7.6184, 2.9619] function value: 300.0957211716573 Number of zeros: 51
+ parameter: [9.9797, -8.7911, 3.5512, 3.2646, 8.6903, 8.4995, -0.4854] function value: 142.91457117588266 Number of zeros: 1
+ parameter: [-5.9383, 4.0281, 2.1637, -2.1712, -0.4741, -7.6289, -1.0255] function value: 479.76556800083347 Number of zeros: 241
+ parameter: [6.8785, -7.3511, 9.9217, -4.8938, -7.7859, -9.451, 0.2328] function value: 8.039416080821708 Number of zeros: 1
+583.66 secs, 584 evals, 412 steps, improv/step: 0.381 (last = 0.2000), fitness=2.457583654
+ parameter: [-4.9638, -0.8707, -5.6766, -3.8916, 1.7669, 4.7495, 5.9942] function value: 272.78597038367394 Number of zeros: 20
+ parameter: [1.1733, 4.24, 8.532, -5.2252, -9.1908, 0.3155, 0.2692] function value: 6.884848054356501 Number of zeros: 0
+parameter: [5.906, -3.065, 4.391, -4.08, -4.001, -4.145, 0.907] n_rep: 36 fitness: 2.457583653650571
+ parameter: [-0.5262, -3.1555, -8.8127, 6.732, 9.8829, -1.5372, 5.4039] function value: 55.58419320143741 Number of zeros: 1
+613.81 secs, 614 evals, 441 steps, improv/step: 0.365 (last = 0.1379), fitness=2.457583654
+ parameter: [8.1351, -6.2414, -0.8726, 4.2185, 4.4198, -0.6513, 7.1908] function value: 63.554143625408834 Number of zeros: 1
+ parameter: [0.0021, 6.5397, 0.3007, -2.1712, -1.0445, -5.0243, 5.0604] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [5.5158, -7.8927, 3.4634, -4.9562, 4.0568, 4.8569, 8.0227] function value: 9.338234507912771 Number of zeros: 0
+644.70 secs, 645 evals, 466 steps, improv/step: 0.356 (last = 0.2000), fitness=2.457583654
+ parameter: [3.0568, 4.6689, -4.423, 3.1816, -5.2244, 9.209, -1.8715] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [5.214, 9.3128, -3.3889, -0.2256, 8.9446, 1.9224, 1.9984] function value: 450.91893853320465 Number of zeros: 298
+ parameter: [2.8984, -4.527, 3.7783, 0.1044, -7.0783, 8.4229, 0.7916] function value: 450.91893853320465 Number of zeros: 300
+675.69 secs, 676 evals, 494 steps, improv/step: 0.340 (last = 0.0714), fitness=2.457583654
+ parameter: [-5.6567, 3.8042, 9.2148, 3.3825, 7.6597, 6.4205, -9.9762] function value: 32.08627248879296 Number of zeros: 3
+ parameter: [-1.6907, 4.6685, 5.1245, 0.2607, 7.4384, 8.0403, -9.1853] function value: 11.957465598727222 Number of zeros: 0
+ parameter: [-6.5967, -5.2132, -6.1898, -2.0592, -6.6368, 2.1341, -5.5596] function value: 450.91893853320465 Number of zeros: 300
+706.66 secs, 707 evals, 523 steps, improv/step: 0.340 (last = 0.3448), fitness=2.457583654
+parameter: [5.906, -3.065, 4.391, -4.08, -4.001, -4.145, 0.907] n_rep: 36 fitness: 2.457583653650571
+ parameter: [3.9773, 2.4587, 8.3138, -7.6428, 3.2454, -1.7772, 5.0071] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [8.8401, 5.7697, -0.9983, 4.7451, 8.5225, 9.7919, -5.2097] function value: 80.80532281036885 Number of zeros: 8
+ parameter: [-6.8215, -9.7475, -7.0883, 0.6111, 8.8431, -8.2299, -0.4616] function value: 79.98880259146121 Number of zeros: 5
+ parameter: [-0.3388, -3.4253, -8.2738, -2.5848, -2.0481, -6.0412, 2.2299] function value: 515.2996156355188 Number of zeros: 144
+737.45 secs, 738 evals, 552 steps, improv/step: 0.330 (last = 0.1379), fitness=2.457583654
+ parameter: [-3.4601, -6.5417, -8.9117, -3.1403, 9.5995, 7.6127, -3.6325] function value: 449.6702086389521 Number of zeros: 296
+ parameter: [3.3073, -9.7731, 8.9661, 1.6027, -9.5427, -2.2305, 8.4116] function value: 12.391568719324495 Number of zeros: 0
+ parameter: [9.305, -2.2999, -5.7484, 3.0847, 9.164, -5.8747, -8.146] function value: 58.1064039786787 Number of zeros: 4
+767.56 secs, 768 evals, 579 steps, improv/step: 0.321 (last = 0.1481), fitness=2.457583654
+ parameter: [4.1231, 3.6608, 3.176, 1.3791, -3.213, 5.3106, 3.3229] function value: 6.706284772585436 Number of zeros: 0
+ parameter: [-9.617, -3.9838, -5.9126, -6.3666, -7.1331, -5.8911, 5.086] function value: 324.39885989325376 Number of zeros: 85
+ parameter: [9.6829, -5.9042, 9.2148, 3.3825, -9.0359, -8.1869, -9.977] function value: 421.2012295674158 Number of zeros: 16
+798.56 secs, 799 evals, 610 steps, improv/step: 0.318 (last = 0.2581), fitness=2.343376816
+ parameter: [2.2958, -4.4823, 9.6799, 0.8264, -5.9781, 1.4917, -9.8627] function value: 450.91893853320465 Number of zeros: 300
+parameter: [4.925, -0.794, 7.257, 7.451, 5.086, 2.471, -7.044] n_rep: 36 fitness: 2.3433768155192616
+ parameter: [2.9478, 0.7354, 6.4206, 3.2561, -5.3453, -4.1124, -3.0351] function value: 2.0923388568522245 Number of zeros: 0
+ parameter: [0.7274, 0.3077, 3.5949, -2.4173, -4.0634, -5.1683, -3.9053] function value: 6.589400601632597 Number of zeros: 0
+ parameter: [9.9822, -5.4535, 9.7446, -1.1347, -4.218, 0.9327, -1.85] function value: 54.88652859124288 Number of zeros: 0
+828.79 secs, 830 evals, 640 steps, improv/step: 0.319 (last = 0.3333), fitness=2.092338857
+ parameter: [9.6654, 6.1353, 8.974, 0.5853, 0.7384, 7.1514, -2.417] function value: 89.70314303115778 Number of zeros: 0
+ parameter: [1.1835, 0.7439, 1.0561, 8.9582, 8.9655, 5.3188, -5.9497] function value: 26.776756856158283 Number of zeros: 0
+ parameter: [3.7558, -1.336, 9.0056, 1.4913, 4.8376, 8.7808, -1.2461] function value: 2.5404621771911926 Number of zeros: 0
+858.84 secs, 860 evals, 669 steps, improv/step: 0.315 (last = 0.2414), fitness=2.092338857
+ parameter: [8.4379, 4.9794, 9.6669, -8.1558, -6.0399, -3.3571, -9.4031] function value: 5.529555811112189 Number of zeros: 0
+ parameter: [-7.9436, 9.9164, -8.8857, -8.9984, 4.6399, 9.8924, 2.163] function value: 51.54763154897076 Number of zeros: 0
+ parameter: [-0.6474, 5.6596, -5.5134, 8.8564, -3.4688, 0.2186, 9.7278] function value: 135.56440001560804 Number of zeros: 1
+889.50 secs, 891 evals, 699 steps, improv/step: 0.312 (last = 0.2333), fitness=2.092338857
+ parameter: [6.4827, 3.8234, 5.8328, -8.7839, 4.7172, 9.4314, 9.1738] function value: 461.8966721073518 Number of zeros: 270
+ parameter: [-8.1655, 8.537, -6.6883, -9.6596, 3.9986, 9.7017, -0.0549] function value: 96.38055620199512 Number of zeros: 0
+ parameter: [0.2756, 7.6812, 7.396, -9.745, 4.2047, -5.2173, -4.9759] function value: 450.91893853320465 Number of zeros: 300
+parameter: [2.948, 0.735, 6.421, 3.256, -5.345, -4.112, -3.035] n_rep: 36 fitness: 2.0923388568522245
+ parameter: [-8.4762, 0.3217, 6.7119, -6.107, 1.3866, 8.2133, 7.8088] function value: 194.85006651623442 Number of zeros: 11
+ parameter: [-2.0974, 0.8615, 5.4758, 8.0119, -9.5411, -9.665, -3.4203] function value: 8.173324445604154 Number of zeros: 0
+920.36 secs, 922 evals, 727 steps, improv/step: 0.312 (last = 0.3214), fitness=1.882943392
+ parameter: [6.4765, -9.4336, -2.6579, -4.7487, 8.016, -0.2307, 0.3418] function value: 87.95877918468253 Number of zeros: 0
+ parameter: [-1.0663, -6.1732, 9.5856, -9.0952, 8.3763, 0.1902, -6.2054] function value: 24.023681047261302 Number of zeros: 2
+ parameter: [4.6443, -3.1046, 7.7907, 2.7675, 5.9429, 9.5173, -0.4335] function value: 6.433195845490731 Number of zeros: 0
+ parameter: [5.9065, -8.7386, 4.3909, -4.0805, -4.0014, -4.1454, 0.9069] function value: 150.97480760687426 Number of zeros: 1
+ parameter: [-0.2704, -5.5583, 3.3478, -1.705, 9.4475, 4.8721, 4.7567] function value: 96.63800973375152 Number of zeros: 1
+ parameter: [0.6938, -2.4104, 6.0874, -6.7625, -2.5318, 7.5993, 3.5365] function value: 165.8185155050395 Number of zeros: 0
+951.01 secs, 953 evals, 755 steps, improv/step: 0.309 (last = 0.2143), fitness=1.882943392
+ parameter: [-5.6169, -9.4485, -9.808, -6.7551, -2.7972, -9.6852, 4.5027] function value: 450.70401065311546 Number of zeros: 194
+ parameter: [-3.7482, -0.3705, 5.3087, 3.4185, -8.8583, 7.3504, -2.3665] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-1.6616, -7.7692, -3.0376, 3.0192, 2.057, 3.8851, 9.9208] function value: 347.16191783751816 Number of zeros: 28
+ parameter: [2.9413, 0.5868, 8.9661, 1.6027, -9.5427, -2.2305, 3.387] function value: 26.66725960441281 Number of zeros: 1
+ parameter: [3.7558, 2.7259, 9.0056, 1.4913, 4.8376, 8.7808, -1.2461] function value: 118.93432228209706 Number of zeros: 0
+981.65 secs, 984 evals, 786 steps, improv/step: 0.307 (last = 0.2581), fitness=1.882943392
+ parameter: [-5.4929, 2.2457, 1.9414, -7.9586, -4.3871, -9.3315, -1.3947] function value: 151.29606698252607 Number of zeros: 2
+ parameter: [-6.3029, 1.2689, -8.6062, -1.1841, 0.2582, 4.932, 3.6824] function value: 496.5630089581775 Number of zeros: 181
+ parameter: [5.8575, 6.5514, 4.7637, -2.8976, 5.0865, 2.4706, -8.072] function value: 56.93585559380678 Number of zeros: 0
+parameter: [3.471, -1.03, 8.532, 7.603, 4.642, 8.808, -1.093] n_rep: 36 fitness: 1.8829433921772607
+1012.36 secs, 1015 evals, 814 steps, improv/step: 0.297 (last = 0.0357), fitness=1.882943392
+ parameter: [8.363, 8.0737, -0.4283, -8.2925, -4.3737, 2.8144, 5.2868] function value: 50.5937176742103 Number of zeros: 0
+ parameter: [3.0809, -6.4608, 7.9425, -3.0592, -6.6774, -6.5903, 2.6101] function value: 8.281186820271628 Number of zeros: 0
+ parameter: [5.5187, 7.4018, 5.2109, 6.4647, -8.9821, -2.5624, -1.5337] function value: 18.270482617043335 Number of zeros: 0
+ parameter: [1.4608, -1.7438, 2.9092, -9.922, -2.6229, -2.8957, -3.8112] function value: 113.43424997698004 Number of zeros: 0
+ parameter: [8.6509, 1.029, 7.3812, -4.8426, -2.3946, 6.1926, 0.0666] function value: 14.265839217482172 Number of zeros: 0
+ parameter: [7.7674, -3.2276, 1.4134, -6.3565, -4.5049, -1.6091, 7.5999] function value: 14.269610497496235 Number of zeros: 1
+ parameter: [4.6121, 0.3148, -1.5315, -5.9951, -6.4372, 0.1868, 6.7716] function value: 75.38122107329943 Number of zeros: 3
+1043.31 secs, 1046 evals, 843 steps, improv/step: 0.295 (last = 0.2414), fitness=1.882943392
+ parameter: [7.1886, -2.3802, -5.6766, -2.9594, 4.9644, 6.5644, 5.9942] function value: 163.54245090699072 Number of zeros: 19
+ parameter: [-9.7896, 1.459, -1.7861, -0.9102, -6.0399, -8.2517, -5.5144] function value: 271.4713323471255 Number of zeros: 40
+ parameter: [0.7274, -3.6828, 3.5949, -9.1477, -8.3209, -5.1683, 6.4649] function value: 13.455897161830288 Number of zeros: 0
+ parameter: [-6.1553, 2.1504, -8.496, -9.6208, -4.4496, -1.3207, 7.0928] function value: 91.92269236327205 Number of zeros: 1
+ parameter: [9.9441, 7.8154, 1.8779, -8.213, -5.7063, 9.5094, 2.9734] function value: 133.0069972638168 Number of zeros: 16
+ parameter: [-0.455, -1.1643, 2.8487, -8.0863, 7.7212, 2.6207, 4.7139] function value: 486.8952387336677 Number of zeros: 45
+ parameter: [-1.1122, -4.388, 8.7576, -7.7045, 6.7866, -1.4605, -1.9707] function value: 398.72886901622144 Number of zeros: 21
+1074.26 secs, 1077 evals, 874 steps, improv/step: 0.296 (last = 0.3226), fitness=1.882943392
+ parameter: [7.8541, 4.4579, 6.208, 3.0039, -5.8642, 9.3836, -7.8497] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-2.9027, -0.0382, 5.0909, 5.1508, 9.2811, 9.705, 3.5042] function value: 241.11289026885072 Number of zeros: 8
+ parameter: [8.4415, 3.4794, 5.9563, -6.3736, -8.1527, 4.4344, 8.1917] function value: 12.859462816814888 Number of zeros: 0
+ parameter: [-5.3442, -5.2132, -6.1898, -7.6743, -6.6368, -5.1679, -5.5596] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [1.8009, 6.436, 1.5083, -3.6447, 0.7647, 9.9529, 4.6278] function value: 22.08756978749923 Number of zeros: 0
+1104.44 secs, 1107 evals, 904 steps, improv/step: 0.292 (last = 0.1667), fitness=1.882943392
+parameter: [3.471, -1.03, 8.532, 7.603, 4.642, 8.808, -1.093] n_rep: 36 fitness: 1.8829433921772607
+ parameter: [5.7357, 3.3154, 5.2362, -0.9375, -3.6564, 0.0276, 8.4484] function value: 456.03565501644783 Number of zeros: 279
+ parameter: [8.363, 8.0737, -0.4283, 2.6491, -4.3737, 2.8144, 0.0051] function value: 73.96239271848066 Number of zeros: 5
+ parameter: [-4.8971, -3.6375, 8.7818, 9.0037, 1.6776, -1.8189, -8.5268] function value: 32.23535518903456 Number of zeros: 1
+ parameter: [3.8756, 2.8208, 5.3159, 9.5125, -9.5502, 7.0236, 4.9598] function value: 193.57090435955448 Number of zeros: 0
+1135.38 secs, 1138 evals, 934 steps, improv/step: 0.294 (last = 0.3667), fitness=1.882943392
+ parameter: [1.6828, -4.3024, 9.606, 7.3387, -9.707, 7.7511, 5.2133] function value: 508.0451871855027 Number of zeros: 158
+ parameter: [4.9537, 9.7417, 5.9521, -1.1035, -7.9129, 7.2486, 7.3578] function value: 105.35370964235706 Number of zeros: 0
+ parameter: [4.3835, -1.3736, 6.1095, 5.7398, -2.4337, 6.4213, 5.4664] function value: 4.829097555488011 Number of zeros: 0
+ parameter: [-0.3388, -3.9212, 8.7615, -9.4256, 9.2704, 0.2714, 1.3337] function value: 459.6853246837965 Number of zeros: 275
+1165.51 secs, 1168 evals, 964 steps, improv/step: 0.291 (last = 0.2000), fitness=1.882943392
+ parameter: [6.4151, -1.5928, 3.047, 2.8631, -9.7995, 4.2854, -0.4523] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [7.1216, -6.4151, -4.5677, 5.1242, 9.5125, 8.8163, 8.7354] function value: 49.730068168847936 Number of zeros: 0
+ parameter: [-2.3869, -1.6946, -6.0445, -7.9982, 9.5696, -3.013, -4.4618] function value: 34.18671618136229 Number of zeros: 0
+ parameter: [-2.3869, -1.6946, -9.9717, -7.8846, 9.5696, -3.013, 1.2994] function value: 29.278017089173105 Number of zeros: 0
+1196.38 secs, 1199 evals, 995 steps, improv/step: 0.286 (last = 0.1290), fitness=1.882943392
+ parameter: [-3.5751, -5.2173, 5.3161, 4.385, -5.9194, -3.1296, -2.4662] function value: 473.9969270481346 Number of zeros: 26
+ parameter: [4.1488, -3.1212, -0.4809, -2.4298, -0.1529, -9.0655, -6.1741] function value: 148.9255255733397 Number of zeros: 5
+parameter: [3.471, -1.03, 8.532, 7.603, 4.642, 8.808, -1.093] n_rep: 36 fitness: 1.8829433921772607
+ parameter: [-7.4692, 2.3372, 8.4045, -4.5437, -8.5274, 7.5625, -5.2404] function value: 455.7707839738404 Number of zeros: 178
+ parameter: [-1.7346, -5.1612, -4.9195, 6.0238, 0.9913, -7.8372, 3.5953] function value: 47.63821684228229 Number of zeros: 1
+ parameter: [-1.7798, -4.526, 7.0384, -0.4054, 9.3162, 9.9811, -6.5272] function value: 125.77216125386565 Number of zeros: 0
+ parameter: [8.6726, 5.4855, 8.6835, 9.3265, 2.1666, 5.5018, -1.3115] function value: 377.81079267872803 Number of zeros: 18
+1227.16 secs, 1230 evals, 1026 steps, improv/step: 0.280 (last = 0.0645), fitness=1.882943392
+ parameter: [-3.7431, -6.6118, 1.9762, -7.5996, -3.317, -4.1607, -5.5867] function value: 452.5256302237278 Number of zeros: 289
+ parameter: [5.4288, 3.0945, 8.4574, 0.3123, -6.721, -5.2883, 4.025] function value: 467.7993835370047 Number of zeros: 256
+ parameter: [4.3019, -6.0605, 0.7834, -2.5272, 8.1276, 6.8782, 6.5061] function value: 22.35845056332444 Number of zeros: 0
+ parameter: [3.2162, 3.0983, 8.3577, 8.4354, -5.1037, 6.6907, 7.9148] function value: 259.101026127266 Number of zeros: 2
+ parameter: [4.5514, -8.8149, -9.5312, 3.4418, 9.3314, -4.605, 2.3298] function value: 78.87653908001532 Number of zeros: 0
+ parameter: [-7.7267, -3.8207, 4.755, -2.2594, 0.1072, -7.1086, 6.2076] function value: 450.91893853320465 Number of zeros: 296
+1257.30 secs, 1260 evals, 1056 steps, improv/step: 0.277 (last = 0.2000), fitness=1.882943392
+ parameter: [2.6561, -6.0605, 7.8244, -2.5272, -0.7505, 1.2328, 3.6515] function value: 8.63353015902948 Number of zeros: 1
+ parameter: [7.6522, 8.5557, 4.1471, 7.5414, -5.0647, -4.4814, -0.5599] function value: 492.24514528751104 Number of zeros: 182
+ parameter: [7.8959, -5.8914, 9.41, 2.8753, 9.0893, 8.8858, 5.2133] function value: 140.71706009664342 Number of zeros: 0
+ parameter: [-5.7117, -2.1094, 4.3758, -1.5158, -7.5181, -4.8267, 4.4803] function value: 27.67991190386165 Number of zeros: 1
+ parameter: [1.2827, -9.9274, -9.6817, -4.7026, -1.5412, 6.2822, 7.6011] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [2.4092, 0.1029, 8.5385, -3.4572, -4.8842, 8.0288, 3.801] function value: 17.007211512611164 Number of zeros: 0
+1287.34 secs, 1290 evals, 1085 steps, improv/step: 0.275 (last = 0.1724), fitness=1.882943392
+ parameter: [5.5237, -5.1114, 3.4198, -2.5407, -2.9029, -0.9078, 4.4342] function value: 8.536335408589618 Number of zeros: 0
+ parameter: [5.1418, -3.2443, 6.0422, -0.0439, -6.3242, 3.4093, -3.8418] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-1.2407, -8.1321, -4.4604, -9.9057, -0.6529, -8.0209, -0.3512] function value: 467.3608274239117 Number of zeros: 122
+ parameter: [7.8404, 4.9999, -4.4593, 5.0809, -8.9771, 8.2168, -1.5346] function value: 450.91893853320465 Number of zeros: 300
+parameter: [3.471, -1.03, 8.532, 7.603, 4.642, 8.808, -1.093] n_rep: 36 fitness: 1.8829433921772607
+ parameter: [9.4834, 4.2265, 2.8863, -8.1251, -9.3425, 8.4522, 1.0103] function value: 472.3624038180646 Number of zeros: 173
+1317.96 secs, 1321 evals, 1116 steps, improv/step: 0.271 (last = 0.1290), fitness=1.882943392
+ parameter: [9.4834, 4.2265, 2.8863, -8.1251, -3.8897, 8.4522, 6.785] function value: 19.760790505869643 Number of zeros: 1
+ parameter: [5.5157, -3.0754, -3.3071, -8.0651, -4.0243, -9.1445, 9.084] function value: 104.0206448206965 Number of zeros: 0
+ parameter: [4.8883, 2.3608, -9.8593, 3.8854, -9.5117, 2.2543, 7.4198] function value: 450.91893853320465 Number of zeros: 300
+1348.57 secs, 1352 evals, 1147 steps, improv/step: 0.270 (last = 0.2581), fitness=1.797264436
+ parameter: [3.35, -3.9993, 0.659, 1.7719, 0.7308, 2.8036, 7.4968] function value: 8.89736091549789 Number of zeros: 0
+ parameter: [8.3398, 4.6431, -0.8714, 5.9687, -9.3001, 0.6842, -0.7403] function value: 473.0323031422553 Number of zeros: 144
+ parameter: [4.8168, 4.2773, 1.9762, -7.5996, -8.7887, -1.7823, 8.5982] function value: 52.205786607294385 Number of zeros: 0
+1379.42 secs, 1383 evals, 1178 steps, improv/step: 0.266 (last = 0.0968), fitness=1.797264436
+ parameter: [1.1733, 4.24, 8.532, -5.2252, -9.1908, 0.3155, 0.2692] function value: 6.884848054356501 Number of zeros: 0
+ parameter: [-5.1263, 2.7947, 7.3992, 6.2601, -8.9263, -0.1915, -4.9146] function value: 168.95538873894853 Number of zeros: 0
+ parameter: [7.6287, -8.8661, 4.5962, -8.5199, -1.2499, 2.7031, -1.2413] function value: 459.56159210615084 Number of zeros: 278
+1409.58 secs, 1413 evals, 1207 steps, improv/step: 0.267 (last = 0.3103), fitness=1.794900286
+ parameter: [-2.0974, -0.4369, 5.4758, 8.0119, -9.5411, -5.9244, -3.4203] function value: 124.89161120048652 Number of zeros: 0
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [1.4855, -3.213, 8.9661, -6.4769, -9.5427, 0.638, 4.1824] function value: 9.012901050851271 Number of zeros: 0
+ parameter: [3.0674, 9.2728, 8.7929, -9.2297, -8.6826, -2.8627, -6.0116] function value: 30.030698994185837 Number of zeros: 1
+1439.72 secs, 1443 evals, 1237 steps, improv/step: 0.265 (last = 0.2000), fitness=1.794900286
+ parameter: [-3.3717, 3.7997, 2.3912, 4.2655, 4.5643, 5.4138, -2.2489] function value: 17.97673166700159 Number of zeros: 1
+ parameter: [-6.2138, 5.1149, 3.4966, -8.7892, 1.477, 8.9037, -4.6854] function value: 145.44038910948387 Number of zeros: 0
+ parameter: [9.8241, 4.5706, 9.3218, -4.7093, 2.76, 6.1045, -6.9973] function value: 8.36020970953993 Number of zeros: 0
+1469.86 secs, 1473 evals, 1267 steps, improv/step: 0.264 (last = 0.2000), fitness=1.794900286
+ parameter: [7.805, 4.1829, -5.3677, -1.9065, 1.7084, -7.2151, 8.0523] function value: 455.0167262544953 Number of zeros: 265
+ parameter: [4.5617, 1.5679, 8.4544, -9.1256, -6.0587, -0.321, 1.1945] function value: 16.016568262531475 Number of zeros: 0
+ parameter: [5.7269, -7.515, 5.08, -3.4503, -1.2557, 2.3937, 7.2072] function value: 8.55519758760223 Number of zeros: 0
+1500.42 secs, 1504 evals, 1298 steps, improv/step: 0.260 (last = 0.1290), fitness=1.794900286
+ parameter: [6.7995, -3.7416, 8.0447, 0.4568, -9.3001, -3.9133, -2.5218] function value: 89.17904635485839 Number of zeros: 0
+ parameter: [7.0622, 4.9525, 8.5376, 5.2332, 5.946, 6.7722, -0.0732] function value: 483.24430223469074 Number of zeros: 233
+ parameter: [8.363, 8.0737, -0.4283, -7.304, -8.2707, 2.8144, 2.7578] function value: 53.692994304354414 Number of zeros: 2
+ parameter: [4.1488, 2.9832, -4.8095, -0.692, -4.1499, -1.5308, -5.5406] function value: 450.91893853320465 Number of zeros: 300
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [-3.932, 8.6125, -9.3932, 2.1751, 9.9809, 9.9359, 0.0447] function value: 33.54420144569513 Number of zeros: 0
+ parameter: [7.8524, 9.9468, 9.708, -0.0096, -4.6418, 7.9871, -4.2478] function value: 8.263600119402101 Number of zeros: 0
+1531.21 secs, 1535 evals, 1329 steps, improv/step: 0.256 (last = 0.0645), fitness=1.794900286
+ parameter: [6.1337, 8.9721, 6.8692, -1.4434, -8.0352, -4.4324, -4.4249] function value: 87.74880427950676 Number of zeros: 0
+ parameter: [7.973, -1.9503, 7.0384, -8.6698, -9.3046, -9.7088, 8.7255] function value: 405.4080781765725 Number of zeros: 94
+ parameter: [8.0247, 3.7324, 8.3095, 1.555, -9.8388, 8.1922, -6.701] function value: 450.91893853320465 Number of zeros: 294
+ parameter: [-0.4981, 2.0502, 2.4463, -0.1053, -1.4277, -6.1055, -9.1193] function value: 65.94364307412167 Number of zeros: 0
+1561.82 secs, 1566 evals, 1359 steps, improv/step: 0.255 (last = 0.2000), fitness=1.794900286
+ parameter: [2.8714, -2.3089, 2.8491, 6.0228, 8.7799, 9.5562, -1.7061] function value: 53.02653774872746 Number of zeros: 0
+ parameter: [8.0247, 5.7024, 8.3095, 6.4888, -1.5197, 8.1922, 0.9386] function value: 48.12023527403227 Number of zeros: 0
+ parameter: [4.5065, -8.7785, -0.8502, 3.3564, -6.6577, -1.3415, 5.5547] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [2.9478, 0.7354, 8.174, 3.2561, -6.0564, -4.7533, -3.0351] function value: 15.972959690313775 Number of zeros: 0
+ parameter: [6.1337, -2.7515, 7.5288, -9.0165, -8.0352, 2.8916, 5.5998] function value: 6.93780073792741 Number of zeros: 0
+1592.04 secs, 1596 evals, 1388 steps, improv/step: 0.251 (last = 0.0690), fitness=1.794900286
+ parameter: [9.0512, -0.6731, 6.3956, 3.256, 3.722, -4.9926, -9.9338] function value: 18.89117065274594 Number of zeros: 0
+ parameter: [-4.4713, -9.2599, 6.7778, -2.7134, 1.6352, 8.6825, -3.4253] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [-2.1482, -8.7872, -1.0778, 3.2518, 8.2451, 2.7449, 6.9754] function value: 45.228236936878794 Number of zeros: 2
+ parameter: [3.7558, -1.336, 9.0056, 1.4913, 5.3595, -4.391, -1.2461] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [5.214, 7.3182, -3.3889, 5.0167, 6.581, -5.4676, -2.1198] function value: 450.91893853320465 Number of zeros: 293
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+1622.83 secs, 1627 evals, 1419 steps, improv/step: 0.249 (last = 0.1935), fitness=1.794900286
+ parameter: [7.7516, -1.8522, 5.3065, -2.1846, 3.8905, 3.6638, -4.6447] function value: 25.911391651323544 Number of zeros: 0
+ parameter: [3.2273, -7.3859, 4.3833, -4.1194, 4.6663, 7.2818, -5.15] function value: 450.8005037567979 Number of zeros: 289
+ parameter: [3.7098, -1.6824, 5.2542, -4.9536, -8.6063, 2.747, -0.5104] function value: 492.29519489451167 Number of zeros: 116
+ parameter: [3.7595, 1.678, 7.2573, -2.1416, -5.8659, -8.2434, -2.6003] function value: 176.83938037326345 Number of zeros: 3
+1653.48 secs, 1658 evals, 1450 steps, improv/step: 0.248 (last = 0.1935), fitness=1.794900286
+ parameter: [5.009, 2.2294, -2.483, -3.3126, 5.946, 8.2982, -0.0732] function value: 117.76854834942314 Number of zeros: 9
+ parameter: [4.4091, -2.0488, -9.9717, 4.2542, 9.5696, -3.013, 0.0637] function value: 27.626298536096336 Number of zeros: 0
+ parameter: [3.7698, -0.3205, 7.4953, 5.2922, -3.4672, -1.2815, 3.5779] function value: 339.96598335853054 Number of zeros: 2
+1684.49 secs, 1689 evals, 1481 steps, improv/step: 0.248 (last = 0.2258), fitness=1.794900286
+ parameter: [-1.0144, 1.7456, 6.6945, -1.1347, -3.9777, 0.9327, -1.85] function value: 8.441066897574343 Number of zeros: 0
+ parameter: [-5.3442, -6.5264, 7.5284, -7.6743, 3.4019, -5.1679, -6.0226] function value: 29.575185226669362 Number of zeros: 1
+ parameter: [4.1489, -2.5171, 8.2862, 9.2887, -9.746, -7.8338, 1.9728] function value: 33.11483412825771 Number of zeros: 0
+ parameter: [7.7991, -1.4642, -7.2236, -6.4576, 2.8387, 3.4521, 0.9697] function value: 478.55538345867393 Number of zeros: 152
+ parameter: [2.4992, -2.7515, 7.5288, -0.9306, -3.7231, 1.7486, 8.3926] function value: 228.28664231705432 Number of zeros: 3
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+1715.42 secs, 1720 evals, 1512 steps, improv/step: 0.243 (last = 0.0323), fitness=1.794900286
+ parameter: [3.5664, -2.2585, 6.3076, -6.2961, 5.1338, 6.5962, -6.6153] function value: 129.8070490891123 Number of zeros: 0
+ parameter: [4.5738, 1.8213, 3.6913, -6.7795, -4.2105, 0.5336, 1.3735] function value: 4.083090323877963 Number of zeros: 0
+ parameter: [3.5664, -2.2585, 2.6809, -1.5942, 5.1338, -5.949, 4.4285] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [9.606, -6.3713, 9.9533, 8.9029, -7.4002, -7.2806, -8.2719] function value: 204.07596721465018 Number of zeros: 0
+ parameter: [2.256, -6.1732, 2.7784, -9.0952, 8.3763, 4.4484, -6.2054] function value: 131.4843255384054 Number of zeros: 1
+ parameter: [-2.3266, -0.8497, 1.441, 1.8807, -0.7399, -6.3801, 7.6327] function value: 450.91893853320465 Number of zeros: 300
+1746.19 secs, 1751 evals, 1543 steps, improv/step: 0.239 (last = 0.0323), fitness=1.794900286
+ parameter: [5.214, 7.3182, -3.3889, 5.0167, -2.6192, 5.6882, -2.1198] function value: 453.1552285934535 Number of zeros: 289
+ parameter: [9.7079, -0.5284, 0.2207, 7.892, 1.4856, -0.2805, 0.3194] function value: 79.55372642518633 Number of zeros: 10
+ parameter: [5.9891, 3.4456, -2.5803, 2.5712, -2.8237, -7.1495, -3.0927] function value: 39.21335400333245 Number of zeros: 1
+ parameter: [4.5848, -5.5739, 3.4306, -6.7801, -2.4327, 7.0769, 9.6315] function value: 65.26410357526235 Number of zeros: 0
+ parameter: [6.2524, -4.3696, 7.8336, 1.5038, -4.7637, -4.97, 4.5173] function value: 141.6416147803353 Number of zeros: 0
+ parameter: [6.284, 9.664, 6.866, 4.6966, -0.9663, 0.7232, -9.8923] function value: 57.33463246576471 Number of zeros: 0
+1777.14 secs, 1782 evals, 1574 steps, improv/step: 0.238 (last = 0.1613), fitness=1.794900286
+ parameter: [4.7868, -2.6745, 3.1057, 3.6541, 9.9064, 7.8214, -2.6909] function value: 11.135129568102556 Number of zeros: 0
+ parameter: [2.4874, 3.6541, 9.5972, -8.1196, -9.1566, -2.3201, -1.1507] function value: 14.152756117968531 Number of zeros: 0
+ parameter: [-3.5751, 0.3385, 5.3161, 4.385, -6.1435, -5.8216, -2.4662] function value: 14.46382859132003 Number of zeros: 1
+ parameter: [9.0065, 1.5176, 8.42, -7.3848, -5.3996, -1.8275, 1.0801] function value: 59.704705318888905 Number of zeros: 0
+ parameter: [7.8785, 3.8234, 5.8328, -5.0237, 1.5045, -3.8471, -4.2542] function value: 458.63756096782225 Number of zeros: 96
+ parameter: [0.9272, -2.7101, 8.5097, 1.6664, -5.3088, 3.2359, 4.663] function value: 4.4031680975652385 Number of zeros: 0
+1807.24 secs, 1812 evals, 1604 steps, improv/step: 0.236 (last = 0.1667), fitness=1.794900286
+ parameter: [1.9921, -9.4485, 6.7906, 6.3353, -7.5067, -7.8805, 4.5027] function value: 11.32400229956749 Number of zeros: 0
+ parameter: [2.9794, 4.24, 8.3474, 3.269, -7.7608, -0.1415, -0.7162] function value: 15.080872072175811 Number of zeros: 0
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [1.6695, -1.6429, 2.8471, -4.6796, -2.9223, -5.0132, 1.0801] function value: 11.5286026440283 Number of zeros: 0
+ parameter: [1.6695, -1.6429, 9.6051, 2.5609, -2.2203, -1.8275, 1.0801] function value: 416.10360904858743 Number of zeros: 24
+ parameter: [6.3874, -8.7943, 9.9927, 1.8217, 6.7456, 1.4269, -3.8995] function value: 4.372874426675695 Number of zeros: 0
+ parameter: [7.9522, 0.2067, 9.6669, -0.5412, -1.6005, 7.4064, 0.1867] function value: 6.7059417944263116 Number of zeros: 0
+1838.21 secs, 1843 evals, 1635 steps, improv/step: 0.234 (last = 0.1290), fitness=1.794900286
+ parameter: [-5.2799, 1.439, 6.866, -3.3862, -0.9663, -6.8349, -9.8923] function value: 33.20418809795099 Number of zeros: 1
+ parameter: [2.9154, -9.0584, 6.5438, 8.6475, 3.9298, 9.8572, 8.2203] function value: 51.84763355131395 Number of zeros: 0
+ parameter: [8.6861, -2.2585, 2.6809, -1.5942, 5.1338, 6.5962, 1.7307] function value: 15.046956062869677 Number of zeros: 1
+ parameter: [9.9491, 0.4572, 4.8128, -7.9987, 1.3622, 0.1093, -0.4104] function value: 85.48643805718226 Number of zeros: 0
+ parameter: [6.6859, 0.6876, 1.8692, -0.6306, 5.621, 1.0424, -5.2425] function value: 13.61049947293997 Number of zeros: 0
+ parameter: [-0.4483, 1.007, 2.7946, 8.4699, 8.7247, -0.4634, -7.4411] function value: 77.93487414905 Number of zeros: 1
+1868.27 secs, 1873 evals, 1665 steps, improv/step: 0.233 (last = 0.1667), fitness=1.794900286
+ parameter: [4.746, -5.7922, 9.8815, 1.3408, 8.3695, 3.6696, 1.2622] function value: 310.9747105089902 Number of zeros: 3
+ parameter: [2.9154, 9.3859, 6.5438, 8.6475, 3.9298, 9.8572, 8.2203] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [4.9245, -0.794, 7.2573, 7.4514, -1.7245, 5.3148, -7.0438] function value: 460.7866560039554 Number of zeros: 267
+ parameter: [9.022, 0.4543, 7.9481, 7.0491, -8.5954, 6.3186, 9.7804] function value: 7.339357001468075 Number of zeros: 0
+ parameter: [8.3503, -4.3298, 9.0118, -3.2883, -2.3914, 7.7573, 1.5373] function value: 146.00398755759062 Number of zeros: 0
+ parameter: [1.5384, -7.4749, 3.8895, -6.5859, -4.6027, -0.8958, 3.0482] function value: 261.1855987517403 Number of zeros: 0
+1898.42 secs, 1903 evals, 1695 steps, improv/step: 0.231 (last = 0.1333), fitness=1.794900286
+ parameter: [5.6563, 1.4461, 8.2239, 7.1145, -1.0599, 7.2973, -2.5142] function value: 59.48574489288788 Number of zeros: 0
+ parameter: [-1.5375, -0.4601, 4.3997, -5.5494, 8.9871, 8.4974, -3.3248] function value: 8.72439603877077 Number of zeros: 0
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [2.9478, -1.9226, 6.4206, 3.2561, -4.6903, -4.8226, -3.0351] function value: 4.225900881824345 Number of zeros: 0
+1928.49 secs, 1933 evals, 1725 steps, improv/step: 0.230 (last = 0.1333), fitness=1.794900286
+ parameter: [1.9921, -9.4485, 7.2103, 6.3353, -8.0372, -7.8805, 4.5027] function value: 10.91552856847626 Number of zeros: 0
+ parameter: [1.7164, -2.5113, 8.7107, 7.3933, 7.0187, 9.4378, 0.3553] function value: 26.307013841104723 Number of zeros: 0
+ parameter: [9.4027, 3.4186, 5.2589, 3.0847, -5.0314, -5.8747, -2.1242] function value: 129.7721984640604 Number of zeros: 0
+ parameter: [8.6992, -9.7837, 7.5373, -7.6143, -0.5767, -8.1206, 0.4603] function value: 27.778941123530213 Number of zeros: 0
+1959.03 secs, 1964 evals, 1756 steps, improv/step: 0.228 (last = 0.1290), fitness=1.794900286
+ parameter: [9.8327, -7.1882, -0.2628, -7.071, 0.7853, -5.3717, 3.2541] function value: 66.03797694866108 Number of zeros: 7
+ parameter: [6.6638, -8.9554, 6.8075, 0.0842, 7.4701, -7.9121, 2.5567] function value: 461.20278737695213 Number of zeros: 274
+ parameter: [-4.3272, 0.5868, 8.9661, -8.4434, -8.5705, 5.4296, -5.7327] function value: 471.09249744687975 Number of zeros: 168
+ parameter: [3.5664, -5.9206, 2.6809, -1.5942, -1.3847, 4.4374, 4.4285] function value: 486.67650454320244 Number of zeros: 19
+ parameter: [-3.709, -4.5271, -1.6026, -0.5095, 3.5546, -2.9579, -1.2441] function value: 120.51181964804593 Number of zeros: 3
+ parameter: [6.5451, -7.2323, -0.4469, 2.7679, -0.9306, -7.2714, 2.847] function value: 28.910946150381353 Number of zeros: 0
+1989.09 secs, 1994 evals, 1786 steps, improv/step: 0.227 (last = 0.2000), fitness=1.794900286
+ parameter: [6.0793, -8.5962, -9.7466, 6.2914, 5.9979, -4.9868, 5.5976] function value: 96.82348155771382 Number of zeros: 0
+ parameter: [5.9065, -3.0654, 4.3909, -8.6874, -4.0014, -4.1454, 0.9069] function value: 3.38065400467757 Number of zeros: 0
+ parameter: [3.8342, -3.7299, 2.0592, -4.3719, -2.8341, -2.1342, 4.3084] function value: 3.1658083636996 Number of zeros: 0
+ parameter: [-2.0974, 6.5472, 5.4758, 8.0119, -9.5411, -9.665, -3.4203] function value: 241.08248786288863 Number of zeros: 24
+ parameter: [7.7616, -1.3301, 7.7286, -0.9267, -6.6483, -4.148, 0.7133] function value: 9.376457461243668 Number of zeros: 0
+ parameter: [9.4027, -2.2999, 5.2589, 7.3189, -4.6211, -5.8747, -2.1242] function value: 6.815690332993614 Number of zeros: 0
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+2020.08 secs, 2025 evals, 1816 steps, improv/step: 0.226 (last = 0.1333), fitness=1.794900286
+ parameter: [4.8052, -5.3266, 2.333, -4.3945, -7.7746, -3.6172, 9.3] function value: 6.017221795788678 Number of zeros: 0
+ parameter: [4.7464, 9.6042, 7.429, 6.7724, -7.1048, 4.0375, -8.0286] function value: 110.82071803223982 Number of zeros: 0
+ parameter: [9.3015, -9.3522, 9.2522, -6.9764, 8.0477, 3.4659, -0.8324] function value: 7.03410421524767 Number of zeros: 0
+ parameter: [1.1836, -7.3838, 9.5815, -9.616, -5.5159, -8.1098, -3.1348] function value: 8.924022308555038 Number of zeros: 0
+ parameter: [-2.8654, -0.8195, -0.405, -5.915, -4.329, 0.3992, 3.7189] function value: 174.7408472077229 Number of zeros: 2
+2050.79 secs, 2056 evals, 1847 steps, improv/step: 0.225 (last = 0.1935), fitness=1.794900286
+ parameter: [1.6098, 7.4196, 7.9159, 7.1848, -4.4978, -5.5552, -6.8619] function value: 459.8677334837626 Number of zeros: 89
+ parameter: [6.5591, -8.2385, -3.7399, -9.776, 7.1045, 0.3453, 8.2361] function value: 30.078304009003816 Number of zeros: 0
+ parameter: [7.3873, -8.0831, -4.7893, -7.1981, -6.102, -5.8839, -7.0382] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [8.0457, 0.3385, 5.3161, 4.385, -6.1435, -5.8216, -2.4662] function value: 5.270937458626322 Number of zeros: 0
+2081.05 secs, 2086 evals, 1877 steps, improv/step: 0.225 (last = 0.2333), fitness=1.794900286
+ parameter: [6.8301, 5.61, 4.2265, 3.5387, 0.8093, 3.7967, -7.2922] function value: 60.58582780530386 Number of zeros: 0
+ parameter: [6.6182, 5.0342, 6.7454, 5.9708, 1.2477, 2.3386, -8.4134] function value: 4.140907824578871 Number of zeros: 0
+ parameter: [1.6695, -1.6429, 2.8471, -0.0511, -2.2203, -1.8275, 1.0801] function value: 3.1960436236710628 Number of zeros: 1
+ parameter: [3.5664, -2.2585, 2.6809, -1.1956, 5.1338, 6.5962, 4.4285] function value: 2.4722779052493333 Number of zeros: 0
+ parameter: [-7.2998, 8.2664, 5.1788, 6.5838, 2.3106, 4.4045, -6.9578] function value: 38.08888563286044 Number of zeros: 2
+ parameter: [2.4869, -3.733, 9.5193, 9.5192, 4.3997, 9.1557, 2.6041] function value: 16.802251961652594 Number of zeros: 1
+2111.21 secs, 2116 evals, 1907 steps, improv/step: 0.225 (last = 0.2333), fitness=1.794900286
+ parameter: [4.3243, -1.9555, 7.1198, -3.5707, 4.0093, 7.6123, -0.8958] function value: 6.10450512139392 Number of zeros: 0
+ parameter: [8.0457, 0.3385, 5.3161, 4.385, 3.1607, -7.4349, -2.4662] function value: 465.8674211013088 Number of zeros: 233
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [3.3937, -0.935, 7.4044, 0.1483, 4.5564, 9.8815, -1.8902] function value: 29.386023096317967 Number of zeros: 0
+ parameter: [3.523, -3.9242, 5.518, 0.897, -5.2979, 4.051, -1.6531] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [1.3987, -5.7038, 9.5193, 9.726, 5.1195, 9.1557, 4.9559] function value: 69.77828416887508 Number of zeros: 1
+ parameter: [8.8652, 7.6396, 5.7663, 7.0545, -8.5755, 2.5396, -3.2934] function value: 32.162507754282785 Number of zeros: 0
+2141.38 secs, 2146 evals, 1937 steps, improv/step: 0.223 (last = 0.0333), fitness=1.794900286
+ parameter: [4.4091, -2.0488, -9.9717, 4.2542, 6.9855, -1.7178, 0.0637] function value: 155.25998622732016 Number of zeros: 1
+ parameter: [-2.2038, 9.9888, -0.4511, 0.7948, -1.7854, 8.5865, 3.7203] function value: 46.34115821494575 Number of zeros: 4
+ parameter: [8.6078, -8.2208, 5.0909, -2.7952, -2.5231, 9.705, 3.5042] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [6.0318, -2.5628, 5.2261, 4.0045, -7.5716, -5.0103, 3.2105] function value: 4.062663894724375 Number of zeros: 0
+ parameter: [8.3976, -4.0446, 7.3562, 2.0062, -8.0352, 2.173, 3.2208] function value: 86.4473268327174 Number of zeros: 0
+ parameter: [2.0033, -5.3446, 8.024, 0.0815, -0.3667, 1.487, 2.9539] function value: 18.385955610246643 Number of zeros: 1
+2172.34 secs, 2177 evals, 1968 steps, improv/step: 0.221 (last = 0.1290), fitness=1.794900286
+ parameter: [4.6219, -3.6898, -6.5071, -6.1541, 6.7599, -5.4534, 2.0942] function value: 26.987447333315618 Number of zeros: 0
+ parameter: [0.8391, 1.4627, 3.5413, -3.5329, -7.0337, 0.1883, 8.9539] function value: 51.20447463332879 Number of zeros: 1
+ parameter: [4.4091, -6.8209, 3.2075, -3.7226, 9.6476, 1.275, 3.7771] function value: 121.19501245866122 Number of zeros: 2
+ parameter: [9.6829, 6.2803, 9.2148, 3.3825, -3.6114, -8.1869, -9.9762] function value: 360.0774275338325 Number of zeros: 11
+ parameter: [4.1244, 0.3385, 5.3161, 4.6474, -6.1435, -3.5037, 0.0304] function value: 2.7982275442094378 Number of zeros: 0
+2202.40 secs, 2207 evals, 1998 steps, improv/step: 0.220 (last = 0.1667), fitness=1.794900286
+ parameter: [1.7754, 0.7662, 7.6996, -3.2324, -4.2385, 0.1008, -3.2048] function value: 6.933158224282466 Number of zeros: 0
+ parameter: [8.5618, -3.6997, 9.606, -9.7782, -9.707, -1.235, 5.2133] function value: 7.105861066218278 Number of zeros: 0
+ parameter: [-4.5843, 9.5269, 6.1189, -4.8576, -6.2588, 2.0619, 0.8323] function value: 145.47726242356399 Number of zeros: 19
+ parameter: [8.0159, 9.6117, 5.5249, -5.3027, -9.6738, -7.3444, 4.0104] function value: 455.15204830373216 Number of zeros: 268
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [0.9259, 1.1646, 8.6075, -4.2742, -7.5535, 0.5711, 9.37] function value: 381.49762287570985 Number of zeros: 56
+ parameter: [1.0235, 8.7532, 5.7493, -4.4408, -6.4661, 4.0424, 6.5906] function value: 361.0635806625525 Number of zeros: 54
+2233.36 secs, 2238 evals, 2029 steps, improv/step: 0.221 (last = 0.2581), fitness=1.794900286
+ parameter: [7.1361, -2.2097, 7.79, -9.7116, -2.4445, -3.6527, 7.8036] function value: 470.3963925858999 Number of zeros: 217
+ parameter: [6.5591, -8.9841, -0.9315, 9.7858, 9.7818, 0.3453, 8.2361] function value: 261.794276417783 Number of zeros: 6
+ parameter: [4.5988, -6.5794, 7.0871, -4.2512, -6.6894, -8.6667, -3.4165] function value: 22.409224885245813 Number of zeros: 0
+ parameter: [2.8548, 8.1944, -9.9717, 4.7709, 9.5696, -3.013, 0.0637] function value: 503.7692867648186 Number of zeros: 63
+ parameter: [4.1214, 2.0185, 8.9203, -2.3083, -5.7287, 1.2057, 0.4073] function value: 11.72428992966945 Number of zeros: 0
+2263.46 secs, 2268 evals, 2059 steps, improv/step: 0.220 (last = 0.2000), fitness=1.794900286
+ parameter: [3.9808, -3.6354, 6.9238, -0.2342, -5.391, 1.7689, 6.6068] function value: 2.917819359597634 Number of zeros: 0
+ parameter: [-0.9273, 3.8493, 8.5321, 7.6034, 8.4699, 8.808, -1.0929] function value: 489.6427039414794 Number of zeros: 184
+ parameter: [4.1488, 2.9832, 6.8795, -0.692, -5.2553, 2.4938, -5.5406] function value: 201.47877535670779 Number of zeros: 0
+ parameter: [8.4446, -6.0605, 7.8244, -2.5272, 5.5121, -1.0707, 7.5497] function value: 481.18687660241216 Number of zeros: 203
+2293.50 secs, 2298 evals, 2089 steps, improv/step: 0.220 (last = 0.1667), fitness=1.794900286
+ parameter: [6.3874, 0.2195, 9.9927, 1.8217, -7.2287, -8.4965, -3.8995] function value: 68.72332880317492 Number of zeros: 0
+ parameter: [5.2693, -2.6745, 3.1057, 0.0982, 9.9064, 7.8214, -0.244] function value: 4.109162924338554 Number of zeros: 0
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [8.5618, 6.6158, 4.7656, -8.265, -6.2041, 4.0856, 0.6318] function value: 11.245099390707031 Number of zeros: 0
+2323.72 secs, 2328 evals, 2119 steps, improv/step: 0.218 (last = 0.1333), fitness=1.794900286
+ parameter: [3.1358, 0.0206, 8.0629, 3.8241, 5.5871, 7.3664, -5.0405] function value: 4.556507204902926 Number of zeros: 0
+ parameter: [5.1418, -4.3513, 6.0422, -8.3354, 1.5267, 3.4093, 6.201] function value: 51.669038349377246 Number of zeros: 0
+ parameter: [6.1301, -6.9367, 3.4326, -5.3797, -1.3251, -5.4746, 1.7519] function value: 6.2065105717714015 Number of zeros: 0
+ parameter: [1.6627, 0.8718, 7.7817, -5.2128, -2.1811, 4.0144, -9.0468] function value: 480.22682646151793 Number of zeros: 180
+ parameter: [0.6559, 0.5868, 8.9661, 1.6027, -9.5427, -2.2305, 1.1864] function value: 6.603063606644326 Number of zeros: 0
+ parameter: [6.3874, -8.7943, 6.797, 1.8217, 6.7456, 1.4269, -3.8995] function value: 19.249948419309767 Number of zeros: 0
+2354.18 secs, 2359 evals, 2150 steps, improv/step: 0.217 (last = 0.0968), fitness=1.794900286
+ parameter: [8.9871, -6.2492, 5.5755, -4.2934, -4.8572, 3.0274, -2.4092] function value: 454.1870509677249 Number of zeros: 286
+ parameter: [6.1337, -2.7515, 7.0944, -0.9643, -8.8148, 3.8472, 9.9972] function value: 3.819911664362759 Number of zeros: 0
+ parameter: [6.4954, -4.925, 3.9062, -5.6027, -7.8771, 4.8162, 3.7881] function value: 485.4428149101049 Number of zeros: 212
+ parameter: [4.4227, -2.568, 7.1996, -0.4682, -4.9999, 2.0581, 4.3918] function value: 2.0064334033423457 Number of zeros: 0
+ parameter: [2.0703, -1.6252, 3.6748, -6.7639, -4.4612, -1.0939, 3.1598] function value: 2.8471929825729423 Number of zeros: 0
+ parameter: [1.7164, 9.1456, 4.9741, 7.3933, 7.0187, 9.4378, 0.3553] function value: 452.8321793276368 Number of zeros: 288
+2384.26 secs, 2389 evals, 2180 steps, improv/step: 0.216 (last = 0.1333), fitness=1.794900286
+ parameter: [3.5664, -2.2585, 2.6809, -1.1956, 5.1338, 6.5962, -5.567] function value: 473.4348437982261 Number of zeros: 53
+ parameter: [6.497, -5.5741, 5.5686, -2.5923, 1.6143, 7.0577, -7.4258] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [6.5591, -8.2385, -3.0062, -9.776, 7.1045, -2.2875, -1.5115] function value: 69.99866630448666 Number of zeros: 1
+ parameter: [6.3463, 8.3696, 9.2554, 6.548, -0.5089, 8.2839, -7.4906] function value: 7.713902521541536 Number of zeros: 0
+ parameter: [4.4102, -2.0605, 8.2551, 3.918, -2.9354, 8.4498, -0.0823] function value: 506.8357549539929 Number of zeros: 23
+ parameter: [6.4245, -8.3814, 9.8373, -6.269, 1.4546, -0.2875, 1.2722] function value: 12.545373959475507 Number of zeros: 0
+2415.23 secs, 2420 evals, 2211 steps, improv/step: 0.215 (last = 0.1613), fitness=1.794900286
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [3.7385, -6.0028, 2.6238, 3.1742, -5.7066, -5.0267, 1.5617] function value: 206.5780209607357 Number of zeros: 0
+ parameter: [2.6443, 3.4183, 8.5638, -2.7191, -8.4925, -2.175, -4.1516] function value: 4.091107209965684 Number of zeros: 0
+ parameter: [-1.2363, -3.6898, -6.5071, -6.1541, 6.7599, -5.4534, 2.0942] function value: 34.34776507560573 Number of zeros: 1
+ parameter: [5.2986, 0.7552, 6.9641, 8.5247, 5.2661, 6.7022, -4.6125] function value: 2.9604199690789708 Number of zeros: 0
+ parameter: [5.4453, 0.0874, 4.7073, -2.9368, -5.7954, -1.3943, 2.8485] function value: 4.0592680575036155 Number of zeros: 0
+ parameter: [0.5777, 1.5124, 2.8859, -9.3878, -2.907, -0.9925, 1.5364] function value: 7.548574388664244 Number of zeros: 0
+2445.31 secs, 2450 evals, 2241 steps, improv/step: 0.213 (last = 0.0667), fitness=1.794900286
+ parameter: [-0.6979, 4.3247, 9.453, 3.3313, -9.9943, 1.5278, 0.7054] function value: 7.643102403682619 Number of zeros: 2
+ parameter: [2.6082, -1.8199, -2.8449, -7.0249, 1.1205, 5.9098, -4.8075] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [1.1836, 7.0679, 9.3726, -3.5733, -5.213, -7.0776, -4.5978] function value: 470.9563638633555 Number of zeros: 247
+ parameter: [4.1244, 0.3385, 5.3161, 4.6474, 4.5441, -3.5037, 0.0304] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [5.2129, -5.0462, 8.4415, -4.6864, 4.8199, 3.7256, -3.6366] function value: 6.989897310122844 Number of zeros: 0
+ parameter: [1.5384, -1.4744, 3.8895, -7.5161, -4.6027, -0.8958, -1.4837] function value: 110.16302060897111 Number of zeros: 0
+2475.37 secs, 2480 evals, 2271 steps, improv/step: 0.210 (last = 0.0333), fitness=1.794900286
+ parameter: [6.6686, -0.509, 2.9376, 2.7992, 8.5544, 0.7274, -8.3367] function value: 7.001351987075154 Number of zeros: 0
+ parameter: [0.2791, -4.3608, 7.207, -6.451, -5.5089, -4.1664, 1.1966] function value: 7.514616637957705 Number of zeros: 0
+ parameter: [1.5031, -1.7913, 5.562, -2.906, 3.7104, 0.957, 1.5364] function value: 260.35382698604013 Number of zeros: 2
+ parameter: [1.9778, -1.1085, 8.625, -2.9531, -8.4912, -7.7912, -1.85] function value: 10.844588262201665 Number of zeros: 0
+ parameter: [3.5729, -9.9664, -0.7276, -1.2764, 9.5451, 8.9281, 7.7011] function value: 72.42725145945893 Number of zeros: 1
+2505.47 secs, 2510 evals, 2301 steps, improv/step: 0.208 (last = 0.0333), fitness=1.794900286
+ parameter: [5.2129, -0.4425, -3.1113, -4.6864, 4.5121, 6.6099, -3.6366] function value: 471.9469045291209 Number of zeros: 243
+ parameter: [4.3243, -1.9555, 7.1198, -3.5707, 4.0093, 7.6123, -0.8958] function value: 6.10450512139392 Number of zeros: 0
+parameter: [2.948, 0.735, 6.421, 3.256, -6.056, -4.125, -3.035] n_rep: 36 fitness: 1.7949002856942298
+ parameter: [4.7783, -0.3578, 7.4348, 7.6915, 9.7607, 1.0659, -7.8744] function value: 153.4581120843092 Number of zeros: 0
+ parameter: [3.5664, -3.645, 7.4347, -6.6012, -9.3136, 2.7836, 4.4285] function value: 63.98096563311306 Number of zeros: 0
+ parameter: [2.5224, 3.661, 8.6297, -2.9118, -8.4437, -2.2052, -4.558] function value: 4.37259474266588 Number of zeros: 0
+ parameter: [6.4781, -4.7326, 9.7385, 3.4592, 8.6239, -0.0993, -8.118] function value: 24.310981292625225 Number of zeros: 0
+2536.31 secs, 2541 evals, 2332 steps, improv/step: 0.207 (last = 0.1290), fitness=1.794900286
+ parameter: [4.9622, 1.3331, 4.5645, 4.8877, 9.9832, 4.4735, -2.4338] function value: 249.6392406516314 Number of zeros: 0
+ parameter: [-0.4348, 3.4183, 9.8026, -2.7191, -8.4925, -2.175, 0.1955] function value: 70.90458894027802 Number of zeros: 4
+ parameter: [4.7802, 1.4539, 2.8448, -5.4795, -2.179, 6.6483, 7.0615] function value: 4.63553592904014 Number of zeros: 0
+ parameter: [6.8515, -8.8418, 1.8868, 2.3867, -7.9321, -8.6753, 2.4514] function value: 207.7025351453037 Number of zeros: 1
+2566.53 secs, 2571 evals, 2362 steps, improv/step: 0.207 (last = 0.2000), fitness=1.710413263
+ parameter: [5.9381, 4.3378, 5.5954, -1.8076, -1.6277, -0.1624, 3.2257] function value: 496.0967597842854 Number of zeros: 212
+ parameter: [-1.629, 5.7294, 9.1991, -3.6669, -7.06, 2.2157, -5.1404] function value: 12.822031810134725 Number of zeros: 0
+ parameter: [4.4029, -6.819, 2.8448, -5.4795, -2.179, 6.6483, 7.0615] function value: 465.5677859485551 Number of zeros: 18
+2596.61 secs, 2601 evals, 2392 steps, improv/step: 0.207 (last = 0.2000), fitness=1.651790038
+ parameter: [5.9381, 0.4391, 5.5954, 2.6914, -7.9981, -0.1624, 3.2257] function value: 4.173451880214429 Number of zeros: 0
+ parameter: [7.8524, -4.7861, 9.708, -0.0096, -4.6418, 7.9871, -4.2478] function value: 450.91893853320465 Number of zeros: 298
+parameter: [4.35, -2.568, 7.2, 6.561, -5.0, 2.058, 4.392] n_rep: 36 fitness: 1.6517900377296328
+ parameter: [7.7616, -0.7881, 7.7286, -6.3736, -6.6483, -8.4822, 0.7133] function value: 146.53347903676476 Number of zeros: 0
+ parameter: [3.4395, 0.1148, 2.6961, -4.4624, -5.6157, -1.7608, 2.2692] function value: 4.02959844991469 Number of zeros: 0
+2627.40 secs, 2632 evals, 2423 steps, improv/step: 0.208 (last = 0.2903), fitness=1.651790038
+ parameter: [6.1493, -1.03, 8.5321, -3.3468, -6.5257, 9.8292, -0.8128] function value: 471.5509890275257 Number of zeros: 240
+ parameter: [5.215, -0.9143, 5.3191, -1.6904, -8.4805, -4.3278, 4.7343] function value: 9.680631617286616 Number of zeros: 0
+ parameter: [7.8614, 0.0956, 9.7155, 0.024, -4.6459, 7.9913, -2.9008] function value: 330.66570105510874 Number of zeros: 2
+ parameter: [6.0047, 0.4826, 5.4778, 2.7186, -7.9036, -0.197, 3.1712] function value: 4.226600108522323 Number of zeros: 0
+ parameter: [3.8106, 5.2771, 7.9871, -3.0065, 3.141, 6.8385, -8.0252] function value: 4.294863904278557 Number of zeros: 0
+ parameter: [5.517, -3.462, 6.0474, 0.9722, 5.4633, -2.1225, -3.7438] function value: 57.9028904988593 Number of zeros: 0
+2658.35 secs, 2663 evals, 2454 steps, improv/step: 0.207 (last = 0.0968), fitness=1.651790038
+ parameter: [5.3255, 8.7108, 8.8886, 0.7367, 3.4235, 9.8752, -9.8049] function value: 7.534643625659663 Number of zeros: 0
+ parameter: [2.6613, -4.883, 9.4144, 1.2842, 6.3394, 4.0473, 9.8411] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [0.7274, 0.3077, 6.2778, -4.0106, -6.0426, -5.1683, -3.1151] function value: 3.1872483494509822 Number of zeros: 0
+ parameter: [-5.1263, 3.1508, 5.0251, -4.2985, -9.7704, -4.9926, -6.4724] function value: 62.876135446441545 Number of zeros: 0
+ parameter: [5.5951, -1.6824, 5.2542, -9.1256, -3.9927, -4.8863, 1.3676] function value: 21.975193305187304 Number of zeros: 0
+ parameter: [2.006, -0.1171, 0.0936, -9.6908, -4.6631, -6.5615, 2.5234] function value: 27.2414289217313 Number of zeros: 0
+2688.40 secs, 2693 evals, 2484 steps, improv/step: 0.206 (last = 0.1333), fitness=1.651790038
+ parameter: [3.5839, -6.535, 2.114, 4.5139, 6.0556, 2.1911, -2.5265] function value: 212.16942236611317 Number of zeros: 0
+ parameter: [-9.8762, 4.2235, -9.9717, -2.6141, -6.8379, -0.4839, 3.3429] function value: 385.4474930121539 Number of zeros: 81
+ parameter: [8.2972, -6.4508, 6.5438, 8.6475, 3.9298, 9.8572, -0.8231] function value: 464.8881342618442 Number of zeros: 13
+ parameter: [5.4249, -4.2093, -0.3745, -5.6065, -3.3666, -1.7323, 7.9634] function value: 47.31641041287972 Number of zeros: 1
+ parameter: [0.9259, 1.1646, 4.113, -4.2742, -7.5535, 0.5711, 1.0191] function value: 35.55527136647218 Number of zeros: 0
+2719.17 secs, 2724 evals, 2515 steps, improv/step: 0.204 (last = 0.0968), fitness=1.651790038
+parameter: [4.35, -2.568, 7.2, 6.561, -5.0, 2.058, 4.392] n_rep: 36 fitness: 1.6517900377296328
+ parameter: [6.7105, -3.4539, 2.7344, -4.9808, 0.396, -2.8877, -0.4768] function value: 5.166223916554682 Number of zeros: 0
+ parameter: [0.6425, -4.6459, 9.2869, 5.7788, 5.7906, 9.73, 2.9028] function value: 17.69165251779301 Number of zeros: 1
+ parameter: [9.4027, -2.2999, 5.2589, 3.0847, -4.6211, -8.6847, -8.0792] function value: 40.943021807334816 Number of zeros: 0
+ parameter: [2.428, -4.8822, 7.1622, 0.7506, 1.3487, 1.3097, 1.5647] function value: 18.629442520179154 Number of zeros: 0
+ parameter: [4.1488, 2.9832, 6.8795, -0.692, -5.2553, -5.4009, -5.5406] function value: 11.261258327387429 Number of zeros: 0
+ parameter: [3.6819, 0.2467, 2.4476, -6.8781, 6.9448, -9.2923, 1.9084] function value: 450.91893853320465 Number of zeros: 300
+2750.09 secs, 2755 evals, 2546 steps, improv/step: 0.203 (last = 0.0968), fitness=1.651790038
+ parameter: [-0.4185, 5.8481, 9.9927, -9.3704, 4.2498, 5.8316, -7.4663] function value: 95.63525320233288 Number of zeros: 7
+ parameter: [2.974, 0.2597, 6.456, 2.4738, -6.1858, -3.9211, -2.3453] function value: 1.928137036842176 Number of zeros: 0
+ parameter: [6.0047, 0.4826, 5.4778, 2.7186, -7.9036, -0.197, -4.3986] function value: 443.7745646034037 Number of zeros: 12
+ parameter: [2.1132, -1.7912, 3.2052, -7.3243, -7.7243, -0.8958, 6.0638] function value: 5.834097396419114 Number of zeros: 0
+ parameter: [9.6829, 3.8042, 9.2148, 3.3825, -9.0359, -8.5187, -9.9762] function value: 6.346377415403921 Number of zeros: 0
+ parameter: [0.5665, 8.9568, 1.8196, -3.7562, -2.7938, -1.7266, -7.0218] function value: 18.14753170916825 Number of zeros: 0
+2780.29 secs, 2785 evals, 2576 steps, improv/step: 0.203 (last = 0.1667), fitness=1.651790038
+ parameter: [3.3737, -3.4634, 3.5949, -2.4561, -4.0634, 9.8629, 2.1061] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [4.8469, 1.1088, 7.8799, 9.375, 7.3201, 2.0398, -2.6766] function value: 530.5323514730161 Number of zeros: 151
+ parameter: [6.4827, 3.8234, 5.8328, -5.0237, 4.7172, 9.4314, -5.1015] function value: 11.486854933337156 Number of zeros: 0
+ parameter: [2.9846, 2.2626, 5.8988, 0.1124, -2.4158, 3.8543, 2.5038] function value: 28.7926390628233 Number of zeros: 0
+ parameter: [2.6355, 0.9471, 4.2896, 1.8285, 6.9244, -0.1418, -6.6086] function value: 48.06003616129883 Number of zeros: 0
+ parameter: [9.186, 1.1041, 3.4235, 3.1027, -8.4341, -4.3921, 1.5218] function value: 10.704008789320593 Number of zeros: 0
+2810.35 secs, 2815 evals, 2606 steps, improv/step: 0.203 (last = 0.2333), fitness=1.651790038
+ parameter: [5.2556, -2.9903, 7.9489, 2.3257, -0.4221, -3.3239, 4.3977] function value: 535.8952453126707 Number of zeros: 148
+ parameter: [5.5553, -1.2005, 6.5642, -9.0286, 1.3743, 3.0377, -1.7605] function value: 2.7165700645247797 Number of zeros: 0
+parameter: [4.35, -2.568, 7.2, 6.561, -5.0, 2.058, 4.392] n_rep: 36 fitness: 1.6517900377296328
+ parameter: [7.4751, -5.5261, 7.6563, -5.2331, -1.7981, -5.8591, -3.5963] function value: 3.7553054619525814 Number of zeros: 0
+ parameter: [4.3605, -1.9983, 7.4339, -1.5232, 4.7922, 7.8419, -0.6551] function value: 2.349805855091282 Number of zeros: 0
+ parameter: [3.6513, -7.8501, 5.0279, -1.2195, 1.4029, -1.1534, -8.8805] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [6.8284, -1.5695, 8.6864, 3.6373, -8.6164, 5.8212, -4.9664] function value: 450.91893853320465 Number of zeros: 298
+2841.26 secs, 2846 evals, 2637 steps, improv/step: 0.202 (last = 0.1290), fitness=1.651790038
+ parameter: [5.4981, 1.5769, 4.0651, -3.1945, -3.9812, 6.621, 7.0744] function value: 3.767595960727993 Number of zeros: 0
+ parameter: [-1.1874, 1.939, 4.5959, -2.5471, -3.1953, -3.0017, -0.1391] function value: 88.66077699956115 Number of zeros: 4
+ parameter: [7.3586, -1.7962, 5.3267, -1.3177, -7.633, 9.8729, 4.2765] function value: 472.4226300502496 Number of zeros: 243
+ parameter: [-0.4174, -1.143, 2.9976, 3.0193, -9.5627, -0.6754, 9.0656] function value: 7.760259600261022 Number of zeros: 0
+ parameter: [2.8139, 6.7563, -2.6455, -6.6537, -9.0835, -0.7144, 7.0918] function value: 27.743561453925974 Number of zeros: 0
+ parameter: [5.062, -1.3325, 8.7061, -6.9172, -6.0399, -3.3571, -9.4031] function value: 195.27201354081367 Number of zeros: 0
+2872.02 secs, 2877 evals, 2668 steps, improv/step: 0.201 (last = 0.0968), fitness=1.651790038
+ parameter: [5.7162, 1.1046, 7.9067, -2.4677, -0.1171, 1.6015, -7.3308] function value: 35.86490552754002 Number of zeros: 0
+ parameter: [-0.6691, 8.4438, 9.9609, -8.9313, -3.7787, 7.1353, 1.6331] function value: 263.71439625355805 Number of zeros: 44
+ parameter: [6.3913, -7.3719, 3.5488, -6.4638, 3.5953, 7.6431, 5.2305] function value: 57.6306849274398 Number of zeros: 0
+ parameter: [-3.3431, 0.2597, 6.456, 2.4738, -0.467, -3.9211, -2.3453] function value: 276.58661803692 Number of zeros: 13
+ parameter: [6.6621, 5.2882, 7.7423, -7.4669, -7.2881, 4.2037, 3.3923] function value: 12.691785583707771 Number of zeros: 0
+ parameter: [4.9843, -0.9157, 5.1908, 4.8782, 3.6901, -4.3906, 5.5054] function value: 450.91893853320465 Number of zeros: 300
+2902.03 secs, 2907 evals, 2698 steps, improv/step: 0.200 (last = 0.1000), fitness=1.651790038
+ parameter: [4.1244, 0.3385, 1.067, -7.3504, -6.1435, -3.5037, 0.0304] function value: 53.001142508119585 Number of zeros: 1
+ parameter: [2.7384, 2.448, 5.9514, -2.4476, -5.5535, 3.5516, 2.5886] function value: 2.5711248224585463 Number of zeros: 0
+ parameter: [5.63, 4.7911, 4.7384, 5.3298, -9.9935, -7.0694, -1.872] function value: 14.65309549180494 Number of zeros: 0
+ parameter: [8.511, 1.5075, 8.3898, -6.7191, -2.1291, 3.568, -4.5914] function value: 17.277431466276727 Number of zeros: 0
+parameter: [4.35, -2.568, 7.2, 6.561, -5.0, 2.058, 4.392] n_rep: 36 fitness: 1.6517900377296328
+ parameter: [8.5806, -1.153, 2.6505, -3.9457, -5.9844, -0.0412, 5.5014] function value: 15.03004458424574 Number of zeros: 0
+ parameter: [-1.8684, -6.1964, 8.5501, -9.0812, 2.4644, -0.0111, -3.2411] function value: 10.789714104908073 Number of zeros: 1
+2932.08 secs, 2937 evals, 2728 steps, improv/step: 0.200 (last = 0.2000), fitness=1.651790038
+ parameter: [4.2701, 3.5186, 8.1993, 8.489, 8.3117, 9.3228, -9.4108] function value: 4.241329936475303 Number of zeros: 0
+ parameter: [4.8615, 0.5877, 7.1596, -1.1567, 2.8192, 3.2548, -5.1171] function value: 1.9399116040961024 Number of zeros: 0
+ parameter: [5.5304, 0.9122, 4.4642, 4.7825, 1.8789, 5.1463, 0.5288] function value: 3.078275874982988 Number of zeros: 0
+ parameter: [9.017, 1.76, 9.9475, -5.9778, -5.0718, 5.7075, 1.1482] function value: 4.656634756794798 Number of zeros: 0
+ parameter: [-0.0382, 7.4869, 9.6949, -7.7485, -6.2356, 5.3626, -4.643] function value: 7.396408303878645 Number of zeros: 0
+ parameter: [3.6819, -7.7586, 6.1662, -6.8781, 9.6345, 8.8473, 9.0214] function value: 104.0759504581323 Number of zeros: 1
+2962.96 secs, 2968 evals, 2759 steps, improv/step: 0.200 (last = 0.2258), fitness=1.651790038
+ parameter: [5.5983, 0.9211, 7.7428, -2.3353, 0.4048, 1.9314, -5.0481] function value: 3.206042886144036 Number of zeros: 0
+ parameter: [5.79, 0.1029, 5.9944, -0.9735, -1.57, -3.3794, -3.4029] function value: 18.38931130182546 Number of zeros: 0
+ parameter: [5.5234, -2.3549, 4.0215, -0.1058, 4.3452, -0.4259, -3.587] function value: 2.1365236034313515 Number of zeros: 0
+ parameter: [1.5169, -3.2657, 9.6512, -7.8368, 5.0686, -0.4295, 3.114] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [4.0684, 4.5492, 8.3507, 2.5605, -8.103, 3.8177, 1.3245] function value: 4.657281734165277 Number of zeros: 0
+2993.86 secs, 2999 evals, 2790 steps, improv/step: 0.199 (last = 0.0968), fitness=1.651790038
+ parameter: [-1.922, -3.9074, 5.6211, 1.0713, -6.8498, -4.3781, 7.5333] function value: 92.86652403139391 Number of zeros: 4
+ parameter: [1.0883, 8.3234, 9.2944, 8.09, -7.6842, -4.1356, -3.1244] function value: 463.23548708380815 Number of zeros: 138
+parameter: [4.35, -2.568, 7.2, 6.561, -5.0, 2.058, 4.392] n_rep: 36 fitness: 1.6517900377296328
+ parameter: [-0.5, 2.8724, 2.107, 3.7341, 5.7964, -3.7295, -6.8954] function value: 284.85967987763013 Number of zeros: 6
+ parameter: [3.7392, -1.6688, 9.2571, 1.2842, 7.8805, 9.6645, -1.1902] function value: 14.52491832379892 Number of zeros: 0
+3024.05 secs, 3029 evals, 2820 steps, improv/step: 0.197 (last = 0.0333), fitness=1.651790038
+ parameter: [5.9381, 0.4391, 3.4441, 2.6914, -7.9981, -5.3352, -1.6298] function value: 19.968824150077463 Number of zeros: 0
+ parameter: [7.819, -9.3949, 4.2239, -6.6716, 3.9034, 5.8912, 9.2716] function value: 8.273094883908666 Number of zeros: 0
+ parameter: [2.1827, -0.0031, 7.883, -1.7673, 5.3753, -3.0143, -9.2982] function value: 123.1605749751723 Number of zeros: 2
+ parameter: [1.3987, -2.4926, 4.8734, 7.3694, -7.6393, 0.1598, 7.1779] function value: 3.5895083655422755 Number of zeros: 0
+ parameter: [0.4039, 7.6457, 8.7107, -0.4068, 2.4893, -2.0849, -9.4731] function value: 484.03142454016756 Number of zeros: 219
+ parameter: [4.2019, -0.3242, 6.7355, 9.0582, 4.6313, -9.0187, -1.5637] function value: 450.91893853320465 Number of zeros: 300
+3054.30 secs, 3059 evals, 2850 steps, improv/step: 0.196 (last = 0.0667), fitness=0.643406875
+ parameter: [0.1103, 2.7632, 4.4608, -2.6827, -4.5626, 1.7884, 0.8995] function value: 3.241223615621491 Number of zeros: 0
+ parameter: [2.9756, 3.1135, 7.4388, 3.6688, 3.5953, 4.6115, 7.4233] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [1.8302, -3.3806, 3.7196, -0.7807, -3.257, -1.3416, 3.0269] function value: 6.04590683560309 Number of zeros: 0
+ parameter: [5.1103, -6.5873, 7.0471, 6.3475, -2.7817, -6.1286, 1.2426] function value: 35.718940776822606 Number of zeros: 0
+ parameter: [6.497, -4.7686, 5.5686, -3.3087, 1.6143, 5.1878, -7.4258] function value: 450.91893853320465 Number of zeros: 299
+ parameter: [0.0306, 4.7599, 6.7198, -2.8113, 4.9324, -0.252, 3.4003] function value: 450.91893853320465 Number of zeros: 300
+3084.43 secs, 3089 evals, 2880 steps, improv/step: 0.194 (last = 0.0667), fitness=0.643406875
+ parameter: [4.9982, 3.2198, 4.483, -2.4349, -7.7398, -0.94, -0.1818] function value: 7.269137683458005 Number of zeros: 0
+ parameter: [6.6291, -4.4113, 5.9402, -3.2509, 7.2179, 5.2207, -1.2948] function value: 3.97407022757441 Number of zeros: 0
+ parameter: [3.3937, -4.8821, 7.4044, 8.6391, 5.6028, 7.9747, 4.2926] function value: 37.948388027978986 Number of zeros: 1
+ parameter: [0.8323, -0.1516, 5.7994, 1.0372, -2.3991, 0.3588, -1.4543] function value: 13.672216765327885 Number of zeros: 0
+3114.51 secs, 3119 evals, 2910 steps, improv/step: 0.194 (last = 0.1333), fitness=0.643406875
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [6.9921, -3.0946, 5.8358, 2.762, -5.6286, 1.2863, 0.1129] function value: 199.5418611969996 Number of zeros: 0
+ parameter: [3.4816, -4.5163, 6.3964, 2.4869, 6.2568, 0.0947, -7.9335] function value: 11.928038844135648 Number of zeros: 0
+ parameter: [0.7012, 0.7835, 3.5594, -3.2283, -3.934, -5.3717, -3.287] function value: 2.340516988492749 Number of zeros: 0
+3144.51 secs, 3149 evals, 2940 steps, improv/step: 0.194 (last = 0.2333), fitness=0.643406875
+ parameter: [1.2445, 0.8968, 5.518, -7.6128, -5.2979, 1.3657, -8.6913] function value: 467.8344846082281 Number of zeros: 245
+ parameter: [4.6855, -1.0472, 0.6595, -0.3898, 6.2218, 4.7655, 2.2893] function value: 14.740401010981309 Number of zeros: 0
+ parameter: [9.318, 0.7082, 7.0201, -2.0472, -0.6064, 3.8543, -4.282] function value: 38.71606836456827 Number of zeros: 0
+3175.50 secs, 3180 evals, 2971 steps, improv/step: 0.194 (last = 0.1613), fitness=0.643406875
+ parameter: [4.6257, 3.1352, 8.9187, 0.8446, -7.347, 0.826, -9.1303] function value: 354.1533122159787 Number of zeros: 5
+ parameter: [4.6257, 3.1352, 8.9187, -3.4814, 0.5915, 0.826, -0.9205] function value: 565.6552911575681 Number of zeros: 85
+ parameter: [4.6305, 0.6874, 9.2817, 8.1008, -8.1788, -2.8774, -2.2654] function value: 2.518148906233099 Number of zeros: 0
+ parameter: [5.1954, -5.0643, 1.0348, 0.6182, -5.1295, -4.5982, 6.3634] function value: 3.6885950542144674 Number of zeros: 0
+ parameter: [5.4558, -1.647, 6.0424, -1.7361, -0.1171, 1.6015, -5.2099] function value: 181.11001321360695 Number of zeros: 0
+3206.39 secs, 3211 evals, 3002 steps, improv/step: 0.194 (last = 0.1613), fitness=0.643406875
+ parameter: [4.2772, -1.7086, 8.7107, 7.9943, 4.1451, 8.6818, -0.0108] function value: 2.1414426491874696 Number of zeros: 0
+ parameter: [6.497, -2.9151, 8.9054, -5.5831, -1.6948, -6.8614, -9.7617] function value: 4.655647800094736 Number of zeros: 0
+ parameter: [3.7915, -4.6143, 7.2946, 9.611, -0.8063, 8.7671, 2.1976] function value: 395.97136683078696 Number of zeros: 3
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [5.1206, -5.5374, 7.3739, -1.0646, 6.6245, -0.773, -8.8623] function value: 8.386856138481628 Number of zeros: 0
+ parameter: [3.9971, -1.6062, 3.5908, -3.4538, -2.1031, -2.0908, -0.3527] function value: 2.9430547957255953 Number of zeros: 0
+ parameter: [4.7685, 0.5078, 4.298, 0.589, -0.0916, 0.2225, 7.0191] function value: 501.804334224869 Number of zeros: 208
+3237.33 secs, 3242 evals, 3033 steps, improv/step: 0.192 (last = 0.0645), fitness=0.643406875
+ parameter: [3.4769, 2.6265, 8.2874, -2.6651, -5.9281, -0.952, -4.2727] function value: 3.3463740508993864 Number of zeros: 0
+ parameter: [5.8404, 1.9071, 9.1815, 1.8155, 4.6801, 8.8038, -7.5357] function value: 22.679773243014058 Number of zeros: 0
+ parameter: [4.7868, -4.6054, 7.1221, 0.0982, 5.4553, 3.827, 0.4982] function value: 15.00240667196395 Number of zeros: 0
+ parameter: [5.065, -5.0966, 9.1886, -8.8426, 6.8305, -9.6771, -2.5714] function value: 450.91893853320465 Number of zeros: 300
+3267.47 secs, 3272 evals, 3063 steps, improv/step: 0.191 (last = 0.0333), fitness=0.643406875
+ parameter: [-1.1022, 0.1853, -2.6975, -8.9175, -1.7401, -4.8504, 0.7009] function value: 28.6990471853332 Number of zeros: 0
+ parameter: [6.3867, 4.8398, 5.0228, -5.1122, -4.2308, 6.3061, -9.9731] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [3.2754, -5.0966, 9.1886, -8.8426, 5.0867, -9.6771, 4.7626] function value: 450.91893853320465 Number of zeros: 300
+3297.49 secs, 3302 evals, 3093 steps, improv/step: 0.191 (last = 0.2000), fitness=0.643406875
+ parameter: [5.4882, 2.0411, 3.3071, 4.0895, -2.4783, -6.2525, -5.6619] function value: 9.750667248415063 Number of zeros: 0
+ parameter: [5.912, -5.7768, 5.562, 4.8019, 8.7988, -0.7816, -0.6496] function value: 170.6993083480525 Number of zeros: 0
+ parameter: [2.9969, -2.9903, 7.9489, -7.13, -0.4221, -3.3239, -5.9674] function value: 3.100402899887269 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [4.3385, -0.0244, 4.1513, -3.8596, 1.9965, 7.789, 4.003] function value: 1.3299601279764797 Number of zeros: 0
+3328.33 secs, 3333 evals, 3124 steps, improv/step: 0.191 (last = 0.2581), fitness=0.643406875
+ parameter: [7.7512, -1.647, 6.0424, 0.3467, 5.3775, 9.106, 8.6086] function value: 253.16164257808896 Number of zeros: 5
+ parameter: [2.928, 0.5783, 7.7363, 1.4128, -6.2916, -5.6235, -7.4384] function value: 16.05849520380912 Number of zeros: 0
+ parameter: [4.7716, -0.6913, 1.4944, -1.4456, -8.1022, 1.0739, 9.055] function value: 13.952610670594312 Number of zeros: 0
+ parameter: [4.2772, -1.7086, 8.5746, 7.4964, 4.1627, 8.6862, 1.8379] function value: 24.64224757856961 Number of zeros: 0
+ parameter: [-2.7024, 4.9561, 0.7736, 1.6469, 8.7132, -4.9105, -6.5773] function value: 483.99202151034046 Number of zeros: 227
+ parameter: [7.6474, 2.1804, 5.6992, -3.0047, -8.6204, -7.5087, -2.927] function value: 7.951863187226075 Number of zeros: 0
+3359.22 secs, 3364 evals, 3155 steps, improv/step: 0.191 (last = 0.1613), fitness=0.643406875
+ parameter: [5.2714, 0.0956, 7.6813, 5.5376, 8.6383, 9.8316, -0.983] function value: 39.7070368309444 Number of zeros: 0
+ parameter: [2.688, 1.2425, 6.1012, -9.2705, 7.2468, 9.9651, -3.1178] function value: 4.589083889335629 Number of zeros: 0
+ parameter: [3.8411, 0.6954, 2.5098, 2.1646, -5.3887, 1.3883, 0.6903] function value: 200.7749673239648 Number of zeros: 0
+ parameter: [3.8979, -1.474, 8.1687, 9.219, -7.1313, -5.6843, -2.8566] function value: 1.6957082220160322 Number of zeros: 0
+ parameter: [2.3408, -7.3339, 9.5542, 8.5775, -5.7915, -3.1779, 0.5816] function value: 44.54614362761821 Number of zeros: 0
+ parameter: [0.6777, -2.266, 4.5168, 2.8309, 7.9587, 8.6006, -0.1846] function value: 6.794097698221183 Number of zeros: 0
+3390.18 secs, 3395 evals, 3186 steps, improv/step: 0.190 (last = 0.0645), fitness=0.643406875
+ parameter: [0.9771, -2.9384, 6.3184, 1.0237, -3.6114, -8.2357, -5.2182] function value: 4.6563226558131845 Number of zeros: 0
+ parameter: [3.2648, -2.069, 8.0147, 8.2138, -6.0965, 3.8245, 5.9623] function value: 1.4948822176144059 Number of zeros: 0
+ parameter: [4.8615, 0.1658, 6.5788, -0.1819, 2.8192, 4.5306, -5.0046] function value: 20.950735639210368 Number of zeros: 0
+ parameter: [7.6584, -1.9694, 6.6249, 9.6289, -3.187, 3.8328, 6.1465] function value: 12.917020663124582 Number of zeros: 0
+ parameter: [2.4998, -1.0926, 7.4486, 7.3694, 4.4675, 2.6451, -6.6232] function value: 4.422221256183718 Number of zeros: 0
+ parameter: [1.7228, -0.198, 9.3156, 0.8592, 6.1633, 9.7282, -2.9962] function value: 3.5023802197731566 Number of zeros: 0
+3420.33 secs, 3425 evals, 3216 steps, improv/step: 0.191 (last = 0.2667), fitness=0.643406875
+ parameter: [0.0691, 2.9019, 3.3905, -5.0106, -7.3153, 1.2681, -7.5843] function value: 454.92658803160634 Number of zeros: 277
+ parameter: [5.7248, 1.0725, 7.8906, -2.476, -0.0765, 1.6331, -5.1692] function value: 3.811369306252798 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [5.517, 0.7072, 7.0083, -4.8472, 0.5815, -2.3355, 4.1261] function value: 450.91893853320465 Number of zeros: 299
+ parameter: [6.9223, 0.2288, 8.1906, -0.9736, 2.59, 4.7361, -3.9668] function value: 3.1714005496375806 Number of zeros: 0
+ parameter: [4.1244, 4.8114, 5.3161, 5.8668, -6.1435, -4.6378, 0.0304] function value: 291.27511528203763 Number of zeros: 2
+3450.49 secs, 3455 evals, 3246 steps, improv/step: 0.190 (last = 0.1667), fitness=0.643406875
+ parameter: [4.2734, -2.5105, 7.5254, -1.7164, 7.1214, 8.6607, -4.236] function value: 15.304226481790366 Number of zeros: 0
+ parameter: [7.1377, 0.3421, 9.1222, 0.1507, 6.0616, 3.263, -9.8737] function value: 3.2599447310844814 Number of zeros: 0
+ parameter: [5.3425, -5.4276, 0.6842, 3.9602, -4.165, -6.1701, 6.0369] function value: 5.8669654298505 Number of zeros: 0
+3480.58 secs, 3485 evals, 3276 steps, improv/step: 0.189 (last = 0.0333), fitness=0.643406875
+ parameter: [6.1926, -5.9631, 6.1693, -2.9148, -4.1865, 3.7031, 9.3376] function value: 3.92877508388525 Number of zeros: 0
+ parameter: [2.9846, 2.2626, 5.8988, -2.4275, -4.8823, 3.8543, -6.5928] function value: 492.82125668525117 Number of zeros: 188
+ parameter: [3.0985, 1.9131, 6.1936, -1.3896, -1.7189, 3.9392, -0.42] function value: 2.159228333926001 Number of zeros: 0
+3511.42 secs, 3516 evals, 3307 steps, improv/step: 0.189 (last = 0.1613), fitness=0.643406875
+ parameter: [4.3373, -2.4729, 7.6512, 9.6175, 8.0979, -4.3906, 1.5419] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [2.4517, 0.3077, 5.3701, -4.0106, -4.0634, -5.1683, -3.1151] function value: 4.263803850080276 Number of zeros: 0
+ parameter: [0.7012, 0.7835, 3.5594, 4.1177, -3.0665, -4.1461, -3.287] function value: 4.759942265207615 Number of zeros: 0
+ parameter: [3.4144, 0.2938, 7.4339, 0.9936, 4.5469, 7.9713, -0.6551] function value: 9.157004027692809 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [1.3741, 0.192, 5.6807, 6.7329, 0.4271, -1.059, -4.4821] function value: 1.9055359209449374 Number of zeros: 0
+3542.43 secs, 3547 evals, 3338 steps, improv/step: 0.188 (last = 0.1613), fitness=0.643406875
+ parameter: [6.5058, -2.4913, 6.0369, -3.2202, 4.7103, 5.285, -0.7309] function value: 2.5836758229486905 Number of zeros: 0
+ parameter: [1.9833, 0.8114, -1.5395, -2.7008, -3.4314, -6.7584, -5.7142] function value: 306.2692788959963 Number of zeros: 11
+ parameter: [3.1816, -0.198, 9.3156, -5.867, 4.8038, 6.2088, -2.9962] function value: 11.541704098373197 Number of zeros: 0
+3572.56 secs, 3577 evals, 3368 steps, improv/step: 0.188 (last = 0.1000), fitness=0.643406875
+ parameter: [-5.1014, 1.1147, -2.6206, -4.7393, -3.1953, 1.0907, -0.1391] function value: 481.2443339410535 Number of zeros: 120
+ parameter: [0.2968, 1.4583, 4.325, 4.3494, -8.1669, -6.1834, -0.9618] function value: 3.40802822484236 Number of zeros: 0
+ parameter: [3.4972, -2.9065, 7.154, 5.5123, -6.6791, 0.7219, 5.0513] function value: 2.008574291498211 Number of zeros: 0
+ parameter: [-3.3448, 3.1352, 8.9187, -8.8957, -7.347, 0.826, -0.9205] function value: 7.271790051570736 Number of zeros: 1
+3603.50 secs, 3608 evals, 3399 steps, improv/step: 0.187 (last = 0.1290), fitness=0.643406875
+ parameter: [3.0985, -6.0405, 1.6006, -3.3071, 4.8454, -0.6515, -0.42] function value: 23.015593576126474 Number of zeros: 0
+ parameter: [3.3085, 1.8449, 5.8957, -1.0674, 4.449, 6.2864, 0.5911] function value: 112.84933089804431 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [5.7193, -1.474, 8.1687, 9.219, -7.1313, -5.6843, -2.8566] function value: 2.447557321347099 Number of zeros: 0
+3634.46 secs, 3639 evals, 3430 steps, improv/step: 0.187 (last = 0.1290), fitness=0.643406875
+ parameter: [-3.8532, 4.5573, -0.8301, 0.6734, -6.5785, -5.6055, -1.2632] function value: 29.19636362042587 Number of zeros: 0
+ parameter: [3.2907, 0.0956, 7.6813, -1.3356, 4.8809, 8.1342, -0.5176] function value: 9.75745934827955 Number of zeros: 0
+ parameter: [0.9218, -2.2193, 2.484, -9.3949, -0.4101, -6.6299, -4.1461] function value: 3.7119381948928467 Number of zeros: 0
+ parameter: [3.2174, -2.1859, 9.0858, 9.8317, -6.9904, 2.5354, 4.5265] function value: 2.0330477030573895 Number of zeros: 0
+ parameter: [3.2422, -5.0173, 8.0591, -6.5761, 0.7425, -8.2908, -9.2459] function value: 3.542612407979851 Number of zeros: 0
+ parameter: [0.1103, 2.7632, 0.814, -4.3238, -4.4203, 1.7884, 8.9132] function value: 56.76699211189137 Number of zeros: 0
+3665.12 secs, 3670 evals, 3461 steps, improv/step: 0.185 (last = 0.0645), fitness=0.643406875
+ parameter: [3.0283, -6.0544, 6.3675, 1.9436, 3.3488, 8.4039, 6.6691] function value: 4.170417484828176 Number of zeros: 0
+ parameter: [2.2873, 1.1092, 5.7131, 6.3242, -6.7811, -3.7777, -1.8869] function value: 1.9561394572553978 Number of zeros: 0
+ parameter: [2.4963, -2.008, 8.4364, 7.4542, 4.2799, 8.3416, 2.3674] function value: 57.18441773266401 Number of zeros: 1
+ parameter: [1.9488, -0.9325, 4.9118, 4.3248, 2.5673, 4.9811, -3.3428] function value: 190.93157429595308 Number of zeros: 0
+ parameter: [4.5957, 0.4034, 4.1137, 0.731, -0.1007, 9.0094, 6.7789] function value: 1.5193915450774453 Number of zeros: 0
+ parameter: [1.5405, 1.9448, 4.4995, -3.9288, 6.0556, -6.2136, -5.9456] function value: 480.0410512285957 Number of zeros: 248
+3695.14 secs, 3700 evals, 3491 steps, improv/step: 0.185 (last = 0.1667), fitness=0.643406875
+ parameter: [4.9519, 0.4667, 3.2697, 1.0549, -4.7173, 8.5157, 6.3748] function value: 190.9585031487542 Number of zeros: 0
+ parameter: [3.9073, -3.1812, 9.1934, -4.5493, 3.7503, 7.8396, 1.2397] function value: 3.288257105104758 Number of zeros: 0
+ parameter: [4.1442, -0.4933, 5.7673, -0.4102, 5.6776, 5.2556, -3.3114] function value: 1.7886848769917192 Number of zeros: 0
+ parameter: [6.4042, 1.894, 9.2169, 0.4743, 5.7705, 4.7303, -2.1913] function value: 338.9415737638147 Number of zeros: 1
+ parameter: [4.9519, 0.4276, 3.8086, 1.0549, 5.8778, 8.5157, 2.2734] function value: 7.945771419691412 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+3725.85 secs, 3731 evals, 3522 steps, improv/step: 0.185 (last = 0.0968), fitness=0.643406875
+ parameter: [6.9119, 0.4667, 3.2697, 1.0549, 0.5533, 8.5157, 6.3748] function value: 6.316626353837745 Number of zeros: 0
+ parameter: [4.6175, -1.0796, 4.8981, 9.0521, 4.6819, -0.0401, -6.4239] function value: 1.7254770754082551 Number of zeros: 0
+ parameter: [7.9295, -7.7374, 1.0404, -6.3287, -0.494, -1.2998, 8.076] function value: 11.900963785383569 Number of zeros: 0
+ parameter: [2.0239, -1.7916, 5.3097, -5.2544, -8.5989, -5.5862, -4.0661] function value: 101.58191563405056 Number of zeros: 0
+3756.07 secs, 3761 evals, 3552 steps, improv/step: 0.184 (last = 0.1000), fitness=0.643406875
+ parameter: [3.7355, -1.3713, 0.8448, -5.8054, -4.6478, 9.2846, 4.5537] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [3.7554, 1.7183, 5.0649, 7.8252, 0.2394, 9.6312, 4.0332] function value: 3.1999611183509113 Number of zeros: 0
+ parameter: [5.8733, 3.1585, 0.8722, -2.2671, 5.8362, 9.7023, 8.3197] function value: 255.9431865081517 Number of zeros: 2
+ parameter: [4.4535, -1.8688, 9.828, -2.809, 2.868, 2.1563, -3.5278] function value: 26.057967437179084 Number of zeros: 0
+ parameter: [2.2652, 0.8082, 4.0184, 4.0446, 7.7893, 7.3549, -5.7853] function value: 16.694916257069035 Number of zeros: 0
+ parameter: [2.1204, -0.882, 5.9333, 4.716, 5.6445, 1.2428, -4.179] function value: 60.274352426427534 Number of zeros: 1
+3786.25 secs, 3791 evals, 3582 steps, improv/step: 0.183 (last = 0.1333), fitness=0.643406875
+ parameter: [1.7823, 1.302, 5.7453, -3.0189, -5.3496, 0.7271, 0.8211] function value: 2.676232471828704 Number of zeros: 0
+ parameter: [3.4511, 1.3081, 6.0005, 0.0982, 3.3125, 3.6835, -4.5422] function value: 1.4865017069293165 Number of zeros: 0
+ parameter: [5.1832, -5.5866, 6.1604, 2.3569, -7.5444, -3.0888, 6.3366] function value: 3.5855593654289053 Number of zeros: 0
+ parameter: [-2.5811, 1.8449, 5.8957, -4.6294, -8.3188, -0.8699, 6.9214] function value: 61.29664592917196 Number of zeros: 4
+ parameter: [4.9577, 1.9421, 9.2714, 1.3223, -7.5818, -3.5213, -7.4517] function value: 15.296098673633399 Number of zeros: 0
+ parameter: [2.8385, 0.7796, 8.5245, -5.5832, 4.2089, 7.0158, 0.5663] function value: 115.00341773837866 Number of zeros: 2
+3817.07 secs, 3822 evals, 3613 steps, improv/step: 0.184 (last = 0.1935), fitness=0.643406875
+ parameter: [4.7094, 1.4735, 7.6478, -1.3896, -1.7189, 2.2693, -6.1802] function value: 76.00160326210117 Number of zeros: 0
+ parameter: [2.2617, 2.7976, 2.114, 2.5298, 6.0556, 2.1911, -2.5265] function value: 113.77685322264641 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [8.3886, -7.5037, 6.4487, -8.2736, 0.6778, -0.0863, 2.1458] function value: 6.710580570775723 Number of zeros: 0
+ parameter: [5.3523, 3.2633, 9.9451, -2.3944, -6.3812, 3.668, -0.5116] function value: 4.788596388883918 Number of zeros: 0
+ parameter: [3.9817, -1.3464, 4.3105, 3.7241, -0.0916, 4.3627, 8.464] function value: 168.63631884075815 Number of zeros: 0
+ parameter: [1.5388, -4.1025, 0.1119, 0.33, -8.1168, -8.2003, 3.8646] function value: 50.42217035080866 Number of zeros: 1
+3847.13 secs, 3852 evals, 3643 steps, improv/step: 0.182 (last = 0.0333), fitness=0.643406875
+ parameter: [4.252, 2.1834, 7.7296, -8.3138, -7.6348, -9.7891, -9.9885] function value: 4.420621860748266 Number of zeros: 0
+ parameter: [-0.5232, -3.7299, 3.5971, -0.3388, -5.6871, -7.3501, 5.2199] function value: 100.10412597129003 Number of zeros: 3
+ parameter: [2.3978, -1.4528, 3.5507, -7.1982, -9.6018, -0.0891, 9.5448] function value: 4.672135368950456 Number of zeros: 0
+ parameter: [3.1849, 3.1987, 6.6538, -2.6604, -6.6788, 2.3877, 1.076] function value: 3.55323919266655 Number of zeros: 0
+ parameter: [-0.3046, 2.677, 3.8742, -0.3786, -3.6062, 3.0437, 1.7646] function value: 5.746283441284068 Number of zeros: 0
+ parameter: [3.3182, -2.3517, 7.3552, 3.7291, -6.0376, 2.2022, 5.2382] function value: 1.852667813674815 Number of zeros: 0
+3877.14 secs, 3882 evals, 3673 steps, improv/step: 0.182 (last = 0.1000), fitness=0.643406875
+ parameter: [4.6746, 2.8084, 7.1684, -1.7034, -3.2124, 4.5016, 0.097] function value: 3.4214592042096714 Number of zeros: 0
+ parameter: [1.6654, -4.5163, 6.3964, 3.5863, -3.1701, -3.7081, -3.0213] function value: 102.31427834500333 Number of zeros: 0
+ parameter: [3.7181, -2.2949, 2.3784, 1.4557, -6.7828, 3.6672, 7.9254] function value: 109.45179727274063 Number of zeros: 0
+ parameter: [5.2129, -0.4425, 8.4415, -4.6864, 8.432, 6.6099, -2.1115] function value: 69.79228319008233 Number of zeros: 0
+ parameter: [2.1204, -2.6034, 5.9333, 4.716, 5.6445, 1.2428, -7.3061] function value: 13.001312725972149 Number of zeros: 0
+ parameter: [1.9079, -0.3999, 8.5617, 8.8638, -7.7108, -1.5052, -5.1131] function value: 287.8362156935854 Number of zeros: 0
+3907.23 secs, 3912 evals, 3703 steps, improv/step: 0.181 (last = 0.0667), fitness=0.643406875
+ parameter: [4.2752, 0.6623, 9.0428, 8.7194, 0.0284, 1.0264, -5.9583] function value: 1.7647701985799606 Number of zeros: 0
+ parameter: [5.1021, -7.4437, 6.4872, 4.0652, -3.253, -5.6789, 1.7403] function value: 5.201920452840095 Number of zeros: 0
+ parameter: [1.4925, 0.6108, 5.6446, 8.3338, 1.9337, -1.0291, -6.2808] function value: 2.450812818049877 Number of zeros: 0
+ parameter: [4.6845, -0.7099, 4.9838, 7.6801, -5.1846, -4.4245, -4.4228] function value: 75.38407262002643 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+ parameter: [3.6382, -1.7916, 5.3097, 1.0657, 4.5058, -5.5862, 1.6863] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [4.4303, 1.5817, 7.5844, -0.7189, -1.5576, 2.1739, -6.4452] function value: 83.08588560108423 Number of zeros: 0
+3937.37 secs, 3942 evals, 3733 steps, improv/step: 0.181 (last = 0.2333), fitness=0.643406875
+ parameter: [2.7542, 5.8702, 4.6933, 4.1335, -5.4146, -0.199, 5.0952] function value: 510.6925351744273 Number of zeros: 92
+ parameter: [5.4647, 1.0761, 2.2281, 1.8204, -0.0916, 6.9923, 0.7194] function value: 312.1753223502041 Number of zeros: 2
+ parameter: [4.3702, 0.7783, 6.7183, -0.5285, 3.4992, 3.533, -5.5835] function value: 2.206865386947863 Number of zeros: 0
+ parameter: [2.428, -0.7042, 5.9792, 5.3276, 5.2349, 9.6855, 0.3154] function value: 5.012595729624375 Number of zeros: 0
+ parameter: [1.8824, -4.2861, 5.9268, -4.1213, -5.6286, 1.2863, -4.1062] function value: 451.4172447959558 Number of zeros: 291
+ parameter: [3.4632, -0.882, 5.8708, -0.4196, 5.6445, 1.2428, -7.3061] function value: 1.9041986764507353 Number of zeros: 0
+3968.26 secs, 3973 evals, 3764 steps, improv/step: 0.180 (last = 0.0323), fitness=0.643406875
+ parameter: [3.0985, -1.7715, 7.8626, -1.3896, 8.6968, 6.2646, -0.42] function value: 136.37822554085037 Number of zeros: 3
+ parameter: [2.5884, -0.0244, 4.1513, -3.8596, 1.9965, 7.789, 4.003] function value: 0.8074743683415285 Number of zeros: 0
+ parameter: [2.2064, 1.7951, 6.5146, -4.1636, -5.6286, 2.4212, 0.1129] function value: 6.808503647848521 Number of zeros: 0
+ parameter: [5.5396, -0.5265, 6.7906, -2.0017, 0.6433, 3.9091, -3.4915] function value: 43.98348935635291 Number of zeros: 0
+ parameter: [3.4334, -3.3796, 5.7798, -1.9265, -5.2807, -4.3263, 1.2122] function value: 2.8197090602034303 Number of zeros: 0
+ parameter: [4.4393, 4.44, 9.5627, -7.8286, -1.7189, 8.7977, 0.9408] function value: 18.015882499554007 Number of zeros: 0
+3998.79 secs, 4004 evals, 3795 steps, improv/step: 0.181 (last = 0.2903), fitness=0.643406875
+ parameter: [3.3492, -3.2254, 7.5293, 5.8594, -7.3665, -0.0662, 4.8729] function value: 1.9994301322682868 Number of zeros: 0
+ parameter: [3.7111, 1.2022, 6.9641, 4.3949, 2.3888, 7.6709, -0.8083] function value: 2.13776094280305 Number of zeros: 0
+ parameter: [7.6619, -1.6777, 9.5975, -4.3767, -4.1685, 2.2408, 1.4634] function value: 4.605301638709793 Number of zeros: 0
+parameter: [3.718, -2.295, 2.741, 1.456, -2.143, 3.667, 7.925] n_rep: 36 fitness: 0.643406874698747
+4029.73 secs, 4035 evals, 3826 steps, improv/step: 0.181 (last = 0.1613), fitness=0.643406875
+ parameter: [4.472, -0.1845, 4.776, 7.5144, 4.6762, 3.3767, -6.5729] function value: 50.64094734874263 Number of zeros: 0
+ parameter: [2.3682, -0.3463, 4.9737, -4.7007, 2.7535, 7.8385, 2.8631] function value: 1.2482004394159727 Number of zeros: 0
+ parameter: [3.6159, -1.3904, 4.9584, 8.3068, 0.6266, 8.8794, 7.5373] function value: 2.2783317450882943 Number of zeros: 0
+4059.82 secs, 4065 evals, 3856 steps, improv/step: 0.180 (last = 0.1333), fitness=0.643406875
+ parameter: [5.7278, -3.1927, 8.9229, 3.464, 2.6029, 7.7186, 2.7931] function value: 8.941450513968073 Number of zeros: 0
+ parameter: [5.615, 2.1172, 4.776, 3.8798, 4.6762, 3.961, -6.5729] function value: 7.265309880797452 Number of zeros: 0
+ parameter: [5.5396, -0.5265, 2.9135, -2.0017, 3.3461, -2.5404, -3.4915] function value: 24.526238767371414 Number of zeros: 0
+ parameter: [1.8194, -0.7042, 5.9792, 6.4279, 3.7994, 8.2218, 0.8433] function value: 3.6515712722867866 Number of zeros: 0
+4090.07 secs, 4095 evals, 3886 steps, improv/step: 0.179 (last = 0.0667), fitness=0.390073665
+ parameter: [4.5968, 0.0252, 3.1602, 5.1307, 1.4119, 8.6215, 3.5492] function value: 59.9918277477435 Number of zeros: 0
+ parameter: [0.7012, 0.7835, 3.5594, 5.5897, -3.934, -5.3717, -3.1693] function value: 2.8019541964910477 Number of zeros: 0
+ parameter: [1.9191, 1.0936, 2.9959, 3.7882, 2.3856, 0.2057, -3.6208] function value: 1.9588406881571359 Number of zeros: 0
+ parameter: [2.248, 0.7728, 9.28, -5.1561, 8.0852, 7.5524, -3.0004] function value: 94.37711885471994 Number of zeros: 3
+ parameter: [4.665, -1.7916, 5.3097, 3.961, -2.4031, -5.4742, -4.0661] function value: 1.5112291156546576 Number of zeros: 0
+ parameter: [4.6079, -2.7717, 5.8895, 4.4443, -3.0774, 0.6285, 2.3278] function value: 3.067839941644608 Number of zeros: 0
+4120.34 secs, 4125 evals, 3916 steps, improv/step: 0.181 (last = 0.3333), fitness=0.390073665
+ parameter: [3.7604, -3.9095, 9.4324, -6.5994, 5.3669, 8.2988, -0.7027] function value: 3.9549814268394967 Number of zeros: 0
+ parameter: [4.4078, -1.1374, 5.3097, 1.039, -4.9575, -2.7872, 1.4495] function value: 3.9810292140444403 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [4.6257, -2.958, 8.9187, 0.8446, -7.347, 0.826, -0.9205] function value: 130.93291972709073 Number of zeros: 0
+ parameter: [3.7732, 2.9808, 5.7849, 6.5338, -7.8523, -4.3681, -3.4589] function value: 3.2337513819671595 Number of zeros: 0
+4150.46 secs, 4155 evals, 3946 steps, improv/step: 0.180 (last = 0.1000), fitness=0.390073665
+ parameter: [4.0161, 1.4583, 3.8168, 4.3494, -8.1669, -6.1834, -0.9618] function value: 3.350686783918126 Number of zeros: 0
+ parameter: [6.8339, 0.1089, 8.7465, -2.1952, -5.9014, -3.6963, -3.043] function value: 5.143938480465083 Number of zeros: 0
+ parameter: [3.16, -0.1918, 3.3546, -3.3351, 1.285, 7.7514, 5.5171] function value: 0.4136595191003299 Number of zeros: 0
+ parameter: [2.866, -3.6824, 8.9387, 7.7851, -2.3146, -5.8207, -6.7323] function value: 2.780067434351772 Number of zeros: 0
+ parameter: [3.0224, 1.5742, 6.5675, -8.2699, 3.9552, 7.7056, -2.7211] function value: 2.951130222367779 Number of zeros: 0
+4181.44 secs, 4186 evals, 3977 steps, improv/step: 0.179 (last = 0.0968), fitness=0.390073665
+ parameter: [4.8886, -5.437, 7.3857, 2.1956, -5.861, -2.1551, 4.2868] function value: 2.7929720986471493 Number of zeros: 0
+ parameter: [3.534, 0.6623, 9.0428, 8.7194, 0.0284, 1.0264, -5.9583] function value: 2.175697684315308 Number of zeros: 0
+ parameter: [3.0362, -0.7258, 8.4019, -2.2104, 6.2356, 9.2775, -2.4677] function value: 2.8411532023657946 Number of zeros: 0
+ parameter: [4.5659, -1.5059, 5.9271, -1.6097, 5.1165, 4.9447, -2.2891] function value: 1.8635914167784366 Number of zeros: 0
+4211.46 secs, 4216 evals, 4007 steps, improv/step: 0.179 (last = 0.1000), fitness=0.390073665
+ parameter: [5.2129, -0.3585, 8.4415, -4.6864, 4.5121, 6.6099, -3.6366] function value: 2.6866135436417684 Number of zeros: 0
+ parameter: [4.4835, -0.8888, 6.6603, 5.2756, -4.3053, 1.2207, 7.2309] function value: 182.40096854257982 Number of zeros: 1
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [3.5252, -0.6626, 9.5677, 5.5545, 6.4336, 1.2585, -8.2482] function value: 71.155844047018 Number of zeros: 0
+4241.55 secs, 4246 evals, 4037 steps, improv/step: 0.178 (last = 0.1333), fitness=0.390073665
+ parameter: [3.073, -1.509, 9.6738, 7.5273, 3.4308, 9.351, -0.4349] function value: 3.0856138761150302 Number of zeros: 0
+ parameter: [4.5188, -4.4546, 8.0077, -7.1819, -4.01, -0.3599, -1.7167] function value: 47.97331201179399 Number of zeros: 0
+ parameter: [3.7181, -2.2949, 2.7405, 5.8864, -2.1426, 7.0679, 1.1571] function value: 450.91893853320465 Number of zeros: 300
+4271.76 secs, 4276 evals, 4067 steps, improv/step: 0.178 (last = 0.1333), fitness=0.390073665
+ parameter: [5.1224, -1.7916, 5.3097, -2.6536, -5.36, -5.5862, -4.0661] function value: 16.98701355169436 Number of zeros: 0
+ parameter: [5.2129, -0.5414, 8.4415, -4.6864, 4.5121, 6.6099, -3.6366] function value: 2.7098205482461344 Number of zeros: 0
+ parameter: [3.3463, -0.2691, 4.9853, 1.933, -2.6666, 4.4072, 5.5677] function value: 5.653722443154021 Number of zeros: 0
+4302.73 secs, 4307 evals, 4098 steps, improv/step: 0.177 (last = 0.0000), fitness=0.390073665
+ parameter: [3.9374, 1.0936, 4.5663, 3.7882, 2.3856, 0.2057, -3.6208] function value: 25.64831551388765 Number of zeros: 0
+ parameter: [0.2968, 2.168, 6.4098, 6.7778, -7.6484, 0.2012, -0.9618] function value: 42.21109513087561 Number of zeros: 0
+ parameter: [4.8153, -1.7086, 8.7107, 6.5165, 4.4788, 9.6028, 0.3216] function value: 2.1692221874272386 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [-2.0152, 5.5199, 5.3113, 5.6248, -5.0911, -2.5104, -5.656] function value: 15.35312408664487 Number of zeros: 2
+4333.50 secs, 4338 evals, 4129 steps, improv/step: 0.176 (last = 0.1290), fitness=0.390073665
+ parameter: [0.1103, -0.2707, 5.9901, -1.0408, 3.7781, 5.2, -2.0772] function value: 3.6937425748218238 Number of zeros: 1
+ parameter: [3.7181, -2.2949, 2.7405, 6.1958, -2.1426, 3.6672, 7.9254] function value: 1.273994791639778 Number of zeros: 0
+ parameter: [1.6643, 0.4041, 6.9957, -1.0243, -6.88, 3.5847, -4.9553] function value: 475.90471097607445 Number of zeros: 235
+4363.71 secs, 4368 evals, 4159 steps, improv/step: 0.176 (last = 0.1000), fitness=0.390073665
+ parameter: [4.472, -1.1444, 4.776, 7.5144, -4.996, -0.426, -6.5729] function value: 451.457210751454 Number of zeros: 290
+ parameter: [4.732, -2.0632, 7.2668, 9.6699, 2.8833, 9.7204, 2.0794] function value: 14.59171630405706 Number of zeros: 0
+ parameter: [4.3526, -1.7007, 6.356, -6.9952, 0.972, 8.3886, 5.5498] function value: 1.7979335207477185 Number of zeros: 0
+4394.66 secs, 4399 evals, 4190 steps, improv/step: 0.176 (last = 0.1613), fitness=0.390073665
+ parameter: [2.3776, 0.0149, 4.049, 8.5485, 5.0426, 9.2429, 0.9616] function value: 10.817171538514717 Number of zeros: 0
+ parameter: [3.7181, -2.2949, 2.7405, 9.3936, -8.8699, 3.6672, 7.9254] function value: 310.0611434687452 Number of zeros: 0
+ parameter: [3.7558, -2.2248, 9.9258, 9.1677, 5.0559, 9.7019, -1.8098] function value: 6.606688644848 Number of zeros: 0
+4425.61 secs, 4430 evals, 4221 steps, improv/step: 0.175 (last = 0.1290), fitness=0.390073665
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [4.5669, 1.7999, 1.5197, 8.1726, -7.9882, 1.7208, 1.7346] function value: 416.94600552479557 Number of zeros: 36
+ parameter: [3.482, -0.942, 5.1217, 3.6845, -7.2162, -4.9786, -0.41] function value: 2.235700281503627 Number of zeros: 0
+ parameter: [1.9833, 0.8114, 4.3446, -2.7008, -3.4314, 3.5918, -1.1727] function value: 225.8373523559834 Number of zeros: 0
+4455.88 secs, 4460 evals, 4251 steps, improv/step: 0.176 (last = 0.3000), fitness=0.390073665
+ parameter: [1.9205, -0.6739, 1.531, 3.989, -1.5101, -2.9969, 2.8001] function value: 80.49790637651351 Number of zeros: 0
+ parameter: [1.6364, 2.875, 5.3023, 0.8733, -9.9455, -4.6071, -0.6131] function value: 3.6788918350477533 Number of zeros: 0
+ parameter: [1.2748, 1.3203, 6.532, 9.9726, 6.8452, -2.7463, -6.7829] function value: 493.83864148887636 Number of zeros: 225
+4486.84 secs, 4491 evals, 4282 steps, improv/step: 0.176 (last = 0.0968), fitness=0.390073665
+ parameter: [5.4921, -1.3137, 6.6256, -2.9148, 3.2244, 4.1276, -2.2208] function value: 1.9493265736389973 Number of zeros: 0
+ parameter: [5.4724, 0.8017, 5.8786, -9.2799, -2.5765, -1.9447, -3.0773] function value: 2.9242724140659027 Number of zeros: 0
+ parameter: [4.2841, -0.4428, 6.5643, -0.739, 0.451, -0.0095, -4.2735] function value: 2.0369618275089567 Number of zeros: 0
+4517.81 secs, 4522 evals, 4313 steps, improv/step: 0.176 (last = 0.1613), fitness=0.390073665
+ parameter: [4.6616, -0.7973, 4.9956, -2.4289, 9.0696, 6.2885, 3.0416] function value: 293.58000069803313 Number of zeros: 2
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [4.3991, -2.3997, 9.7262, -3.9371, 3.6511, -6.0447, -6.1809] function value: 437.2586116192599 Number of zeros: 12
+ parameter: [4.6616, -0.7973, 4.9956, -2.4289, 1.1933, 0.2858, 3.0416] function value: 253.05001335543534 Number of zeros: 1
+4547.93 secs, 4552 evals, 4343 steps, improv/step: 0.175 (last = 0.0667), fitness=0.390073665
+ parameter: [3.0321, -0.1199, 8.2433, -7.2798, 5.6529, -0.41, -9.2511] function value: 10.658647661193125 Number of zeros: 0
+ parameter: [1.7885, -0.6931, 4.4023, 6.4147, -2.9894, -3.6058, -1.5504] function value: 1.1550234323421835 Number of zeros: 0
+ parameter: [3.279, -0.0176, 5.2056, 6.6543, 1.7741, 9.5187, 3.1933] function value: 16.302579338083795 Number of zeros: 0
+ parameter: [0.9068, 0.1416, 3.3352, -4.2432, 3.6915, 6.1123, 1.2634] function value: 1.7222322188446335 Number of zeros: 0
+ parameter: [3.4914, -0.2096, 6.9589, 7.6878, 4.3196, 9.1334, 0.2808] function value: 1.3773696023775894 Number of zeros: 0
+4578.11 secs, 4582 evals, 4373 steps, improv/step: 0.175 (last = 0.2000), fitness=0.390073665
+ parameter: [1.4925, 0.6108, 5.6446, -3.0283, 4.6025, -1.8196, -6.2808] function value: 89.03797553677829 Number of zeros: 1
+ parameter: [2.7196, -1.3709, 3.2541, 3.0105, 1.6413, -8.3282, 1.0277] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [2.7113, -0.2945, 4.0979, 7.8998, 6.6532, 0.9412, -7.4652] function value: 0.9311066600301217 Number of zeros: 0
+ parameter: [2.3086, -0.5806, 3.6283, -2.0827, -7.278, -9.416, 0.4985] function value: 19.081419718510123 Number of zeros: 0
+ parameter: [5.934, -2.0254, 9.0951, 6.7278, -4.0521, 0.198, -3.0599] function value: 33.288160889411344 Number of zeros: 0
+ parameter: [2.5747, 3.0959, 3.1783, 8.1659, -8.8596, 2.9908, 8.7543] function value: 6.1649784693090215 Number of zeros: 0
+4609.09 secs, 4613 evals, 4404 steps, improv/step: 0.175 (last = 0.1613), fitness=0.390073665
+ parameter: [1.5881, 0.8017, 5.7024, -9.2799, -2.5765, -1.9447, -0.5365] function value: 23.35049120254379 Number of zeros: 0
+ parameter: [4.1769, -0.4837, 5.3466, -2.1987, 1.3019, -7.5273, 1.7475] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [3.3261, -0.9142, 5.8129, -2.5605, 1.3349, 6.0926, 5.1618] function value: 63.611459088326626 Number of zeros: 0
+ parameter: [2.2873, 1.1092, 5.7131, 5.1006, -6.7811, -5.9806, -3.0264] function value: 2.8105722321958444 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [4.8719, -0.0805, 5.299, 5.0442, -6.5409, 8.7532, 6.9011] function value: 161.47038550694526 Number of zeros: 0
+ parameter: [2.1385, 0.7751, 2.2819, 0.3667, 2.9739, 5.8712, 2.16] function value: 1.4416399379453102 Number of zeros: 0
+4639.33 secs, 4643 evals, 4434 steps, improv/step: 0.174 (last = 0.0333), fitness=0.390073665
+ parameter: [3.0433, -2.1994, 5.7223, 7.2151, -1.0122, 5.1798, 4.721] function value: 1.2075163668560935 Number of zeros: 0
+ parameter: [5.5396, -0.5265, 6.7906, 0.2724, 3.3461, 5.0453, -3.4915] function value: 5.608084463125859 Number of zeros: 0
+ parameter: [2.2312, -4.6131, 7.7636, -9.1329, 3.5099, 9.7391, -2.4871] function value: 318.30379422634684 Number of zeros: 3
+ parameter: [3.8273, -0.124, 7.2599, 7.6053, -5.9888, -9.179, -6.4016] function value: 8.018745746209088 Number of zeros: 0
+4669.50 secs, 4673 evals, 4464 steps, improv/step: 0.173 (last = 0.0667), fitness=0.390073665
+ parameter: [1.3104, 0.875, 3.0696, 7.2059, -6.3349, -4.7333, -0.538] function value: 2.4196163536156363 Number of zeros: 0
+ parameter: [6.4229, 1.5641, 8.8315, -7.0715, 1.7516, 4.8127, -7.4598] function value: 16.700719279340596 Number of zeros: 0
+ parameter: [2.2312, -2.4729, 4.3935, -4.8751, -4.3217, -4.3906, -1.6637] function value: 11.810668151916802 Number of zeros: 0
+4699.64 secs, 4703 evals, 4494 steps, improv/step: 0.173 (last = 0.1667), fitness=0.390073665
+ parameter: [3.4729, 0.1912, 4.4259, 3.3509, 3.6121, 6.9448, 3.9372] function value: 68.04115898676052 Number of zeros: 0
+ parameter: [2.0753, 0.0933, 6.0339, -1.0364, 2.9931, 4.9983, -1.9279] function value: 1.7117346520030479 Number of zeros: 0
+ parameter: [5.1453, -1.0159, 5.9583, 5.1757, -1.9024, 6.2415, 5.3304] function value: 1.7223721890588346 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+4729.74 secs, 4733 evals, 4524 steps, improv/step: 0.173 (last = 0.1333), fitness=0.390073665
+ parameter: [6.7588, -1.9113, 7.7699, 2.7875, 6.4979, 4.3288, -8.1526] function value: 11.599741727396415 Number of zeros: 0
+ parameter: [4.6257, 2.2554, 8.9187, 9.4013, -7.5633, 0.826, 2.5403] function value: 40.842064909246616 Number of zeros: 0
+ parameter: [3.5734, -1.3568, 4.6554, 5.8896, 1.5761, 5.6916, -1.5678] function value: 205.56645730537505 Number of zeros: 0
+4759.97 secs, 4763 evals, 4554 steps, improv/step: 0.172 (last = 0.1000), fitness=0.390073665
+ parameter: [3.4615, -0.8112, 4.0013, 9.9897, 4.3524, 8.5639, -1.1709] function value: 172.88366157777875 Number of zeros: 0
+ parameter: [2.6152, -1.5279, 6.7222, 5.4468, -8.6781, 0.9412, -7.1786] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [1.6077, -2.9843, 8.1687, -1.9332, 4.1999, -5.6843, -4.8631] function value: 501.3509471586019 Number of zeros: 54
+ parameter: [3.9193, 1.8449, 5.8957, -1.0674, 0.2427, 6.2864, 0.5911] function value: 2.079633285147457 Number of zeros: 0
+ parameter: [0.8888, 0.8363, 0.3057, -1.5859, -0.38, 7.201, 8.7147] function value: 15.02140779930375 Number of zeros: 0
+ parameter: [2.9086, -0.7356, 4.7156, 7.7665, 5.2003, 0.9874, -5.8725] function value: 0.7192346884656659 Number of zeros: 0
+4790.89 secs, 4794 evals, 4585 steps, improv/step: 0.173 (last = 0.2258), fitness=0.390073665
+ parameter: [2.248, -1.0276, 4.9912, -7.4681, -1.9878, -4.3173, -5.2455] function value: 6.434652823151152 Number of zeros: 0
+ parameter: [6.5855, -0.8744, 8.5895, 9.9992, 0.6322, 7.8592, 1.5005] function value: 3.03784782979113 Number of zeros: 0
+ parameter: [1.337, 0.424, 3.0058, -2.6881, 2.6906, 7.72, 5.5907] function value: 13.718255735799145 Number of zeros: 0
+ parameter: [0.7888, -2.7626, 5.0436, -2.3514, -3.9913, -4.4574, 0.5695] function value: 5.9238705634471955 Number of zeros: 0
+ parameter: [2.1363, 0.7301, 2.3941, -6.5531, -0.1382, 7.6553, -1.1709] function value: 517.3559779768964 Number of zeros: 189
+4821.62 secs, 4825 evals, 4616 steps, improv/step: 0.172 (last = 0.0645), fitness=0.390073665
+ parameter: [3.3119, -4.1767, 4.9368, 5.0495, -6.3349, -3.8045, -0.6832] function value: 188.31402318595892 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [7.0952, -1.9999, 6.1715, -3.529, 3.1096, 4.8094, -0.2806] function value: 2.573817258147846 Number of zeros: 0
+ parameter: [1.1279, 1.939, 4.5959, -2.8304, 0.4243, 1.0907, -0.1391] function value: 124.60664376904853 Number of zeros: 2
+4851.82 secs, 4855 evals, 4646 steps, improv/step: 0.171 (last = 0.0333), fitness=0.390073665
+ parameter: [1.9833, -1.1733, 3.7359, -2.7008, -2.5342, -6.7584, -5.7142] function value: 7.9612693802094245 Number of zeros: 0
+ parameter: [2.8911, -0.933, 3.7905, 4.6897, 6.6036, 0.7462, -6.361] function value: 0.8835750839083315 Number of zeros: 0
+ parameter: [2.4628, -0.5174, 2.4512, 3.8838, 5.1422, 4.9447, -2.2891] function value: 25.746749085093807 Number of zeros: 0
+4881.97 secs, 4885 evals, 4676 steps, improv/step: 0.172 (last = 0.2333), fitness=0.390073665
+ parameter: [6.8503, -3.5063, 7.3634, 2.8656, 0.924, 2.9904, 1.3162] function value: 6.152179188730235 Number of zeros: 0
+ parameter: [5.3457, -1.8427, 4.269, 0.0446, 4.4705, 3.3378, -5.4893] function value: 65.71150570811878 Number of zeros: 0
+ parameter: [5.0254, -5.2924, 3.7312, 7.6679, 1.0645, -2.6896, 0.2074] function value: 4.967754485758308 Number of zeros: 0
+ parameter: [1.9471, -0.3766, 5.3465, -0.1266, 2.6147, 6.8015, 1.5991] function value: 1.4021645081681873 Number of zeros: 0
+ parameter: [3.425, -1.1763, 6.4979, 8.3543, -3.7096, 6.2258, 6.7696] function value: 0.9901528666912631 Number of zeros: 0
+ parameter: [3.9724, -0.6626, 5.9143, 7.4313, -3.2041, 0.2171, -8.2482] function value: 491.3570317159895 Number of zeros: 222
+4912.26 secs, 4915 evals, 4706 steps, improv/step: 0.171 (last = 0.1667), fitness=0.390073665
+ parameter: [5.2494, -1.9717, 4.0099, -1.6989, 5.0686, -5.6055, 2.913] function value: 450.91893853320465 Number of zeros: 296
+ parameter: [1.0379, 0.2726, 5.1058, 6.8606, 2.5536, 7.9329, -1.7521] function value: 201.75087555762246 Number of zeros: 0
+ parameter: [3.5469, -2.3986, 2.8306, 2.71, -5.6757, 2.0885, -0.0628] function value: 463.934987451019 Number of zeros: 273
+ parameter: [6.5096, -2.389, 4.0403, 3.2186, 1.2954, 8.8629, 8.6555] function value: 4.376996372784151 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [2.3221, -2.2688, 5.022, 1.5925, -5.1169, -4.3911, 0.4769] function value: 1.9978288083477946 Number of zeros: 0
+ parameter: [-5.0409, 0.3942, 3.7687, -8.6922, -5.5131, -1.5705, -9.6857] function value: 475.2151115241967 Number of zeros: 231
+4942.49 secs, 4945 evals, 4736 steps, improv/step: 0.171 (last = 0.0667), fitness=0.390073665
+ parameter: [4.89, -1.432, 5.1779, 6.1977, 8.9962, 9.6167, 0.0731] function value: 3.2931837970404425 Number of zeros: 0
+ parameter: [5.4271, -2.6025, 4.7073, -2.5734, -6.2384, -4.7308, -0.2764] function value: 7.565053860418701 Number of zeros: 0
+ parameter: [6.1603, -5.8063, 7.743, -7.6221, 5.4047, 6.9745, 1.8658] function value: 4.449773136549355 Number of zeros: 0
+4972.68 secs, 4975 evals, 4766 steps, improv/step: 0.171 (last = 0.1333), fitness=0.390073665
+ parameter: [4.6257, 2.7897, 8.9187, 9.4013, -7.5633, 0.826, -0.9205] function value: 3.002160584411743 Number of zeros: 0
+ parameter: [1.4748, 4.0454, 8.4794, -2.1371, -4.4348, 0.7527, -4.9961] function value: 4.047349425691376 Number of zeros: 0
+ parameter: [2.097, -0.5241, 4.4883, 8.4581, 0.3866, -4.2569, 3.4414] function value: 453.90830834311345 Number of zeros: 286
+5002.73 secs, 5005 evals, 4796 steps, improv/step: 0.170 (last = 0.1000), fitness=0.390073665
+ parameter: [5.7711, -1.0186, 4.9237, 4.7714, 3.191, 7.2659, 2.8083] function value: 3.375856093169006 Number of zeros: 0
+ parameter: [4.3174, -2.7125, 1.4785, 1.687, 2.5483, 2.296, 3.5715] function value: 1.8426547637286612 Number of zeros: 0
+ parameter: [3.9193, 1.5049, 5.8957, -1.0674, 4.3429, 6.2864, 0.5911] function value: 77.83736211638738 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+5032.89 secs, 5035 evals, 4826 steps, improv/step: 0.170 (last = 0.1333), fitness=0.390073665
+ parameter: [3.1876, 2.4993, 5.3342, 9.0806, 1.3153, 9.4983, 2.9775] function value: 1.8293613416311767 Number of zeros: 0
+ parameter: [2.2157, -0.8077, 2.2973, 3.7158, 9.6771, 0.3471, -8.8238] function value: 2.7473208989986726 Number of zeros: 0
+ parameter: [1.1343, 2.1144, 5.4122, 6.9792, -7.5387, -5.1951, -2.6651] function value: 3.026181603185184 Number of zeros: 0
+ parameter: [2.9667, -4.0152, 5.0458, 3.5235, -1.0208, 2.33, 5.4925] function value: 7.747535861381444 Number of zeros: 0
+ parameter: [4.1192, 1.2721, 8.9517, -1.0674, 3.8606, 6.2864, -6.7316] function value: 5.3486297088113615 Number of zeros: 0
+5063.08 secs, 5065 evals, 4856 steps, improv/step: 0.170 (last = 0.1667), fitness=0.390073665
+ parameter: [5.7673, -1.3603, 5.1387, -2.9627, 1.9607, 1.6775, 6.4092] function value: 445.35224362309594 Number of zeros: 50
+ parameter: [1.9858, 0.7208, 2.6306, 4.1461, 6.667, -2.3827, -9.0028] function value: 4.231796097114956 Number of zeros: 0
+ parameter: [3.2937, 1.8441, 7.27, 7.5765, -2.9194, 9.4255, -2.2318] function value: 509.2287948027558 Number of zeros: 105
+ parameter: [2.903, 4.5533, 4.8785, 5.4415, -4.3597, 2.966, -1.4994] function value: 23.129561465527296 Number of zeros: 0
+ parameter: [1.9622, 0.8922, 4.3905, 1.0415, -6.9034, -0.427, 4.038] function value: 2.596761925928821 Number of zeros: 0
+ parameter: [3.5128, -0.95, 4.571, 3.0778, 4.4266, 0.845, -4.8176] function value: 1.0159020089795567 Number of zeros: 0
+5093.27 secs, 5095 evals, 4886 steps, improv/step: 0.170 (last = 0.2000), fitness=0.390073665
+ parameter: [4.0384, -0.4629, 2.0315, -1.0179, 0.7482, -2.3717, 2.0599] function value: 185.57494658692738 Number of zeros: 0
+ parameter: [-1.115, -0.0703, 3.9362, 9.1677, -4.3597, -2.7631, -1.2995] function value: 35.66602622633012 Number of zeros: 0
+ parameter: [3.2937, 1.8441, 1.2731, 7.5765, -2.9194, 9.4255, 6.6477] function value: 309.44067952967424 Number of zeros: 3
+ parameter: [3.5902, -2.5125, 5.0458, 3.5235, -1.0208, 4.7715, 5.4925] function value: 0.7924204754548105 Number of zeros: 0
+ parameter: [5.4899, -1.1515, 4.4368, -3.2269, 3.0575, 9.8153, 5.4031] function value: 1.8654854811957111 Number of zeros: 0
+ parameter: [5.7579, 0.011, 7.9033, -4.7745, 4.8534, 8.5787, -1.1424] function value: 3.3059730282899618 Number of zeros: 0
+5123.45 secs, 5125 evals, 4916 steps, improv/step: 0.170 (last = 0.1000), fitness=0.390073665
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [3.4444, -1.1109, 6.746, 3.7158, -1.9092, 6.5605, 6.3643] function value: 13.597118159744733 Number of zeros: 0
+ parameter: [3.703, -2.2296, 2.9165, 9.2023, -2.2997, 3.0546, 7.1353] function value: 2.151976082482527 Number of zeros: 0
+ parameter: [5.5415, -4.1085, 4.5445, -8.625, -9.695, -5.6363, -0.2717] function value: 58.72893854934869 Number of zeros: 0
+5153.71 secs, 5155 evals, 4946 steps, improv/step: 0.169 (last = 0.1333), fitness=0.390073665
+ parameter: [4.0699, -1.6954, 7.8544, 9.223, 4.4601, 7.7967, -0.5463] function value: 1.4534511261315324 Number of zeros: 0
+ parameter: [2.5234, 1.9627, 5.1569, 8.2635, 2.039, -2.7074, 3.3642] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [0.7012, 0.7835, 3.9495, 8.6351, -3.934, -5.3717, -3.1693] function value: 3.9601918377915313 Number of zeros: 0
+ parameter: [5.3481, -2.4808, 1.866, -4.3719, 4.9894, 7.1232, 2.2046] function value: 23.059134435029097 Number of zeros: 0
+ parameter: [5.1674, 1.2951, -0.0302, 7.2426, 4.8224, -3.3917, 0.711] function value: 473.32348957877826 Number of zeros: 141
+5183.99 secs, 5185 evals, 4976 steps, improv/step: 0.169 (last = 0.0667), fitness=0.390073665
+ parameter: [3.3267, -2.5125, 5.0458, 3.5235, -3.6633, 5.7272, 5.4925] function value: 99.84127811636783 Number of zeros: 0
+ parameter: [4.001, -2.1337, 4.4971, -0.2412, -4.2707, -3.9458, 0.9503] function value: 1.6936063233227574 Number of zeros: 0
+ parameter: [0.7012, -0.0348, 3.5594, 8.6351, -3.934, -5.3717, -3.1693] function value: 8.37266455475933 Number of zeros: 0
+ parameter: [2.943, 1.456, 6.3454, 0.3498, 3.8377, 3.2442, -5.9841] function value: 1.617780235178771 Number of zeros: 0
+ parameter: [1.1725, 0.0056, 3.8139, 5.3122, -0.9852, -0.5382, -1.0864] function value: 2.2428078158936593 Number of zeros: 0
+ parameter: [3.6993, -0.2089, 3.06, 8.7137, -8.0741, -2.6691, 4.7378] function value: 1.7805713486708308 Number of zeros: 0
+5214.11 secs, 5215 evals, 5006 steps, improv/step: 0.169 (last = 0.1333), fitness=0.390073665
+ parameter: [3.2807, 1.4583, 2.3319, -5.2661, -2.1039, -2.795, 2.1284] function value: 114.61262363399904 Number of zeros: 0
+ parameter: [1.779, -0.6378, 5.3118, 8.6163, -3.1953, 1.0907, -2.3187] function value: 224.87055457390093 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [1.8711, 0.8961, 4.46, -0.1464, -5.646, -1.3369, 1.1481] function value: 2.117168258888181 Number of zeros: 0
+ parameter: [1.1279, 1.939, 4.5959, -2.8304, 9.1154, 1.0907, -8.4258] function value: 35.20969812927768 Number of zeros: 1
+ parameter: [3.7635, -2.2808, 8.5033, 9.0404, -7.8157, -5.9455, -1.7268] function value: 1.9209782648504037 Number of zeros: 0
+ parameter: [3.7202, -1.9455, 8.4113, 8.208, 7.2686, 7.3762, -4.1974] function value: 2.0261353408661624 Number of zeros: 0
+5244.21 secs, 5245 evals, 5036 steps, improv/step: 0.169 (last = 0.1667), fitness=0.390073665
+ parameter: [3.3516, -0.748, 5.1038, -3.6512, 2.4109, 7.2471, 3.3327] function value: 1.4350601452144813 Number of zeros: 0
+ parameter: [4.1737, -0.5085, 5.8895, 7.6185, 2.8231, 8.4795, 1.7571] function value: 3.701078004138864 Number of zeros: 0
+ parameter: [4.1199, 0.8677, 5.2056, 6.3109, 3.0304, 7.9612, 1.8125] function value: 4.5703168706156605 Number of zeros: 0
+ parameter: [3.2488, -0.7744, 3.8857, 2.3035, -0.5086, 1.1178, 6.7108] function value: 338.9618688806847 Number of zeros: 1
+ parameter: [2.2186, 2.4457, 5.6807, -1.9291, 4.9525, 5.4159, 0.1776] function value: 236.77060447305473 Number of zeros: 4
+5274.47 secs, 5275 evals, 5066 steps, improv/step: 0.168 (last = 0.1000), fitness=0.390073665
+ parameter: [3.0456, -2.5706, 9.7265, -3.4403, 1.7655, 0.0864, -6.0692] function value: 2.5685773413456525 Number of zeros: 0
+ parameter: [3.2264, -2.5842, 3.2687, 4.2475, 3.0814, 3.4869, 8.4369] function value: 399.06932017635097 Number of zeros: 2
+ parameter: [-2.581, 3.8229, 1.9861, 8.4357, -3.0511, -7.2926, -6.7285] function value: 17.016990037642014 Number of zeros: 1
+5304.60 secs, 5305 evals, 5096 steps, improv/step: 0.169 (last = 0.2333), fitness=0.390073665
+ parameter: [0.0085, 1.0382, 1.531, 3.989, -2.7317, -2.9969, 3.6143] function value: 200.8441505712288 Number of zeros: 2
+ parameter: [2.4608, -0.7946, 4.583, 8.1372, 4.0422, 2.2369, -2.4704] function value: 4.597437900380468 Number of zeros: 0
+parameter: [3.703, -2.23, 2.916, 1.294, -2.3, 3.055, 7.135] n_rep: 36 fitness: 0.39007366534694765
+ parameter: [4.84, -4.4036, 4.5217, 5.5669, 5.05, 7.6267, 9.2205] function value: 129.92296228804443 Number of zeros: 0
+5334.88 secs, 5335 evals, 5126 steps, improv/step: 0.168 (last = 0.0667), fitness=0.390073665
+ parameter: [0.5301, 0.623, 3.6834, -7.4538, 4.2432, 0.1231, -5.9219] function value: 2.833165956761748 Number of zeros: 0
+ parameter: [3.4729, 0.1912, 3.4413, 4.7471, 3.6121, 6.9448, 0.8095] function value: 7.2669298774190425 Number of zeros: 0
+ parameter: [2.2418, 0.433, 4.763, 1.639, -2.5473, -1.4174, -1.4469] function value: 1.2671478394702766 Number of zeros: 0
+ parameter: [4.0469, -0.6992, 5.9147, 7.0736, -2.8856, 1.8475, 1.6017] function value: 1.3738179706216884 Number of zeros: 0
+ parameter: [3.9899, -5.365, 9.1979, 9.9202, -4.1356, -0.7349, 1.5313] function value: 3.379706086364149 Number of zeros: 0
+5365.14 secs, 5365 evals, 5156 steps, improv/step: 0.168 (last = 0.1667), fitness=0.390073665
+ parameter: [3.1404, -0.1712, 4.0138, 0.4217, 3.223, 4.7427, -0.6031] function value: 1.7399639952362869 Number of zeros: 0
+ parameter: [3.4444, 0.7752, 5.9538, 6.6541, -2.7431, 6.5605, 6.3643] function value: 16.519827333812536 Number of zeros: 0
+ parameter: [3.0862, -2.4505, 4.1037, 8.3188, 6.9539, 5.2445, -0.7003] function value: 1.493674522984568 Number of zeros: 0
+ parameter: [1.505, -1.0012, 2.8896, 7.8553, 3.4523, -4.4433, -6.8636] function value: 3.493622132975632 Number of zeros: 0
+ parameter: [3.9423, -1.386, 4.4993, 7.2206, 2.8618, 8.0842, 0.5468] function value: 119.65478453946847 Number of zeros: 0
+ parameter: [5.8109, -0.7686, 2.0315, -1.8179, -1.3771, -2.3717, 1.139] function value: 11.115983894061483 Number of zeros: 0
+5395.27 secs, 5395 evals, 5186 steps, improv/step: 0.168 (last = 0.1667), fitness=0.390073665
+ parameter: [2.9178, 0.3758, 7.2745, 5.7085, 4.2163, -1.4806, -9.4934] function value: 16.94636886366511 Number of zeros: 0
+ parameter: [3.4168, -3.2017, 1.5624, 6.8602, -0.6862, 4.9819, 5.01] function value: 203.46161574477537 Number of zeros: 0
+ parameter: [3.4729, 0.1912, 4.4259, 4.7471, 3.6121, 9.0118, 0.8095] function value: 27.197525870351615 Number of zeros: 0
+ parameter: [4.0092, -0.9326, 4.5037, -0.251, 2.5259, 6.864, 2.9936] function value: 0.6929875082566925 Number of zeros: 0
+5425.58 secs, 5425 evals, 5216 steps, improv/step: 0.169 (last = 0.2667), fitness=0.270522038
+parameter: [2.503, -0.187, 3.047, 3.836, -3.071, -4.823, -1.977] n_rep: 36 fitness: 0.2705220382586927
+ parameter: [3.7038, -1.1829, 5.7164, 7.8512, 4.1854, 6.9278, -0.1179] function value: 2.491017203618491 Number of zeros: 0
+ parameter: [3.2137, -0.4624, 2.1679, 2.6536, -2.3893, 2.9124, 5.5364] function value: 2.4421711626008493 Number of zeros: 0
+ parameter: [4.7604, -0.4878, 4.7704, 3.284, 1.4489, 6.6129, 3.0096] function value: 1.3779960941853753 Number of zeros: 0
+ parameter: [4.4278, -2.2626, 7.2579, 2.9156, 5.664, 9.6218, 1.0169] function value: 1.9790757278184736 Number of zeros: 0
+ parameter: [4.1087, 2.1807, 6.0575, 4.7091, 8.8785, 3.7545, -8.8753] function value: 13.527399425232915 Number of zeros: 0
+5456.39 secs, 5456 evals, 5247 steps, improv/step: 0.168 (last = 0.1290), fitness=0.270522038
+ parameter: [4.3263, 1.4961, 7.9374, 3.7727, -3.0384, -3.7556, -7.9634] function value: 3.1926787694736243 Number of zeros: 0
+ parameter: [3.2684, -1.5296, 2.1388, -2.0885, -1.5388, 7.8118, 3.2775] function value: 569.5182886961151 Number of zeros: 69
+ parameter: [-0.6346, -1.7968, 3.1829, -1.4355, 8.5039, 8.905, 1.6035] function value: 10.341467537396618 Number of zeros: 1
+ parameter: [3.5788, -1.0748, 6.1924, 9.0373, 2.1655, 1.3853, -3.4522] function value: 0.8172410931059796 Number of zeros: 0
+5486.43 secs, 5486 evals, 5277 steps, improv/step: 0.168 (last = 0.1000), fitness=0.270522038
+ parameter: [3.4729, 0.1912, 2.8798, 4.7471, 2.007, 5.1372, 0.8095] function value: 22.71444424019663 Number of zeros: 0
+ parameter: [4.3136, -0.0701, 5.8815, 5.9703, 1.4277, 8.6406, 3.6699] function value: 1.2398006589839845 Number of zeros: 0
+ parameter: [2.4326, -0.0064, 1.4015, 4.6881, 5.4248, 0.7812, -2.9364] function value: 3.320877480220274 Number of zeros: 0
+5516.75 secs, 5516 evals, 5307 steps, improv/step: 0.168 (last = 0.2333), fitness=0.270522038
+ parameter: [4.5916, 1.2479, 6.8082, -9.6536, -4.0428, -8.9326, -2.947] function value: 266.5165609173107 Number of zeros: 2
+parameter: [2.503, -0.187, 3.047, 3.836, -3.071, -4.823, -1.977] n_rep: 36 fitness: 0.2705220382586927
+ parameter: [3.1033, 0.1364, 4.9208, 8.5503, 4.5363, 5.7108, -0.8952] function value: 3.9953262264219407 Number of zeros: 0
+ parameter: [2.1261, 0.424, 3.0058, -2.6881, 1.2461, 7.621, 5.5907] function value: 0.8119588119714055 Number of zeros: 0
+5546.92 secs, 5546 evals, 5337 steps, improv/step: 0.168 (last = 0.1333), fitness=0.270522038
+ parameter: [3.8569, -0.0428, 5.9328, 4.7093, -6.4972, 3.9671, -4.8051] function value: 450.91893853320465 Number of zeros: 299
+ parameter: [2.1848, -1.6024, 1.9068, 5.812, -3.9163, -4.8139, 1.1788] function value: 1.1120413635210038 Number of zeros: 0
+ parameter: [1.745, 0.2768, 3.4703, 6.3357, -6.1891, -4.8434, -2.6756] function value: 58.1798767878347 Number of zeros: 0
+ parameter: [3.5206, -1.1651, 4.6315, 4.3177, 2.6365, 6.2258, -1.7391] function value: 155.1177653067917 Number of zeros: 0
+ parameter: [2.4482, -0.2619, 3.3296, 1.6621, 1.3191, 8.3156, 5.9601] function value: 0.7364094723859416 Number of zeros: 0
+ parameter: [4.4243, -0.9326, 4.3869, 2.3666, 2.5259, 6.864, 2.9936] function value: 1.1216902870148178 Number of zeros: 0
+5577.31 secs, 5576 evals, 5367 steps, improv/step: 0.168 (last = 0.0667), fitness=0.270522038
+ parameter: [2.903, -0.0703, 3.9362, 5.4415, -4.8941, -4.3217, -1.2995] function value: 1.2285107057160365 Number of zeros: 0
+ parameter: [4.6556, -1.9864, 4.9869, 4.4525, 4.9624, -0.6972, 1.6427] function value: 475.83778646425753 Number of zeros: 14
+ parameter: [2.903, -0.0703, 1.8533, 5.4415, -4.3597, -4.3217, 1.3155] function value: 3.0562320242931142 Number of zeros: 0
+ parameter: [4.1769, -1.4264, 1.613, -2.1987, -1.5413, -0.6221, 2.9876] function value: 3.301391562918072 Number of zeros: 0
+ parameter: [2.8147, 0.4501, 6.6174, -3.7783, -2.3198, 2.5537, 0.8596] function value: 3.442445619531466 Number of zeros: 0
+ parameter: [2.5032, -0.1873, 6.5501, 3.8361, -3.0708, -4.8226, -1.9772] function value: 113.79931595145106 Number of zeros: 1
+5607.40 secs, 5606 evals, 5397 steps, improv/step: 0.167 (last = 0.0667), fitness=0.270522038
+ parameter: [4.2752, 0.6623, 5.6405, 9.0091, 0.0284, -0.7826, -5.9583] function value: 6.8120426816868225 Number of zeros: 0
+ parameter: [2.8774, 0.0729, 2.9811, -3.4872, 2.8618, 6.7768, 1.5037] function value: 8.13855145634479 Number of zeros: 0
+ parameter: [3.7293, -0.6404, 4.9208, 7.1183, 4.5363, 7.2639, -0.8952] function value: 12.914515395106223 Number of zeros: 0
+parameter: [2.503, -0.187, 3.047, 3.836, -3.071, -4.823, -1.977] n_rep: 36 fitness: 0.2705220382586927
+ parameter: [4.411, -4.6808, 5.1029, -6.5575, -1.2, -3.183, -0.2777] function value: 3.6978628021231676 Number of zeros: 0
+5637.65 secs, 5636 evals, 5427 steps, improv/step: 0.167 (last = 0.1000), fitness=0.270522038
+ parameter: [3.2264, -1.1392, 3.2687, 8.4581, 5.6638, 3.4869, 2.1776] function value: 154.45194761206895 Number of zeros: 0
+ parameter: [2.5825, -0.8724, 1.7974, 3.4778, -6.1664, -2.6987, 4.4011] function value: 1.7666596842142412 Number of zeros: 0
+ parameter: [2.6651, -0.2354, 4.0298, 6.3856, -3.5779, -4.0271, -1.5334] function value: 0.5245042045161041 Number of zeros: 0
+5667.88 secs, 5666 evals, 5457 steps, improv/step: 0.166 (last = 0.1000), fitness=0.270522038
+ parameter: [1.4929, -1.5859, 4.9264, 7.2282, -5.5426, -0.9229, 4.0049] function value: 3.144525847856971 Number of zeros: 0
+ parameter: [2.6739, -2.0953, 3.9797, -0.8417, -1.3107, -4.0343, -1.9456] function value: 0.46313729197670533 Number of zeros: 0
+ parameter: [3.9021, 0.2614, 7.6445, 9.1018, -0.5233, 2.8396, -2.1752] function value: 1.431756542812746 Number of zeros: 0
+ parameter: [4.2753, -0.6739, 1.531, -3.8073, -3.7582, 2.3763, 3.6143] function value: 102.86440352270766 Number of zeros: 1
+ parameter: [2.0853, -0.6102, 2.114, 4.5139, 6.0556, 2.1911, 7.1652] function value: 450.91893853320465 Number of zeros: 298
+ parameter: [3.2412, -2.2273, 4.3251, -0.9722, -2.0614, -3.7271, -2.3504] function value: 6.71073733218398 Number of zeros: 0
+5698.30 secs, 5696 evals, 5487 steps, improv/step: 0.166 (last = 0.2000), fitness=0.270522038
+ parameter: [2.9491, 0.3208, 4.5487, 5.0385, -6.5701, -3.5178, -0.3805] function value: 2.540733665331296 Number of zeros: 0
+ parameter: [3.7825, -0.2608, 4.1333, 6.984, 3.421, 7.419, 1.1121] function value: 10.056079139710599 Number of zeros: 0
+ parameter: [3.3666, -1.3803, 1.2175, -6.1335, 6.5966, 1.1893, -2.2962] function value: 5.155798957240912 Number of zeros: 0
+ parameter: [1.9947, -0.4837, 1.1234, -2.1987, 1.3019, 5.7674, 1.7475] function value: 202.10000603200643 Number of zeros: 0
+ parameter: [3.3261, -3.9102, 5.5579, -9.2799, -2.5765, -5.6628, -3.0773] function value: 4.619338778292057 Number of zeros: 0
+5728.48 secs, 5726 evals, 5517 steps, improv/step: 0.166 (last = 0.1000), fitness=0.270522038
+ parameter: [3.4431, -0.9631, 5.3466, 2.1807, -0.4479, 5.7674, 2.5271] function value: 19.622628839199837 Number of zeros: 0
+parameter: [2.503, -0.187, 3.047, 3.836, -3.071, -4.823, -1.977] n_rep: 36 fitness: 0.2705220382586927
+ parameter: [3.212, -0.0057, 5.2693, 1.1917, 1.0525, 7.4035, 3.2052] function value: 1.1475742799773847 Number of zeros: 0
+ parameter: [3.2412, 2.0915, 4.3251, -0.9722, -2.0614, -4.8195, -1.2388] function value: 276.1849970346465 Number of zeros: 0
+5758.69 secs, 5756 evals, 5547 steps, improv/step: 0.166 (last = 0.1000), fitness=0.270522038
+ parameter: [4.2093, -0.2475, 7.2136, 4.3157, 3.7076, 9.8071, 1.1363] function value: 1.9093479766279122 Number of zeros: 0
+ parameter: [1.7339, 0.195, 4.1104, 7.0982, -3.4463, -4.519, -2.5664] function value: 1.3295410984227038 Number of zeros: 0
+ parameter: [3.6917, -2.181, 3.0472, 1.1741, -2.4164, 2.5997, 6.5485] function value: 0.37851286081127167 Number of zeros: 0
+5788.88 secs, 5786 evals, 5577 steps, improv/step: 0.166 (last = 0.1333), fitness=0.270522038
+ parameter: [3.5252, -0.6626, 5.9143, 7.4313, 6.4336, 6.4954, -8.2482] function value: 169.39405343145617 Number of zeros: 0
+ parameter: [2.0853, -0.0402, 2.114, 4.5139, 6.0556, 2.1911, 6.628] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [3.9472, -3.1425, 2.5018, 4.4682, 1.5738, 1.898, 3.9105] function value: 4.029895113089109 Number of zeros: 0
+ parameter: [4.2835, -1.9981, 8.9467, 2.145, 0.1143, 1.361, -5.5266] function value: 36.47763113250975 Number of zeros: 0
+ parameter: [3.782, -2.2454, 4.3213, 9.0985, 2.0463, 2.0805, -1.3311] function value: 17.278248380170794 Number of zeros: 0
+ parameter: [3.3293, -0.9532, 3.0185, -1.9269, 2.8124, 5.0774, 2.6403] function value: 0.8537004173478996 Number of zeros: 0
+5819.21 secs, 5816 evals, 5607 steps, improv/step: 0.165 (last = 0.1000), fitness=0.237367027
+ parameter: [2.1261, 0.4319, 3.0058, -2.6881, 1.0447, 7.72, 5.5907] function value: 0.42652551698749774 Number of zeros: 0
+ parameter: [2.5032, -0.1873, 3.0468, 3.8361, -3.0708, -4.8226, -2.0216] function value: 0.2560428718252335 Number of zeros: 0
+ parameter: [1.3808, -0.4214, 2.3796, 9.4272, -5.7101, -7.4645, -4.1813] function value: 94.02785572061983 Number of zeros: 0
+ parameter: [2.7023, -0.0424, 2.9957, -1.7314, 1.7835, 7.8084, 7.0207] function value: 15.544931462113388 Number of zeros: 0
+parameter: [3.412, -0.776, 3.756, -0.799, 1.091, 4.845, 2.951] n_rep: 36 fitness: 0.23736702748241673
+ parameter: [4.2624, -1.1895, 5.3845, 2.1787, -7.2386, 2.5343, 8.425] function value: 2.9074470419917993 Number of zeros: 0
+ parameter: [4.3855, 0.1027, 3.7237, 5.1307, 2.2504, 8.6215, 4.5585] function value: 1.3592252089202086 Number of zeros: 0
+5849.31 secs, 5846 evals, 5637 steps, improv/step: 0.165 (last = 0.1000), fitness=0.237367027
+ parameter: [3.0123, 0.3298, 3.3178, 3.8736, -0.213, -1.124, -2.2022] function value: 0.698120365741496 Number of zeros: 0
+ parameter: [4.0021, -0.9722, 4.4605, -1.8538, 0.0123, 8.5929, 7.1201] function value: 0.9913730501719153 Number of zeros: 0
+ parameter: [1.7018, -0.6446, 4.533, 6.2946, -3.1061, -4.0608, -5.9583] function value: 147.2581933431132 Number of zeros: 0
+ parameter: [3.703, -2.2296, 2.9165, 1.2941, -2.2997, 0.2221, 7.1353] function value: 54.45261239013958 Number of zeros: 0
+5879.49 secs, 5876 evals, 5667 steps, improv/step: 0.164 (last = 0.0667), fitness=0.237367027
+ parameter: [1.9573, -1.7656, 3.988, -1.3895, 1.9282, 5.2029, 1.7233] function value: 14.99530910136074 Number of zeros: 0
+ parameter: [3.8644, -0.9212, 2.7736, 2.3444, 2.536, 2.2998, -1.4052] function value: 17.59943961199478 Number of zeros: 0
+ parameter: [4.393, 0.3119, 5.3174, 6.3595, 0.363, 8.7926, 4.2507] function value: 2.9378546256889586 Number of zeros: 0
+5909.72 secs, 5906 evals, 5697 steps, improv/step: 0.164 (last = 0.0333), fitness=0.237367027
+ parameter: [2.9397, -0.3614, 3.0179, -0.1584, 3.6071, 1.1338, -2.4382] function value: 0.8411172243852398 Number of zeros: 0
+ parameter: [3.6784, -0.9616, 6.6502, 3.5235, -4.333, 5.7999, 6.3854] function value: 1.6630827571907738 Number of zeros: 0
+ parameter: [2.8801, -1.8496, 4.9261, 1.3815, -2.5111, -3.5782, -1.0755] function value: 1.8743277286220281 Number of zeros: 0
+parameter: [3.412, -0.776, 3.756, -0.799, 1.091, 4.845, 2.951] n_rep: 36 fitness: 0.23736702748241673
+5940.04 secs, 5936 evals, 5727 steps, improv/step: 0.163 (last = 0.1333), fitness=0.237367027
+ parameter: [3.3516, 0.641, 6.8856, 5.7777, 1.5742, 8.5901, 2.8169] function value: 9.949007006282033 Number of zeros: 0
+ parameter: [3.491, -1.1442, 4.7127, 7.9321, 2.8705, -0.4862, -3.8513] function value: 2.791867040724713 Number of zeros: 0
+ parameter: [3.5365, -0.7112, 5.7837, 7.5513, 6.5503, 1.7134, 9.0281] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [4.1199, -0.5353, 5.8771, 7.1022, 1.7741, 6.8211, -0.608] function value: 45.26079087868166 Number of zeros: 0
+ parameter: [2.9513, -2.1993, 3.7732, -1.6284, -1.3506, -4.0622, -1.7185] function value: 0.5723917966674908 Number of zeros: 0
+ parameter: [3.7898, -3.3762, 0.9467, -3.847, -8.7573, 3.9774, 0.0529] function value: 450.91893853320465 Number of zeros: 300
+5970.46 secs, 5966 evals, 5757 steps, improv/step: 0.163 (last = 0.1000), fitness=0.237367027
+ parameter: [1.9303, 0.1476, 5.6103, -3.6354, 2.1144, -4.0316, -9.5882] function value: 1.679026277416062 Number of zeros: 0
+ parameter: [2.7744, -0.0402, 3.3937, 2.9708, 6.2536, 2.747, -4.6242] function value: 1.4076128279744435 Number of zeros: 0
+ parameter: [0.7012, -1.3178, 4.1268, 8.6351, -3.934, -5.3717, -1.4827] function value: 3.157746346989448 Number of zeros: 0
+ parameter: [4.2893, -1.1996, 3.4258, -0.2865, 1.5771, 2.5691, 1.0526] function value: 1.0365387810004185 Number of zeros: 0
+6000.58 secs, 5996 evals, 5787 steps, improv/step: 0.163 (last = 0.1000), fitness=0.237367027
+ parameter: [2.9273, -0.204, 2.8386, -6.8177, -3.676, 3.159, 5.8362] function value: 2.674313972597407 Number of zeros: 0
+ parameter: [3.65, -1.1763, 6.4979, -4.3833, -3.7096, 6.2258, 6.7696] function value: 2.345626883440456 Number of zeros: 0
+ parameter: [3.6292, 1.4961, 7.9374, -4.7919, -3.0384, -3.7556, -7.9634] function value: 2.371843790777634 Number of zeros: 0
+6030.81 secs, 6026 evals, 5817 steps, improv/step: 0.162 (last = 0.1000), fitness=0.237367027
+ parameter: [2.8421, -0.0963, 5.6351, 8.0889, -5.4836, -3.4966, -0.9646] function value: 1.1043114947819765 Number of zeros: 0
+parameter: [3.076, -0.21, 3.742, -2.072, 0.739, 6.552, 4.657] n_rep: 36 fitness: 0.2095400653525104
+ parameter: [4.5694, -0.8339, 5.6102, -1.933, 2.4755, 5.642, 0.154] function value: 1.6780552632385057 Number of zeros: 0
+ parameter: [2.6172, -2.4136, 3.112, 8.9244, 9.0747, 3.6511, -2.4936] function value: 5.24965224600114 Number of zeros: 0
+ parameter: [3.3261, 0.8017, 5.5784, 6.7443, 4.9199, 0.836, -6.743] function value: 12.926033379118051 Number of zeros: 0
+ parameter: [3.3261, 0.8017, 3.866, -9.2799, -4.6986, -1.9447, 0.5294] function value: 3.119466067921085 Number of zeros: 0
+6061.12 secs, 6056 evals, 5847 steps, improv/step: 0.162 (last = 0.1333), fitness=0.209540065
+ parameter: [4.3866, -0.4748, 5.792, 7.2427, 0.5192, 8.8219, 4.5186] function value: 2.4854970267883214 Number of zeros: 0
+ parameter: [4.4486, -1.1531, 9.8654, 7.4948, -3.5893, -4.8009, -9.0854] function value: 16.009851249384027 Number of zeros: 0
+ parameter: [2.2492, 0.8709, 2.9658, -5.1566, 2.1362, 8.634, 8.8775] function value: 102.4397854415699 Number of zeros: 0
+ parameter: [1.447, 0.826, 2.7712, -0.0682, -1.4702, 8.7, 6.3905] function value: 61.195989264160595 Number of zeros: 0
+ parameter: [2.8177, -1.8472, 5.1031, 7.674, -1.9092, 6.5605, 6.3643] function value: 7.079900997245522 Number of zeros: 0
+ parameter: [0.929, 2.0447, 2.6521, 9.1967, -3.8058, -6.8327, 3.1933] function value: 461.05061065890436 Number of zeros: 276
+6091.43 secs, 6086 evals, 5877 steps, improv/step: 0.162 (last = 0.1000), fitness=0.209540065
+ parameter: [3.3402, -0.1634, 3.5791, -0.9237, 0.2022, 7.2117, 5.5561] function value: 1.1651850271536146 Number of zeros: 0
+ parameter: [5.2836, -3.3356, 8.0519, 1.77, 5.2054, 8.701, 2.4137] function value: 7.505900696632969 Number of zeros: 0
+ parameter: [3.1821, -1.1849, 3.4353, -0.0161, 0.4633, 5.875, 5.3924] function value: 0.15916946969387535 Number of zeros: 0
+ parameter: [2.3568, 0.0974, 4.1914, 9.5834, 0.905, 9.1308, 5.5561] function value: 2.31881298914867 Number of zeros: 0
+6122.29 secs, 6117 evals, 5908 steps, improv/step: 0.162 (last = 0.0968), fitness=0.040802179
+ parameter: [3.6936, -2.1892, 2.2227, 1.1944, -2.3967, 2.6766, 6.6477] function value: 3.7418036491989235 Number of zeros: 0
+ parameter: [1.722, -0.7316, 4.2987, 6.5098, 6.5503, -3.2451, -1.0851] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [3.3516, -0.6313, 4.8932, 7.6572, 1.6706, 6.6196, 3.1022] function value: 0.5939538787620966 Number of zeros: 0
+ parameter: [4.1916, 1.4961, 5.4114, -4.7919, -3.0384, -1.0546, -7.9634] function value: 181.00481989824183 Number of zeros: 0
+parameter: [2.774, -1.231, 3.142, 0.536, -2.02, -4.558, -1.843] n_rep: 36 fitness: 0.04080217887517063
+ parameter: [2.0484, -0.5314, 2.3986, 4.7239, -3.8834, -4.3331, 0.766] function value: 2.378775147626915 Number of zeros: 0
+ parameter: [4.2035, -0.0723, 4.4904, 5.6755, 1.1866, 9.0771, 4.1637] function value: 14.317236788622479 Number of zeros: 0
+6152.52 secs, 6147 evals, 5938 steps, improv/step: 0.162 (last = 0.1333), fitness=0.040802179
+ parameter: [3.5561, -0.1866, 5.6787, 9.4779, 6.4171, 9.4198, -0.3273] function value: 0.8835803932786068 Number of zeros: 0
+ parameter: [3.7038, -0.611, 5.9494, 7.8512, -0.6826, 6.9278, -0.1179] function value: 166.01880988163518 Number of zeros: 0
+ parameter: [2.6514, 0.6445, 2.3595, -5.6646, -2.2609, 7.8084, 8.9455] function value: 2.8679750346805686 Number of zeros: 0
+6182.53 secs, 6177 evals, 5968 steps, improv/step: 0.162 (last = 0.2333), fitness=0.040802179
+ parameter: [3.5324, -1.034, 6.8392, 3.9815, 4.7517, 0.196, -5.8669] function value: 23.495189706902227 Number of zeros: 0
+ parameter: [3.7777, -1.515, 6.5656, 9.7888, 6.5807, -5.8694, -7.8253] function value: 453.11033141873156 Number of zeros: 4
+ parameter: [1.5329, 0.4432, 3.112, -4.2486, 9.0747, 3.9034, -6.6817] function value: 3.9766315570360558 Number of zeros: 0
+6212.68 secs, 6207 evals, 5998 steps, improv/step: 0.162 (last = 0.1333), fitness=0.040802179
+ parameter: [2.9086, -0.7356, 4.7156, -0.963, -0.9949, 0.9874, 5.2265] function value: 226.14955914595993 Number of zeros: 1
+ parameter: [3.4345, -0.8847, 4.9441, 2.2168, -2.0831, -4.8881, -3.9733] function value: 1.1013966982589432 Number of zeros: 0
+ parameter: [2.7914, -1.2452, 3.5669, 1.8969, -1.3689, -3.0587, -1.4062] function value: 0.3433742054413355 Number of zeros: 0
+parameter: [2.774, -1.231, 3.142, 0.536, -2.02, -4.558, -1.843] n_rep: 36 fitness: 0.04080217887517063
+ parameter: [4.3764, -0.5886, 7.3949, -6.688, -1.0194, 1.6074, -1.6437] function value: 2.0664264321658483 Number of zeros: 0
+6243.60 secs, 6238 evals, 6029 steps, improv/step: 0.162 (last = 0.1613), fitness=0.040802179
+ parameter: [2.8485, -0.9532, 2.4248, 4.0239, 2.8124, 5.7, 2.6403] function value: 8.382212361457487 Number of zeros: 0
+ parameter: [3.2599, -1.7216, 2.9424, 0.2128, 0.8913, 3.7975, 4.0833] function value: 0.13419329531353577 Number of zeros: 0
+ parameter: [2.5507, 0.6166, 4.0034, 2.0178, 3.6232, 7.401, 1.3015] function value: 0.7952259903435013 Number of zeros: 0
+ parameter: [2.7418, -0.2128, 5.1245, 5.6631, 3.0812, 8.9241, 2.9169] function value: 0.9987169120386821 Number of zeros: 0
+ parameter: [4.0977, -1.3028, 5.2536, 6.5812, 3.2569, 5.0787, 0.1668] function value: 1.1990658018430236 Number of zeros: 0
+6274.43 secs, 6269 evals, 6060 steps, improv/step: 0.162 (last = 0.2258), fitness=0.040802179
+ parameter: [2.1946, -0.5644, 2.8677, 2.4895, -2.0469, -4.9159, -2.4906] function value: 0.3598587907201521 Number of zeros: 0
+ parameter: [2.0105, 0.0978, 3.5303, -2.1072, 2.784, 4.4694, 0.7081] function value: 0.5814214008926308 Number of zeros: 0
+ parameter: [3.4985, -2.5209, 3.7616, -1.8961, -0.2197, -2.1186, 1.1922] function value: 24.46043519744067 Number of zeros: 0
+6304.81 secs, 6299 evals, 6090 steps, improv/step: 0.162 (last = 0.2333), fitness=0.040802179
+ parameter: [3.5905, 0.8548, 5.2284, 8.768, 4.4521, 8.434, 0.0807] function value: 0.9984908640984828 Number of zeros: 0
+ parameter: [4.0146, -0.5085, 6.7708, 7.6185, 2.8231, 8.4795, 1.7571] function value: 1.263326367751348 Number of zeros: 0
+ parameter: [3.1295, -1.9327, 2.325, -2.871, -0.6631, 4.8119, 7.574] function value: 0.3341976216108602 Number of zeros: 0
+ parameter: [3.9167, -2.2985, 3.4692, 2.687, 5.0766, 5.6753, 1.7852] function value: 1.1598313665121311 Number of zeros: 0
+ parameter: [3.9263, -2.0636, 7.4224, 5.9367, 2.9137, 6.5818, 2.8035] function value: 36.313192880055276 Number of zeros: 0
+ parameter: [2.5032, -0.1873, 3.401, 3.8361, -7.8674, -8.7816, -5.5955] function value: 69.97185151509308 Number of zeros: 0
+6335.08 secs, 6329 evals, 6120 steps, improv/step: 0.162 (last = 0.0667), fitness=0.040802179
+parameter: [2.774, -1.231, 3.142, 0.536, -2.02, -4.558, -1.843] n_rep: 36 fitness: 0.04080217887517063
+ parameter: [3.8232, -3.5964, 4.0657, -2.0761, -6.1359, 4.8527, 5.8305] function value: 261.44201020542357 Number of zeros: 0
+ parameter: [3.7241, -2.3208, 2.6709, 5.7612, -2.0805, 2.3778, 8.238] function value: 20.702492927132713 Number of zeros: 0
+ parameter: [4.3464, -2.137, 8.5205, 6.3423, -0.9548, 1.0492, -1.8284] function value: 1.7842118746831546 Number of zeros: 0
+ parameter: [4.4099, -2.3164, 1.6405, 3.6026, 2.8661, 4.569, 4.3886] function value: 3.2833483299402766 Number of zeros: 0
+ parameter: [3.044, -2.1272, 4.5487, 2.9862, -4.2707, -3.9458, -1.1959] function value: 14.314865508423528 Number of zeros: 0
+ parameter: [3.6742, -1.9669, 2.2108, 0.5509, 1.0785, 3.5814, 4.3126] function value: 1.1451835021350658 Number of zeros: 0
+6365.19 secs, 6359 evals, 6150 steps, improv/step: 0.161 (last = 0.0667), fitness=0.040802179
+ parameter: [3.4091, -1.4883, 3.8035, 4.3006, -4.8576, -7.0143, -2.6201] function value: 2.270466648315549 Number of zeros: 0
+ parameter: [1.7607, 0.539, 4.0458, -1.1766, -0.8228, 5.6189, 0.0569] function value: 197.93445094372356 Number of zeros: 0
+ parameter: [3.7866, -2.4328, 3.5236, 1.2014, 3.8136, 3.6012, 1.1171] function value: 0.8314289776100537 Number of zeros: 0
+ parameter: [2.9161, 0.4097, 5.1588, 4.4521, 1.2024, 4.1721, -0.4569] function value: 1.327461157842667 Number of zeros: 0
+ parameter: [4.0977, -1.3028, 5.2536, 6.5812, 3.2569, 5.0787, 3.1018] function value: 66.56313968644292 Number of zeros: 0
+ parameter: [3.5514, -1.3256, 3.9007, -0.7376, 0.8392, 7.4983, 5.827] function value: 1.7435926520624445 Number of zeros: 0
+6395.33 secs, 6389 evals, 6180 steps, improv/step: 0.161 (last = 0.1000), fitness=0.040802179
+ parameter: [3.4637, -0.4465, 4.7939, 2.3198, 0.4507, 6.4825, 4.0003] function value: 0.7646209796905628 Number of zeros: 0
+ parameter: [2.815, -0.2417, 4.2202, 1.717, 1.1112, 7.4834, 4.8289] function value: 0.7463716874928488 Number of zeros: 0
+ parameter: [3.3945, -0.5039, 5.086, 8.9917, 2.3002, 7.01, 2.435] function value: 0.4066894310325 Number of zeros: 0
+ parameter: [2.5495, 0.6446, 2.0315, 1.2006, -1.3771, -2.3717, 1.139] function value: 55.78026905794396 Number of zeros: 0
+ parameter: [4.9297, -0.951, 5.923, 3.0835, 6.8609, -0.1835, 2.6645] function value: 450.91893853320465 Number of zeros: 297
+6425.48 secs, 6419 evals, 6210 steps, improv/step: 0.162 (last = 0.2333), fitness=-0.139464628
+ parameter: [3.076, -0.2103, 3.2153, -2.0716, -0.0676, 9.8271, 7.6782] function value: 16.16044682409277 Number of zeros: 0
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [1.9001, -0.6962, 6.3512, 1.1659, 7.2586, 6.6401, -3.9367] function value: 2.6824240411002673 Number of zeros: 0
+ parameter: [4.5317, -0.095, 6.3165, -1.2291, 1.6639, -1.0562, 2.4352] function value: 528.1658391494798 Number of zeros: 153
+6455.63 secs, 6449 evals, 6240 steps, improv/step: 0.162 (last = 0.2000), fitness=-0.139464628
+ parameter: [2.1706, -0.757, 5.002, 1.7878, 9.1235, 3.7871, -7.263] function value: 2.616857159217032 Number of zeros: 0
+ parameter: [2.8941, 0.5652, 6.1993, 0.0721, -2.0728, 2.3163, 0.014] function value: 1.6328733465971426 Number of zeros: 0
+ parameter: [2.526, -0.0195, 1.7336, 2.2717, -2.3775, -5.4882, -2.2457] function value: 1.4073957246888031 Number of zeros: 0
+6485.69 secs, 6479 evals, 6270 steps, improv/step: 0.161 (last = 0.0000), fitness=-0.139464628
+ parameter: [1.0103, -0.1704, 0.8712, -9.5526, 1.2, 5.7516, 6.627] function value: 4.458996640218426 Number of zeros: 0
+ parameter: [3.6564, -0.3968, 3.8951, 2.7767, 2.7165, 3.9528, 0.9058] function value: 4.662285945974825 Number of zeros: 0
+ parameter: [3.4053, -0.6909, 5.1855, 7.6021, 3.114, 1.686, 6.6668] function value: 450.91893853320465 Number of zeros: 299
+6515.93 secs, 6509 evals, 6300 steps, improv/step: 0.160 (last = 0.0667), fitness=-0.139464628
+ parameter: [2.7987, 0.5296, 4.0246, 4.2523, -0.1803, 7.4201, 5.5018] function value: 0.38975683207616235 Number of zeros: 0
+ parameter: [4.0083, -1.1972, 2.8008, 2.6001, 1.8062, 5.7854, 4.3563] function value: 1.4989245383524061 Number of zeros: 0
+ parameter: [4.1196, -2.0546, 3.6181, 1.4663, 0.5601, 7.4279, 3.6507] function value: 132.87324152453405 Number of zeros: 0
+ parameter: [3.8398, 2.6977, 6.8462, 7.2859, 6.8438, 7.8756, 3.1821] function value: 462.0966697482675 Number of zeros: 274
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [1.8988, -2.6521, 5.3466, -2.1987, 0.9723, 5.7674, 1.7475] function value: 62.836655103640375 Number of zeros: 0
+ parameter: [3.7997, -0.2654, 8.1827, 8.2661, -3.6583, -3.1282, -0.1481] function value: 178.3693709071547 Number of zeros: 1
+6546.32 secs, 6539 evals, 6330 steps, improv/step: 0.160 (last = 0.1333), fitness=-0.139464628
+ parameter: [3.0006, -2.0202, 1.9527, -2.6474, -0.9427, -4.5633, -1.8091] function value: 4.597035927629533 Number of zeros: 0
+ parameter: [2.6172, -2.4136, 3.112, 8.9244, -4.3004, 4.7694, -2.4936] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [3.4372, -0.7627, 4.0096, 1.2807, 4.7369, 2.3508, -6.0076] function value: 22.318568363676818 Number of zeros: 0
+ parameter: [2.6831, 0.0817, 3.1959, 4.8488, -3.7682, -4.7539, -1.6846] function value: 0.3614739229521952 Number of zeros: 0
+ parameter: [3.3444, -2.5705, 4.403, 0.0489, -1.356, -2.6311, -0.8118] function value: 1.1084050183134844 Number of zeros: 0
+6576.55 secs, 6569 evals, 6360 steps, improv/step: 0.160 (last = 0.0333), fitness=-0.139464628
+ parameter: [3.4247, -1.2675, 3.4977, 2.3035, -0.5086, 7.2435, 2.655] function value: 276.9351201326826 Number of zeros: 0
+ parameter: [4.4584, -0.6493, 4.5716, 7.1693, 4.0648, 5.638, 0.9298] function value: 7.564035103481638 Number of zeros: 0
+ parameter: [2.4741, -2.0684, 2.812, -2.5223, -0.2597, -4.6527, -2.4472] function value: 0.378494785770061 Number of zeros: 0
+6606.80 secs, 6599 evals, 6390 steps, improv/step: 0.160 (last = 0.2000), fitness=-0.139464628
+ parameter: [2.4974, 0.1433, 4.8104, 8.089, 7.1256, 6.0111, -3.8674] function value: 0.864859495171649 Number of zeros: 0
+ parameter: [3.0793, -1.6084, 5.5331, 0.7522, 5.617, 6.8758, -1.9332] function value: 6.661052901645486 Number of zeros: 0
+ parameter: [3.5894, -1.3066, 5.9553, 6.9066, -2.444, 6.3969, -1.9156] function value: 500.44003102985045 Number of zeros: 205
+ parameter: [1.2316, 0.1089, 2.7338, 4.9948, -0.1633, 5.9652, 5.7036] function value: 0.9182124471697619 Number of zeros: 0
+ parameter: [2.9345, -0.9504, 4.9973, 6.2012, 7.2015, -2.0503, 4.444] function value: 450.91893853320465 Number of zeros: 300
+6637.12 secs, 6629 evals, 6420 steps, improv/step: 0.159 (last = 0.0000), fitness=-0.139464628
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [2.3867, -1.6356, 1.6722, -0.0767, 2.0598, -3.9006, -3.5156] function value: 0.15140963702641008 Number of zeros: 0
+ parameter: [2.4102, -0.226, 3.6475, 2.0982, -1.7703, -0.426, 0.4837] function value: 0.5981669961258755 Number of zeros: 0
+ parameter: [2.3715, 1.1366, 2.6358, -8.6106, -0.7559, 9.4646, 8.7215] function value: 2.6324006995374067 Number of zeros: 0
+ parameter: [3.2599, -1.7216, 2.9424, 0.2128, 0.8913, 3.7975, -1.5096] function value: 343.01151666874387 Number of zeros: 0
+ parameter: [3.9539, 0.0396, 8.9288, 9.8947, -1.2453, -6.2902, -2.6569] function value: 551.6068600507707 Number of zeros: 83
+ parameter: [2.1991, -1.2313, 4.9301, 0.5356, -5.3438, -4.5581, -1.7472] function value: 4.858802616670291 Number of zeros: 0
+6667.18 secs, 6659 evals, 6450 steps, improv/step: 0.159 (last = 0.1667), fitness=-0.139464628
+ parameter: [3.6576, -1.3721, 4.14, 2.4568, 2.2166, 5.6672, 3.063] function value: 0.5917511710109751 Number of zeros: 0
+ parameter: [2.8996, -0.7565, 3.999, 5.2865, 4.1432, 4.92, -0.073] function value: 0.48170188071144443 Number of zeros: 0
+ parameter: [3.7642, 0.331, 7.4668, 2.4646, 7.6889, 1.26, -3.1328] function value: 520.2485173878575 Number of zeros: 43
+ parameter: [3.4053, -0.6909, 4.0194, 7.6021, 3.114, 1.686, -3.597] function value: 11.692379998914275 Number of zeros: 0
+ parameter: [3.8079, -2.1486, 3.7211, 9.8947, -7.9036, -6.2902, -2.6569] function value: 204.68621344395967 Number of zeros: 0
+6697.52 secs, 6689 evals, 6480 steps, improv/step: 0.159 (last = 0.1000), fitness=-0.139464628
+ parameter: [2.1802, -0.0853, 3.5792, 1.9297, 2.4409, 8.1233, 4.5165] function value: 0.619922617682649 Number of zeros: 0
+ parameter: [3.8136, -0.6494, 2.8702, 3.3358, -2.8119, -0.8936, 2.2483] function value: 1.1968977765211732 Number of zeros: 0
+ parameter: [3.9167, -0.6753, 4.2559, 1.5425, 2.8352, 7.0208, 2.8686] function value: 0.7469160978895167 Number of zeros: 0
+6727.82 secs, 6719 evals, 6510 steps, improv/step: 0.159 (last = 0.1667), fitness=-0.139464628
+ parameter: [2.3961, 1.1623, 4.1333, 6.8865, -4.2837, -4.3735, 1.5123] function value: 194.8578304271156 Number of zeros: 1
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [3.2664, -1.191, 5.6681, 8.1682, -0.697, 4.6654, 2.951] function value: 1.2124477754186422 Number of zeros: 0
+ parameter: [4.1244, -0.6602, 5.3161, 4.6474, -6.1435, -3.5037, -4.9813] function value: 207.78249147208336 Number of zeros: 0
+ parameter: [3.8817, -3.811, 4.1904, -2.6672, -6.6332, 5.2149, 3.4091] function value: 504.93530431845016 Number of zeros: 180
+ parameter: [3.5173, -0.6284, 6.0064, 7.3467, 6.3514, 0.938, -8.6615] function value: 1.3267766693944187 Number of zeros: 0
+6758.08 secs, 6749 evals, 6540 steps, improv/step: 0.159 (last = 0.1000), fitness=-0.139464628
+ parameter: [2.1079, 1.2699, 3.6132, 8.8256, -5.9855, -6.1373, -2.4058] function value: 0.9414101707619533 Number of zeros: 0
+ parameter: [4.3016, -1.2735, 5.6292, 8.2738, 1.3647, 5.4517, 2.1682] function value: 1.173419791602895 Number of zeros: 0
+ parameter: [4.5579, 0.0795, 7.1721, -3.1098, -2.2327, 1.2807, -1.1726] function value: 2.3591347245835563 Number of zeros: 0
+ parameter: [3.2988, -0.7415, 4.6358, 3.6778, 2.5259, 7.5777, 3.8037] function value: 1.6870901403999643 Number of zeros: 0
+ parameter: [4.0977, -0.7026, 3.535, 3.3002, 9.7875, -3.1044, -4.9327] function value: 448.23757839918125 Number of zeros: 3
+ parameter: [2.0844, -0.1528, 4.2109, 8.0692, -1.9197, -4.7304, -4.3049] function value: 0.5309388952761979 Number of zeros: 0
+6788.38 secs, 6779 evals, 6570 steps, improv/step: 0.158 (last = 0.1000), fitness=-0.139464628
+ parameter: [2.0532, -0.7008, 3.1411, 4.9975, -3.3195, -8.4723, -4.7962] function value: 0.8490796795228531 Number of zeros: 0
+ parameter: [2.7102, -1.3372, 2.554, 1.4532, -2.0254, -1.0841, 1.2246] function value: 6.74261434405595 Number of zeros: 0
+ parameter: [2.7899, -2.6237, 4.1891, 8.0727, 3.3189, 2.0462, -2.1724] function value: 25.538273622483143 Number of zeros: 0
+ parameter: [2.2506, -0.238, 5.2494, 7.0059, -5.053, -3.6561, -2.6479] function value: 17.66443789498775 Number of zeros: 0
+6818.76 secs, 6809 evals, 6600 steps, improv/step: 0.158 (last = 0.1000), fitness=-0.139464628
+ parameter: [3.2906, -0.1713, 5.8206, 4.1765, -1.6914, -7.2961, -8.2686] function value: 2.1753306242864334 Number of zeros: 0
+ parameter: [3.3855, -1.5187, 2.5632, -1.5891, 1.6935, -0.5584, 1.1226] function value: 22.525988966568743 Number of zeros: 0
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [2.8817, -1.6013, 4.1783, 5.4177, 2.2636, 7.9634, 4.2914] function value: 8.902760215732956 Number of zeros: 0
+6848.95 secs, 6839 evals, 6630 steps, improv/step: 0.158 (last = 0.1333), fitness=-0.139464628
+ parameter: [2.7223, -1.0, 3.9389, 3.8021, 1.7828, 3.1612, 0.6181] function value: 0.7319955358722499 Number of zeros: 0
+ parameter: [2.9569, -0.5581, 3.204, 2.0062, -2.7005, 2.3508, 6.4424] function value: 16.308012698737027 Number of zeros: 0
+ parameter: [4.0862, -0.951, 5.6135, 6.0574, -5.854, -3.3004, -0.8341] function value: 4.848129069476876 Number of zeros: 0
+ parameter: [4.1371, 1.285, 4.5665, 8.2661, -3.2455, -3.8782, -7.1477] function value: 83.58671838610843 Number of zeros: 0
+ parameter: [3.3293, -0.723, 3.0185, 6.5924, 2.8124, 5.0774, 2.6403] function value: 1.5207057624561326 Number of zeros: 0
+ parameter: [3.1789, -3.7061, -0.9595, 9.5622, -5.3445, 1.7963, 2.8647] function value: 450.91893853320465 Number of zeros: 300
+6879.41 secs, 6869 evals, 6660 steps, improv/step: 0.158 (last = 0.0667), fitness=-0.139464628
+ parameter: [2.3188, 0.0848, 4.0919, 9.32, 2.7328, 5.925, 1.4704] function value: 0.7257852182485666 Number of zeros: 0
+ parameter: [2.2262, -1.0068, 1.9527, -0.391, -0.8081, -3.7898, 0.4946] function value: 33.54547764353852 Number of zeros: 0
+ parameter: [2.9847, -1.7513, 1.5572, 3.6672, -0.9381, -0.4581, 3.4545] function value: 1.283853330483347 Number of zeros: 0
+6909.80 secs, 6899 evals, 6690 steps, improv/step: 0.158 (last = 0.2000), fitness=-0.139464628
+ parameter: [3.1938, -0.2049, 5.2941, 3.3936, 2.0786, 6.8748, 2.1237] function value: 1.2377809357357075 Number of zeros: 0
+ parameter: [1.6422, -0.1857, 4.1246, 9.6059, 2.1644, -3.1191, -6.7585] function value: 0.6568206886705763 Number of zeros: 0
+ parameter: [3.0634, -1.6013, 2.6739, 3.0009, 0.0171, 3.3721, 1.3998] function value: 103.60368714554325 Number of zeros: 0
+ parameter: [3.1297, -1.5965, 2.6539, -0.2844, -2.341, -6.6029, -2.8187] function value: 0.28879983935256887 Number of zeros: 0
+ parameter: [3.032, -1.4854, 2.1881, 0.2228, -2.6582, 4.3941, 5.5127] function value: 76.62966733026771 Number of zeros: 0
+6940.10 secs, 6929 evals, 6720 steps, improv/step: 0.158 (last = 0.1000), fitness=-0.139464628
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [2.626, -0.8898, 1.8499, 1.2144, -2.097, -4.789, -2.0586] function value: 7.492158868585268 Number of zeros: 0
+ parameter: [4.1244, -0.6602, 3.4543, 4.6474, -6.1435, -3.5037, 0.0304] function value: 18.222136907193544 Number of zeros: 0
+ parameter: [2.3715, -1.2113, 4.608, 7.9134, 3.239, 7.735, -0.2105] function value: 128.88731512559417 Number of zeros: 0
+ parameter: [2.1084, -0.6391, 2.3988, 0.4883, -0.8796, -3.5598, -1.7618] function value: 0.32919096680264737 Number of zeros: 0
+ parameter: [1.9406, 1.481, 4.4966, -0.0571, 2.212, 7.8957, 2.0468] function value: 1.6460433867743083 Number of zeros: 0
+6970.92 secs, 6960 evals, 6751 steps, improv/step: 0.157 (last = 0.1290), fitness=-0.139464628
+ parameter: [2.7766, -1.6207, 3.5849, -1.5891, -0.2709, -0.5584, 1.1226] function value: 5.926914330741559 Number of zeros: 0
+ parameter: [4.4885, 0.0671, 4.608, 4.9074, 0.4771, 7.735, 4.8622] function value: 0.8660110081296699 Number of zeros: 0
+ parameter: [3.4597, -0.5688, 5.3245, 7.423, 5.9558, 0.8988, -7.467] function value: 0.9882656608962335 Number of zeros: 0
+ parameter: [2.494, -1.7683, 3.8523, 0.1469, 3.798, 0.4896, -3.0497] function value: 1.1628161413776001 Number of zeros: 0
+ parameter: [2.0926, -0.3644, 2.6049, -2.1485, 2.0508, 4.5343, 2.7844] function value: 0.3664802042126654 Number of zeros: 0
+ parameter: [2.7155, -0.4863, 3.1811, 2.2153, -2.4113, -1.8781, 3.8732] function value: 115.19182962513689 Number of zeros: 0
+7001.23 secs, 6990 evals, 6781 steps, improv/step: 0.157 (last = 0.1667), fitness=-0.139464628
+ parameter: [2.5909, -1.2056, 4.4125, 3.4568, -1.8001, -2.6967, -1.4505] function value: 0.6147327937149661 Number of zeros: 0
+ parameter: [3.474, -1.1763, 6.4979, 8.3543, -3.7096, 6.2258, -6.6798] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [2.9876, 0.6383, 3.8668, 5.2072, -7.1704, -3.4231, 1.8577] function value: 1.836408004926211 Number of zeros: 0
+ parameter: [3.3513, -0.0394, 4.3834, 2.6486, -0.6788, 7.3631, 3.0817] function value: 76.48527624971469 Number of zeros: 0
+7031.58 secs, 7020 evals, 6811 steps, improv/step: 0.157 (last = 0.0667), fitness=-0.139464628
+ parameter: [2.5281, -1.6502, 2.179, -0.5921, -1.534, -7.5147, -2.3827] function value: 13.250576826903846 Number of zeros: 0
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [3.0634, -1.6013, 2.3766, 3.0009, 0.0171, 0.8748, 1.3998] function value: 11.101181353401403 Number of zeros: 0
+ parameter: [4.1244, -0.6602, 5.3161, 4.6474, 0.878, 4.2065, 0.0304] function value: 6.59860158834721 Number of zeros: 0
+7061.80 secs, 7050 evals, 6841 steps, improv/step: 0.157 (last = 0.1000), fitness=-0.139464628
+ parameter: [2.8179, -0.8562, 4.3149, 8.4914, 6.5856, 2.6141, -7.4077] function value: 20.381321460690106 Number of zeros: 0
+ parameter: [3.754, -1.8995, 3.741, -1.9667, 1.169, 4.6908, 4.0319] function value: 0.4431706852683506 Number of zeros: 0
+ parameter: [3.6223, -2.2392, 2.9629, 1.136, -1.8929, 2.5256, 6.107] function value: 0.3988038481536723 Number of zeros: 0
+7091.97 secs, 7080 evals, 6871 steps, improv/step: 0.156 (last = 0.0667), fitness=-0.139464628
+ parameter: [4.3043, -3.4871, 1.8055, -5.1912, -8.0861, 3.2331, 9.3631] function value: 100.84647038742605 Number of zeros: 0
+ parameter: [2.0926, -0.3644, 2.6049, -0.8323, 2.0508, 6.7955, 2.7844] function value: 22.491028918283625 Number of zeros: 0
+ parameter: [3.5049, -0.3907, 4.6768, 5.3227, 0.7388, 6.4641, 4.6567] function value: 5.204477196214446 Number of zeros: 0
+ parameter: [2.5032, -1.709, 3.0468, 3.8361, -3.0708, -4.8226, -2.0216] function value: 20.23961845678829 Number of zeros: 0
+ parameter: [2.7366, 0.212, 4.1333, 6.8865, -4.2837, -4.3735, -1.7903] function value: 0.5228460839411356 Number of zeros: 0
+ parameter: [1.7554, 0.2205, 2.0042, -4.8308, 0.7388, 4.7664, 4.5201] function value: 1.57332537640201 Number of zeros: 0
+ parameter: [3.4352, 0.6884, 8.4592, -2.2431, 4.3873, 2.1126, -9.0876] function value: 2.6107309101634932 Number of zeros: 0
+7122.94 secs, 7111 evals, 6902 steps, improv/step: 0.156 (last = 0.0645), fitness=-0.139464628
+ parameter: [3.6848, -2.1514, 7.0427, 1.1009, 6.5906, 2.3221, 6.1906] function value: 450.91893853320465 Number of zeros: 300
+ parameter: [2.6287, 0.2326, 3.504, 1.2758, -2.5446, 7.815, 8.7415] function value: 0.62774754218476 Number of zeros: 0
+ parameter: [2.7359, -0.2276, 4.5874, 7.8205, 6.0223, 6.0507, -2.1743] function value: 0.6197638582363308 Number of zeros: 0
+parameter: [3.032, -1.485, 2.73, 0.223, 0.026, 4.394, 5.513] n_rep: 36 fitness: -0.13946462785267094
+ parameter: [2.5592, -1.9095, 0.8951, 1.7247, 4.3281, -1.8288, -2.4995] function value: 0.8858229379394206 Number of zeros: 0
+ parameter: [3.6089, -1.7096, 4.3008, -4.9191, 1.3181, 7.0801, 5.2178] function value: 1.004892429146646 Number of zeros: 0
+ parameter: [3.6077, -1.2675, 2.4932, 2.3035, -0.5086, 1.1178, 2.655] function value: 0.8398773984568223 Number of zeros: 0
+7153.26 secs, 7141 evals, 6932 steps, improv/step: 0.156 (last = 0.0667), fitness=-0.139464628
+ parameter: [3.7827, -0.0685, 4.6849, 4.7668, -6.0731, -4.0384, -0.3794] function value: 1.2383030746143147 Number of zeros: 0
+ parameter: [3.1682, -0.2174, 5.6252, 9.902, 1.9897, 6.8894, 2.2336] function value: 1.6512773927500122 Number of zeros: 0
+ parameter: [3.0374, -2.3459, 1.6013, -5.5902, 0.3253, -5.0874, -2.1737] function value: 1.9961009194684793 Number of zeros: 0
+ parameter: [4.3866, -1.8401, 4.4984, 1.4733, 1.2162, 1.7654, 4.2507] function value: 119.87297476328557 Number of zeros: 0
+ parameter: [3.1729, -1.6815, 4.2301, -2.3265, 1.9121, 1.7283, -0.4435] function value: 0.9430239896952711 Number of zeros: 0
+7183.63 secs, 7171 evals, 6962 steps, improv/step: 0.155 (last = 0.0667), fitness=-0.139464628
+ parameter: [3.7799, 0.2726, 5.1058, 9.2142, 2.5536, 7.9329, -1.2589] function value: 97.02599871074709 Number of zeros: 0
+
+Optimization stopped after 6979 steps and 7200.95 seconds
+Termination reason: Max time (7200.0 s) reached
+Steps per second = 0.97
+Function evals per second = 1.00
+Improvements/step = Inf
+Total function evaluations = 7188
+
+
+Best candidate found: [3.03205, -1.4854, 2.72952, 0.222792, 0.0260461, 4.39413, 5.51272]
+
+Fitness: -0.139464628
+
+ parameter: [4.5731, -1.4854, 2.7295, 0.2228, 0.026, 4.3941, 5.5127] function value: 1.413358194171016 Number of zeros: 0
+ parameter: [3.032, -2.2031, 2.7295, 0.2228, 0.026, 4.3941, 5.5127] function value: 3.921232247978633 Number of zeros: 0
+ parameter: [3.1061, -1.5199, 2.7963, 0.2293, 0.0279, 5.9066, 5.5994] function value: 16.025313587977823 Number of zeros: 0
+ parameter: [3.1704, -1.5498, 3.3849, 0.235, 0.0295, 4.4998, 5.6014] function value: 2.8825648462257 Number of zeros: 0
+ parameter: [3.2421, -1.5705, 2.8253, 0.2414, 0.0312, 4.8925, 5.6325] function value: 1.0280263859375194 Number of zeros: 0
+ parameter: [3.2514, -1.5682, 2.8184, 0.2446, 0.0321, 4.7476, 5.6217] function value: 0.3973039404934872 Number of zeros: 0
+ parameter: [3.1675, -1.5658, 2.814, 0.2494, 0.0335, 4.6538, 5.6135] function value: 0.06880135348904277 Number of zeros: 0
+ parameter: [2.6916, -1.5469, 2.781, 0.2747, 0.0405, 4.4519, 5.3216] function value: 0.3996581556527215 Number of zeros: 0
+ parameter: [2.6759, -1.5717, 2.8119, 0.2669, 0.0383, 4.5015, 5.6077] function value: 0.018626909430907897 Number of zeros: 0
+ parameter: [2.8344, -1.5222, 2.6912, 0.2759, 0.0408, 4.2333, 5.5378] function value: 0.13625185928218106 Number of zeros: 0
+ parameter: [2.8636, -1.3999, 2.7109, 0.2708, 0.0394, 4.4429, 5.5695] function value: -0.006113252698913248 Number of zeros: 0
+ parameter: [3.1507, -1.5565, 2.8056, 0.2464, 0.0326, 4.4805, 5.7027] function value: -0.072625322809299 Number of zeros: 0
+ parameter: [3.1337, -1.5464, 2.7947, 0.243, 0.0317, 4.4681, 5.6756] function value: -0.0981495853041684 Number of zeros: 0
+ parameter: [2.7704, -1.5488, 2.79, 0.2552, 0.0351, 4.473, 5.5825] function value: -0.039070099818018594 Number of zeros: 0
+ parameter: [3.0191, -1.491, 2.7347, 0.3189, 0.0238, 4.4097, 5.5287] function value: -0.17012704620505018 Number of zeros: 0
+ parameter: [2.8269, -1.5376, 2.7791, 0.269, 0.0304, 4.4677, 5.58] function value: -0.12068482939000724 Number of zeros: 0
+ parameter: [2.8544, -1.5309, 2.7728, 0.2761, 0.0294, 4.4594, 5.5726] function value: -0.09722591846748216 Number of zeros: 0
+ parameter: [2.9302, -1.4953, 2.7326, 0.2894, 0.0243, 4.4077, 5.5547] function value: -0.07499904410514756 Number of zeros: 0
+ parameter: [2.8595, -1.4733, 2.709, 0.3053, 0.0223, 4.412, 5.4935] function value: -0.07605486127063271 Number of zeros: 0
+ parameter: [2.9418, -1.5003, 2.7369, 0.2971, 0.0248, 4.4099, 5.4946] function value: -0.058870019407408346 Number of zeros: 0
+ parameter: [2.8823, -1.4758, 2.7127, 0.3072, 0.0225, 4.4117, 5.4985] function value: -0.15457069742198618 Number of zeros: 0
+ parameter: [2.9358, -1.4931, 2.7227, 0.2939, 0.0293, 4.3882, 5.5027] function value: -0.0641869570180586 Number of zeros: 0
+ parameter: [3.0042, -1.492, 2.7345, 0.3177, 0.0239, 4.4095, 5.5306] function value: -0.08624708512007577 Number of zeros: 0
+ parameter: [2.9408, -1.4864, 2.7188, 0.3155, 0.0228, 4.3872, 5.5013] function value: 0.016316689188096572 Number of zeros: 0
+ parameter: [2.9194, -1.5027, 2.7398, 0.3024, 0.0253, 4.4155, 5.5314] function value: -0.14914992477056954 Number of zeros: 0
+ parameter: [2.9336, -1.4923, 2.7209, 0.2934, 0.03, 4.3853, 5.506] function value: -0.053921886316364465 Number of zeros: 0
+ parameter: [2.9376, -1.509, 2.7353, 0.3056, 0.0223, 4.4115, 5.5312] function value: -0.13489371925440458 Number of zeros: 0
+ parameter: [2.9419, -1.4952, 2.7383, 0.3122, 0.0208, 4.4169, 5.5384] function value: 0.0019847617492532456 Number of zeros: 0
+ parameter: [2.8861, -1.4983, 2.7338, 0.3044, 0.0233, 4.4081, 5.5236] function value: -0.08549684579995918 Number of zeros: 0
+ parameter: [2.8902, -1.4982, 2.7338, 0.3053, 0.0235, 4.4081, 5.5262] function value: -0.12326728166886666 Number of zeros: 0
+ parameter: [2.8936, -1.4982, 2.7337, 0.3061, 0.0237, 4.4081, 5.5285] function value: -0.09049688419287776 Number of zeros: 0
+ parameter: [2.8966, -1.4981, 2.7337, 0.3067, 0.0238, 4.4081, 5.5304] function value: -0.09530005360343781 Number of zeros: 0
+ parameter: [2.9256, -1.4964, 2.735, 0.31, 0.023, 4.4109, 5.5379] function value: -0.1136928085971786 Number of zeros: 0
+ parameter: [2.9038, -1.49, 2.7265, 0.3094, 0.0236, 4.4095, 5.5263] function value: -0.18431586981926038 Number of zeros: 0
+ parameter: [2.9275, -1.4919, 2.729, 0.3057, 0.0244, 4.4014, 5.5296] function value: -0.08970412794900941 Number of zeros: 0
+ parameter: [2.9043, -1.4979, 2.7362, 0.3116, 0.0224, 4.4127, 5.5368] function value: -0.15500109236940282 Number of zeros: 0
+ parameter: [2.906, -1.4976, 2.7359, 0.3114, 0.0225, 4.4123, 5.5366] function value: -0.15467428767987365 Number of zeros: 0
+ parameter: [2.9221, -1.4934, 2.731, 0.3073, 0.0239, 4.4045, 5.5317] function value: -0.1187866475140096 Number of zeros: 0
+ parameter: [2.9213, -1.4938, 2.7314, 0.3076, 0.0237, 4.4052, 5.5323] function value: -0.10620147803267278 Number of zeros: 0
+ parameter: [2.9098, -1.4968, 2.735, 0.3106, 0.0228, 4.4109, 5.5358] function value: -0.12479983039361209 Number of zeros: 0
+ parameter: [2.9188, -1.4945, 2.7324, 0.3084, 0.0235, 4.4068, 5.5334] function value: -0.14719202994088926 Number of zeros: 0
+ parameter: [2.9184, -1.4981, 2.7342, 0.3092, 0.0232, 4.4096, 5.5355] function value: -0.19501344465468562 Number of zeros: 0
+ parameter: [2.9153, -1.4958, 2.7341, 0.3084, 0.0231, 4.4095, 5.5359] function value: -0.17350906915832603 Number of zeros: 0
+ parameter: [2.9109, -1.4935, 2.7307, 0.3095, 0.0234, 4.4096, 5.5314] function value: -0.17583032596551465 Number of zeros: 0
+ parameter: [2.9124, -1.497, 2.7347, 0.3109, 0.0229, 4.4104, 5.5353] function value: -0.16593664870239644 Number of zeros: 0
+ parameter: [2.9173, -1.4964, 2.735, 0.3099, 0.0226, 4.4083, 5.5325] function value: -0.18500225929283165 Number of zeros: 0
+ parameter: [2.9185, -1.4976, 2.7347, 0.3096, 0.0238, 4.4086, 5.5372] function value: -0.17268856886865702 Number of zeros: 0
+ parameter: [2.9158, -1.4959, 2.7336, 0.3101, 0.0229, 4.4086, 5.5348] function value: -0.1872947963763869 Number of zeros: 0
+ parameter: [2.9194, -1.4976, 2.7356, 0.3095, 0.0234, 4.4082, 5.5346] function value: -0.19652668370064896 Number of zeros: 0
+ parameter: [2.917, -1.4962, 2.734, 0.3098, 0.0232, 4.4093, 5.5351] function value: -0.19495100689474631 Number of zeros: 0
+ parameter: [2.9191, -1.4976, 2.7354, 0.3098, 0.0233, 4.407, 5.5337] function value: -0.1948009477749128 Number of zeros: 0
+ parameter: [2.9177, -1.4959, 2.7352, 0.3101, 0.0232, 4.4073, 5.5338] function value: -0.19596472045302757 Number of zeros: 0
+ parameter: [2.9187, -1.4969, 2.7355, 0.31, 0.0233, 4.4067, 5.5334] function value: -0.196731058069373 Number of zeros: 0
+ parameter: [2.9184, -1.4966, 2.735, 0.31, 0.0235, 4.4072, 5.5344] function value: -0.19562157860248178 Number of zeros: 0
+ parameter: [2.9187, -1.4975, 2.7354, 0.3102, 0.0232, 4.4081, 5.5359] function value: -0.1947836695307844 Number of zeros: 0
+ parameter: [2.9171, -1.496, 2.7347, 0.3097, 0.0233, 4.4073, 5.5332] function value: -0.19593999117917318 Number of zeros: 0
+ parameter: [2.9184, -1.4966, 2.735, 0.31, 0.0234, 4.4071, 5.5343] function value: -0.19560710076376805 Number of zeros: 0
+ parameter: [2.9182, -1.4967, 2.7346, 0.3099, 0.0233, 4.4078, 5.534] function value: -0.1965239932458775 Number of zeros: 0
+ parameter: [2.9181, -1.4965, 2.7348, 0.31, 0.0234, 4.4073, 5.5338] function value: -0.19693007482696737 Number of zeros: 0
+ parameter: [2.9166, -1.4956, 2.7337, 0.3102, 0.0233, 4.4076, 5.5334] function value: -0.19708706363053402 Number of zeros: 0
+ parameter: [2.9173, -1.4959, 2.735, 0.31, 0.0233, 4.4069, 5.5333] function value: -0.1969936170174853 Number of zeros: 0
+ parameter: [2.9169, -1.4956, 2.7348, 0.3099, 0.0232, 4.4071, 5.5331] function value: -0.19624293783944138 Number of zeros: 0
+ parameter: [2.9167, -1.4956, 2.7347, 0.3097, 0.0233, 4.407, 5.5328] function value: -0.19791476223235083 Number of zeros: 0
+ parameter: [2.9166, -1.4958, 2.7345, 0.3096, 0.0233, 4.4071, 5.5327] function value: -0.19596794772680032 Number of zeros: 0
+ parameter: [2.9166, -1.4957, 2.7345, 0.3096, 0.0233, 4.4071, 5.5328] function value: -0.1959707056013597 Number of zeros: 0
+ parameter: [2.9168, -1.4957, 2.7346, 0.3098, 0.0233, 4.4072, 5.5331] function value: -0.19703372125749496 Number of zeros: 0
+ parameter: [2.9171, -1.496, 2.7347, 0.3097, 0.0233, 4.4073, 5.5332] function value: -0.19783076297729074 Number of zeros: 0
+ parameter: [2.9164, -1.4954, 2.7344, 0.3098, 0.0233, 4.4071, 5.5329] function value: -0.19718073060051516 Number of zeros: 0
+ parameter: [2.917, -1.496, 2.7346, 0.3097, 0.0233, 4.4073, 5.5332] function value: -0.19784360240654794 Number of zeros: 0
+ parameter: [2.9164, -1.4955, 2.7344, 0.3098, 0.0233, 4.4072, 5.5329] function value: -0.19796066243215574 Number of zeros: 0
+ parameter: [2.9167, -1.4957, 2.7346, 0.3097, 0.0233, 4.4073, 5.5331] function value: -0.1979216004891429 Number of zeros: 0
+ parameter: [2.9169, -1.4957, 2.7348, 0.3097, 0.0233, 4.407, 5.533] function value: -0.19800865577587617 Number of zeros: 0
+ parameter: [2.9166, -1.4956, 2.7345, 0.3097, 0.0233, 4.4072, 5.533] function value: -0.19792376318957428 Number of zeros: 0
+ parameter: [2.9161, -1.4952, 2.7344, 0.3096, 0.0233, 4.4071, 5.5327] function value: -0.1981349825763283 Number of zeros: 0
+ parameter: [2.9158, -1.4949, 2.7344, 0.3098, 0.0233, 4.4068, 5.5326] function value: -0.1982295588557073 Number of zeros: 0
+ parameter: [2.9152, -1.4944, 2.7341, 0.3098, 0.0234, 4.4066, 5.5322] function value: -0.19833034594713286 Number of zeros: 0
+ parameter: [2.9144, -1.4938, 2.7339, 0.3098, 0.0234, 4.4065, 5.5318] function value: -0.19844114603739868 Number of zeros: 0
+ parameter: [2.9143, -1.4937, 2.7338, 0.3098, 0.0234, 4.4066, 5.5319] function value: -0.1978004138133944 Number of zeros: 0
+ parameter: [2.9151, -1.4943, 2.7342, 0.3097, 0.0234, 4.4066, 5.5322] function value: -0.19836879281730785 Number of zeros: 0
+ parameter: [2.9141, -1.4935, 2.7338, 0.3098, 0.0234, 4.4066, 5.5318] function value: -0.19850012871297767 Number of zeros: 0
+ parameter: [2.914, -1.4934, 2.7338, 0.3098, 0.0234, 4.4066, 5.5318] function value: -0.1985201763443486 Number of zeros: 0
+ parameter: [2.9133, -1.4929, 2.7335, 0.3098, 0.0234, 4.4065, 5.5315] function value: -0.1986435854754869 Number of zeros: 0
+ parameter: [2.9137, -1.4931, 2.7338, 0.3099, 0.0234, 4.4062, 5.5314] function value: -0.19859110406152286 Number of zeros: 0
+ parameter: [2.9137, -1.4932, 2.7338, 0.3098, 0.0234, 4.4063, 5.5315] function value: -0.1985759459877327 Number of zeros: 0
+ parameter: [2.913, -1.4925, 2.7336, 0.3098, 0.0234, 4.4062, 5.5312] function value: -0.1987267877097942 Number of zeros: 0
+ parameter: [2.9127, -1.4922, 2.7336, 0.3099, 0.0234, 4.4058, 5.5307] function value: -0.19879709326103737 Number of zeros: 0
+ parameter: [2.9125, -1.4922, 2.7334, 0.3099, 0.0234, 4.406, 5.5308] function value: -0.1984716535305235 Number of zeros: 0
+ parameter: [2.9128, -1.4924, 2.7335, 0.3099, 0.0234, 4.4061, 5.5311] function value: -0.19875273681793365 Number of zeros: 0
+ parameter: [2.9115, -1.4913, 2.7333, 0.31, 0.0234, 4.4056, 5.5303] function value: -0.1990145670751658 Number of zeros: 0
+ parameter: [2.9119, -1.4916, 2.7334, 0.31, 0.0234, 4.4057, 5.5304] function value: -0.198937306914384 Number of zeros: 0
+ parameter: [2.9115, -1.4913, 2.7333, 0.31, 0.0234, 4.4056, 5.5302] function value: -0.1990064118944339 Number of zeros: 0
+ parameter: [2.9113, -1.491, 2.7333, 0.3101, 0.0234, 4.4054, 5.53] function value: -0.19907127591720958 Number of zeros: 0
+ parameter: [2.911, -1.4908, 2.7332, 0.3101, 0.0234, 4.4054, 5.5299] function value: -0.19910262659591155 Number of zeros: 0
+ parameter: [2.9106, -1.4904, 2.7332, 0.3101, 0.0234, 4.4053, 5.5298] function value: -0.1991844730784949 Number of zeros: 0
+ parameter: [2.9103, -1.4902, 2.7329, 0.3101, 0.0234, 4.4055, 5.5297] function value: -0.19922577113547796 Number of zeros: 0
+ parameter: [2.9102, -1.4902, 2.7329, 0.3101, 0.0234, 4.4055, 5.5297] function value: -0.19923890732279423 Number of zeros: 0
+ parameter: [2.9099, -1.4898, 2.733, 0.3101, 0.0234, 4.4053, 5.5296] function value: -0.1993148766049429 Number of zeros: 0
+ parameter: [2.9098, -1.4898, 2.7328, 0.3102, 0.0234, 4.4053, 5.5294] function value: -0.19930879679755498 Number of zeros: 0
+ parameter: [2.9094, -1.4893, 2.7328, 0.3102, 0.0234, 4.4052, 5.5293] function value: -0.1994032093836801 Number of zeros: 0
+ parameter: [2.9093, -1.4893, 2.7328, 0.3102, 0.0234, 4.4052, 5.5292] function value: -0.19941142910217213 Number of zeros: 0
+ parameter: [2.9085, -1.4886, 2.7324, 0.3103, 0.0234, 4.4054, 5.5291] function value: -0.19954397882196298 Number of zeros: 0
+ parameter: [2.908, -1.4879, 2.7326, 0.3103, 0.0234, 4.405, 5.5287] function value: -0.19885588451843178 Number of zeros: 0
+ parameter: [2.9077, -1.4879, 2.7322, 0.3103, 0.0234, 4.4053, 5.5288] function value: -0.1988818152724032 Number of zeros: 0
+ parameter: [2.9075, -1.4876, 2.7322, 0.3104, 0.0234, 4.4053, 5.5286] function value: -0.19892161695114957 Number of zeros: 0
+ parameter: [2.9076, -1.4878, 2.7322, 0.3103, 0.0234, 4.4053, 5.5287] function value: -0.19969896752819252 Number of zeros: 0
+ parameter: [2.9073, -1.4875, 2.7322, 0.3103, 0.0234, 4.4052, 5.5287] function value: -0.1997480228311746 Number of zeros: 0
+ parameter: [2.9072, -1.4874, 2.7322, 0.3103, 0.0234, 4.4053, 5.5286] function value: -0.19976064583090392 Number of zeros: 0
+ parameter: [2.9072, -1.4874, 2.7321, 0.3103, 0.0234, 4.4054, 5.5288] function value: -0.19977027248073506 Number of zeros: 0
+ parameter: [2.9071, -1.4874, 2.7321, 0.3103, 0.0234, 4.4055, 5.5288] function value: -0.199780282613445 Number of zeros: 0
+ parameter: [2.9069, -1.4871, 2.7321, 0.3104, 0.0234, 4.4053, 5.5286] function value: -0.19981910931380942 Number of zeros: 0
+ parameter: [2.9069, -1.4871, 2.7321, 0.3103, 0.0234, 4.4054, 5.5287] function value: -0.199829034364077 Number of zeros: 0
+ parameter: [2.9067, -1.4869, 2.7322, 0.3103, 0.0234, 4.4053, 5.5287] function value: -0.1998685816163334 Number of zeros: 0
+ parameter: [2.9066, -1.4868, 2.7322, 0.3103, 0.0234, 4.4053, 5.5287] function value: -0.19908739021338986 Number of zeros: 0
+ parameter: [2.9063, -1.4865, 2.7321, 0.3103, 0.0234, 4.4053, 5.5287] function value: -0.1999327106088232 Number of zeros: 0
+ parameter: [2.9062, -1.4865, 2.7321, 0.3103, 0.0234, 4.4053, 5.5286] function value: -0.19994568300275528 Number of zeros: 0
+ parameter: [2.9061, -1.4863, 2.7321, 0.3103, 0.0234, 4.4053, 5.5287] function value: -0.1999693289459335 Number of zeros: 0
+ parameter: [2.9056, -1.4859, 2.7321, 0.3102, 0.0234, 4.4054, 5.5289] function value: -0.20005520628909884 Number of zeros: 0
+ parameter: [2.9048, -1.485, 2.7322, 0.3102, 0.0234, 4.4053, 5.5288] function value: -0.2001814296087801 Number of zeros: 0
+ parameter: [2.904, -1.4843, 2.732, 0.3101, 0.0234, 4.4055, 5.5289] function value: -0.20029251026628417 Number of zeros: 0
+ parameter: [2.9031, -1.4833, 2.7322, 0.3101, 0.0234, 4.4054, 5.529] function value: -0.20039593831503005 Number of zeros: 0
+ parameter: [2.9019, -1.4822, 2.7322, 0.31, 0.0234, 4.4053, 5.5289] function value: -0.2005028031267782 Number of zeros: 0
+ parameter: [2.9018, -1.4821, 2.7321, 0.31, 0.0234, 4.4056, 5.5292] function value: -0.20052987262263314 Number of zeros: 0
+ parameter: [2.9013, -1.4815, 2.7322, 0.3099, 0.0234, 4.4054, 5.5291] function value: -0.20054365041006994 Number of zeros: 0
+ parameter: [2.9012, -1.4815, 2.7321, 0.31, 0.0234, 4.4054, 5.5291] function value: -0.19988338267153272 Number of zeros: 0
+ parameter: [2.9005, -1.4808, 2.7321, 0.3099, 0.0234, 4.4055, 5.5292] function value: -0.19992804160234182 Number of zeros: 0
+ parameter: [2.9013, -1.4815, 2.7323, 0.31, 0.0234, 4.4053, 5.529] function value: -0.2005341501111542 Number of zeros: 0
+ parameter: [2.8995, -1.4797, 2.7322, 0.3099, 0.0234, 4.4053, 5.529] function value: -0.20064391550819577 Number of zeros: 0
+ parameter: [2.9003, -1.4807, 2.732, 0.3099, 0.0234, 4.4056, 5.5292] function value: -0.19997012989649132 Number of zeros: 0
+ parameter: [2.8991, -1.4793, 2.7321, 0.3098, 0.0234, 4.4054, 5.5292] function value: -0.20066342351768332 Number of zeros: 0
+ parameter: [2.8987, -1.4789, 2.7322, 0.3098, 0.0234, 4.4052, 5.529] function value: -0.20066145618495615 Number of zeros: 0
+ parameter: [2.899, -1.4793, 2.7322, 0.3098, 0.0234, 4.4053, 5.5291] function value: -0.2006531358980294 Number of zeros: 0
+ parameter: [2.8992, -1.4795, 2.732, 0.3098, 0.0234, 4.4055, 5.5292] function value: -0.2006959375399167 Number of zeros: 0
+ parameter: [2.8987, -1.479, 2.732, 0.3098, 0.0234, 4.4054, 5.5292] function value: -0.20070158456089504 Number of zeros: 0
+ parameter: [2.8983, -1.4788, 2.7316, 0.3098, 0.0234, 4.4058, 5.5292] function value: -0.20082120236746745 Number of zeros: 0
+ parameter: [2.8981, -1.4785, 2.7317, 0.3098, 0.0234, 4.4057, 5.5292] function value: -0.20079581882706427 Number of zeros: 0
+ parameter: [2.8975, -1.478, 2.7317, 0.3098, 0.0234, 4.4057, 5.5292] function value: -0.20153713044449434 Number of zeros: 0
+ parameter: [2.8978, -1.4783, 2.7316, 0.3098, 0.0234, 4.4058, 5.5293] function value: -0.20155557159911838 Number of zeros: 0
+ parameter: [2.8977, -1.4783, 2.7315, 0.3098, 0.0233, 4.4059, 5.5293] function value: -0.19967020343628694 Number of zeros: 0
+ parameter: [2.8975, -1.4781, 2.7315, 0.3098, 0.0233, 4.4059, 5.5293] function value: -0.20159398375304993 Number of zeros: 0
+ parameter: [2.8975, -1.4781, 2.7315, 0.3098, 0.0233, 4.4059, 5.5293] function value: -0.20091071138417121 Number of zeros: 0
+ parameter: [2.8973, -1.478, 2.7315, 0.3098, 0.0233, 4.406, 5.5294] function value: -0.20161256378503348 Number of zeros: 0
+ parameter: [2.8973, -1.478, 2.7314, 0.3098, 0.0233, 4.406, 5.5294] function value: -0.19969967027424776 Number of zeros: 0
+ parameter: [2.8973, -1.4779, 2.7315, 0.3098, 0.0233, 4.4059, 5.5293] function value: -0.20159984084619187 Number of zeros: 0
+ parameter: [2.8966, -1.4772, 2.7314, 0.3097, 0.0233, 4.406, 5.5295] function value: -0.20162215165942002 Number of zeros: 0
+ parameter: [2.897, -1.4777, 2.7313, 0.3098, 0.0233, 4.4061, 5.5294] function value: -0.20164843001912447 Number of zeros: 0
+ parameter: [2.8961, -1.4768, 2.7313, 0.3097, 0.0233, 4.4061, 5.5295] function value: -0.20165019683567958 Number of zeros: 0
+ parameter: [2.896, -1.4767, 2.7312, 0.3097, 0.0233, 4.4062, 5.5295] function value: -0.20169097262102556 Number of zeros: 0
+ parameter: [2.8955, -1.4763, 2.731, 0.3096, 0.0233, 4.4064, 5.5297] function value: -0.20175628267866869 Number of zeros: 0
+ parameter: [2.8944, -1.4755, 2.7306, 0.3096, 0.0233, 4.4067, 5.5298] function value: -0.20185476269578295 Number of zeros: 0
+ parameter: [2.8936, -1.475, 2.7302, 0.3095, 0.0233, 4.4072, 5.5302] function value: -0.20199086555086104 Number of zeros: 0
+ parameter: [2.8924, -1.474, 2.7296, 0.3094, 0.0233, 4.4078, 5.5305] function value: -0.2021554726575551 Number of zeros: 0
+ parameter: [2.8899, -1.472, 2.7287, 0.3092, 0.0233, 4.4087, 5.5311] function value: -0.20239505953759981 Number of zeros: 0
+ parameter: [2.8894, -1.4716, 2.7286, 0.3091, 0.0233, 4.4088, 5.5312] function value: -0.20243232089089314 Number of zeros: 0
+ parameter: [2.8883, -1.471, 2.7276, 0.3091, 0.0233, 4.4096, 5.5315] function value: -0.20274565321113858 Number of zeros: 0
+ parameter: [2.888, -1.4708, 2.7274, 0.309, 0.0233, 4.4098, 5.5316] function value: -0.20280410335729343 Number of zeros: 0
+ parameter: [2.8846, -1.4681, 2.726, 0.3088, 0.0233, 4.4109, 5.5321] function value: -0.20316684688447886 Number of zeros: 0
+ parameter: [2.8841, -1.4677, 2.7258, 0.3088, 0.0233, 4.4112, 5.5322] function value: -0.20323875194525493 Number of zeros: 0
+ parameter: [2.8817, -1.4657, 2.7251, 0.3085, 0.0233, 4.412, 5.5329] function value: -0.20301183765864325 Number of zeros: 0
+ parameter: [2.8821, -1.4662, 2.725, 0.3086, 0.0233, 4.412, 5.5328] function value: -0.20342756551175606 Number of zeros: 0
+ parameter: [2.8798, -1.4645, 2.7238, 0.3084, 0.0233, 4.413, 5.5332] function value: -0.20372233443172394 Number of zeros: 0
+ parameter: [2.8801, -1.4647, 2.724, 0.3084, 0.0233, 4.4131, 5.5335] function value: -0.203358860621985 Number of zeros: 0
+ parameter: [2.8799, -1.4647, 2.7236, 0.3085, 0.0233, 4.4132, 5.5333] function value: -0.20384023143020416 Number of zeros: 0
+ parameter: [2.8773, -1.463, 2.7219, 0.3082, 0.0233, 4.4148, 5.5342] function value: -0.2043172904341071 Number of zeros: 0
+ parameter: [2.8737, -1.4604, 2.7199, 0.3081, 0.0233, 4.4164, 5.5347] function value: -0.20482583937153315 Number of zeros: 0
+ parameter: [2.8695, -1.4577, 2.7171, 0.3077, 0.0232, 4.419, 5.5361] function value: -0.2054452853252806 Number of zeros: 0
+ parameter: [2.8613, -1.4517, 2.7127, 0.3072, 0.0232, 4.4228, 5.5377] function value: -0.20553906660094162 Number of zeros: 0
+ parameter: [2.8577, -1.4492, 2.7107, 0.3069, 0.0232, 4.4246, 5.5387] function value: -0.20660721890875391 Number of zeros: 0
+ parameter: [2.8574, -1.4492, 2.7099, 0.3069, 0.0232, 4.4254, 5.5391] function value: -0.2067597333941353 Number of zeros: 0
+ parameter: [2.8488, -1.443, 2.7054, 0.3064, 0.0231, 4.4293, 5.5407] function value: -0.2075493028094786 Number of zeros: 0
+ parameter: [2.8496, -1.444, 2.7051, 0.3064, 0.0231, 4.4296, 5.5409] function value: -0.2075906635221447 Number of zeros: 0
+ parameter: [2.8369, -1.4352, 2.6976, 0.3054, 0.0231, 4.4366, 5.5445] function value: -0.20800508464788764 Number of zeros: 0
+ parameter: [2.8324, -1.4317, 2.6957, 0.3051, 0.023, 4.4383, 5.5454] function value: -0.20844778212221401 Number of zeros: 0
+ parameter: [2.8221, -1.4243, 2.6902, 0.3044, 0.023, 4.4431, 5.5477] function value: -0.20883939930286227 Number of zeros: 0
+ parameter: [2.823, -1.425, 2.6903, 0.3045, 0.023, 4.4429, 5.5473] function value: -0.20921565534588607 Number of zeros: 0
+ parameter: [2.8004, -1.4091, 2.6776, 0.303, 0.0229, 4.4542, 5.5529] function value: -0.20931593618940023 Number of zeros: 0
+ parameter: [2.8115, -1.4167, 2.6844, 0.3037, 0.0229, 4.4482, 5.5501] function value: -0.20906770780887915 Number of zeros: 0
+ parameter: [2.8012, -1.4101, 2.6772, 0.3031, 0.0229, 4.4545, 5.5527] function value: -0.20909619370460467 Number of zeros: 0
+ parameter: [2.8178, -1.4215, 2.6873, 0.3042, 0.023, 4.4455, 5.5485] function value: -0.20942857725219657 Number of zeros: 0
+ parameter: [2.7989, -1.4081, 2.6767, 0.3029, 0.0229, 4.455, 5.5531] function value: -0.2093218366726307 Number of zeros: 0
+ parameter: [2.7985, -1.4078, 2.6764, 0.3029, 0.0229, 4.4551, 5.5531] function value: -0.20932706370518472 Number of zeros: 0
+ parameter: [2.7988, -1.408, 2.6765, 0.3029, 0.0229, 4.455, 5.553] function value: -0.20931725450393232 Number of zeros: 0
+ parameter: [2.7972, -1.407, 2.6754, 0.3028, 0.0229, 4.4559, 5.5534] function value: -0.20933639051216327 Number of zeros: 0
+ parameter: [2.7976, -1.4072, 2.6758, 0.3028, 0.0229, 4.4556, 5.5532] function value: -0.20933559576151434 Number of zeros: 0
+ parameter: [2.7947, -1.4052, 2.6741, 0.3027, 0.0229, 4.457, 5.5538] function value: -0.20936509134400072 Number of zeros: 0
+ parameter: [2.7969, -1.4068, 2.6753, 0.3028, 0.0229, 4.4561, 5.5534] function value: -0.20933797854160893 Number of zeros: 0
+ parameter: [2.797, -1.4068, 2.6754, 0.3028, 0.0229, 4.4559, 5.5533] function value: -0.2093400334052224 Number of zeros: 0
+ parameter: [2.7967, -1.4066, 2.6751, 0.3028, 0.0229, 4.4562, 5.5534] function value: -0.209339227424027 Number of zeros: 0
+ parameter: [2.8003, -1.4092, 2.6772, 0.3031, 0.0229, 4.4543, 5.5524] function value: -0.20970012569252708 Number of zeros: 0
+ parameter: [2.7917, -1.4031, 2.6723, 0.3025, 0.0228, 4.4586, 5.5544] function value: -0.20979851531859683 Number of zeros: 0
+ parameter: [2.7968, -1.4067, 2.6752, 0.3029, 0.0229, 4.456, 5.5532] function value: -0.20975580302728136 Number of zeros: 0
+ parameter: [2.7856, -1.3988, 2.6689, 0.3021, 0.0228, 4.4615, 5.5558] function value: -0.20980418823374158 Number of zeros: 0
+ parameter: [2.7882, -1.4007, 2.6703, 0.3023, 0.0228, 4.4603, 5.5553] function value: -0.20980635001027984 Number of zeros: 0
+ parameter: [2.7895, -1.4016, 2.6711, 0.3024, 0.0228, 4.4597, 5.555] function value: -0.20980812475854704 Number of zeros: 0
+ parameter: [2.788, -1.4005, 2.6703, 0.3023, 0.0228, 4.4603, 5.5553] function value: -0.20981758659970978 Number of zeros: 0
+ parameter: [2.787, -1.3998, 2.6697, 0.3022, 0.0228, 4.4609, 5.5555] function value: -0.20981211855515916 Number of zeros: 0
+ parameter: [2.7881, -1.4005, 2.6705, 0.3023, 0.0228, 4.4602, 5.5552] function value: -0.2098233201368314 Number of zeros: 0
+ parameter: [2.7865, -1.3993, 2.6695, 0.3022, 0.0228, 4.461, 5.5556] function value: -0.20981787288239465 Number of zeros: 0
+ parameter: [2.7879, -1.4003, 2.6704, 0.3023, 0.0228, 4.4603, 5.5553] function value: -0.20982341044445596 Number of zeros: 0
+ parameter: [2.7876, -1.4001, 2.6703, 0.3022, 0.0228, 4.4604, 5.5553] function value: -0.20982354504915843 Number of zeros: 0
+ parameter: [2.7876, -1.4001, 2.6703, 0.3022, 0.0228, 4.4603, 5.5553] function value: -0.20982940806561812 Number of zeros: 0
+ parameter: [2.7872, -1.3998, 2.6702, 0.3022, 0.0228, 4.4604, 5.5553] function value: -0.2096917217628726 Number of zeros: 0
+ parameter: [2.7889, -1.401, 2.6711, 0.3023, 0.0228, 4.4597, 5.555] function value: -0.20939283777868212 Number of zeros: 0
+ parameter: [2.7876, -1.4001, 2.6703, 0.3023, 0.0228, 4.4603, 5.5553] function value: -0.20982621347476546 Number of zeros: 0
+ parameter: [2.7872, -1.3998, 2.6701, 0.3022, 0.0228, 4.4605, 5.5554] function value: -0.20969088178658263 Number of zeros: 0
+ parameter: [2.7887, -1.4008, 2.671, 0.3023, 0.0228, 4.4597, 5.5551] function value: -0.2098308158270775 Number of zeros: 0
+ parameter: [2.7886, -1.4008, 2.6709, 0.3023, 0.0228, 4.4598, 5.5551] function value: -0.2098293096609493 Number of zeros: 0
+ parameter: [2.7893, -1.4012, 2.6713, 0.3023, 0.0228, 4.4595, 5.555] function value: -0.2093961540587974 Number of zeros: 0
+ parameter: [2.7877, -1.4001, 2.6705, 0.3022, 0.0228, 4.4602, 5.5553] function value: -0.20983322797021953 Number of zeros: 0
+ parameter: [2.7888, -1.4009, 2.6711, 0.3023, 0.0228, 4.4597, 5.555] function value: -0.20983360013519745 Number of zeros: 0
+ parameter: [2.788, -1.4003, 2.6706, 0.3023, 0.0228, 4.4601, 5.5552] function value: -0.20983470339073207 Number of zeros: 0
+ parameter: [2.7875, -1.3999, 2.6704, 0.3022, 0.0228, 4.4603, 5.5553] function value: -0.20969932809171996 Number of zeros: 0
+ parameter: [2.7878, -1.4002, 2.6706, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20983699012345 Number of zeros: 0
+ parameter: [2.7878, -1.4001, 2.6706, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20983610134806047 Number of zeros: 0
+ parameter: [2.7874, -1.3998, 2.6704, 0.3022, 0.0228, 4.4603, 5.5554] function value: -0.20970161443100246 Number of zeros: 0
+ parameter: [2.7873, -1.3998, 2.6703, 0.3022, 0.0228, 4.4604, 5.5554] function value: -0.20925641537964196 Number of zeros: 0
+ parameter: [2.7876, -1.4, 2.6705, 0.3022, 0.0228, 4.4602, 5.5553] function value: -0.20983687700742648 Number of zeros: 0
+ parameter: [2.7876, -1.4, 2.6705, 0.3022, 0.0228, 4.4602, 5.5553] function value: -0.2098373219350832 Number of zeros: 0
+ parameter: [2.7884, -1.4005, 2.671, 0.3023, 0.0228, 4.4598, 5.5551] function value: -0.2097015984140335 Number of zeros: 0
+ parameter: [2.7878, -1.4001, 2.6706, 0.3022, 0.0228, 4.4601, 5.5553] function value: -0.20983804109333945 Number of zeros: 0
+ parameter: [2.7876, -1.4, 2.6705, 0.3022, 0.0228, 4.4602, 5.5553] function value: -0.2098385622685571 Number of zeros: 0
+ parameter: [2.7878, -1.4001, 2.6706, 0.3022, 0.0228, 4.4601, 5.5553] function value: -0.20983887294200124 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20983968897458263 Number of zeros: 0
+ parameter: [2.7881, -1.4003, 2.6708, 0.3023, 0.0228, 4.46, 5.5552] function value: -0.20925694595610086 Number of zeros: 0
+ parameter: [2.7878, -1.4001, 2.6706, 0.3022, 0.0228, 4.4601, 5.5553] function value: -0.20925714532486692 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.20983952217169222 Number of zeros: 0
+ parameter: [2.788, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.20983962449257512 Number of zeros: 0
+ parameter: [2.7882, -1.4004, 2.6709, 0.3023, 0.0228, 4.4599, 5.5552] function value: -0.20983965071575708 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20983972527074762 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.2098398800579181 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.20983992289875888 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.209839946523457 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20925724149782152 Number of zeros: 0
+ parameter: [2.7878, -1.4001, 2.6707, 0.3022, 0.0228, 4.4601, 5.5553] function value: -0.20983989386771462 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3022, 0.0228, 4.4601, 5.5553] function value: -0.2094032505693577 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.2097032114545942 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.2098400508514966 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.2098401721120458 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.2098401955906992 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.2098402186271849 Number of zeros: 0
+ parameter: [2.7878, -1.4001, 2.6707, 0.3022, 0.0228, 4.4601, 5.5553] function value: -0.20984025566071526 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20882080033721348 Number of zeros: 0
+ parameter: [2.7879, -1.4001, 2.6707, 0.3022, 0.0228, 4.4601, 5.5553] function value: -0.2094035026577859 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.20984021239705483 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.20925744845389596 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.2097033895131825 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.20984024285523925 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.46, 5.5553] function value: -0.2094036742461024 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20984025637947568 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20984028021605264 Number of zeros: 0
+ parameter: [2.7879, -1.4002, 2.6707, 0.3023, 0.0228, 4.4601, 5.5553] function value: -0.20984026900534924 Number of zeros: 0
+opt2 = Optim.optimize(fun, best_candidate(bbsolution1), time_limit = locT) =  * Status: success
+
+ * Candidate solution
+    Final objective value:     -2.098403e-01
+
+ * Found with
+    Algorithm:     Nelder-Mead
+
+ * Convergence measures
+    √(Σ(yᵢ-ȳ)²)/n ≤ 1.0e-08
+
+ * Work counters
+    Seconds run:   1680  (vs limit 1800)
+    Iterations:    819
+    f(x) calls:    1672
+
+opt_mat[i, :] = (vcat(Optim.minimizer(opt2), Optim.minimum(opt2)))' = [2.787924762058526 -1.4001943179197123 2.6707129712466964 0.3022535122832135 0.022817452741621985 4.460050617160314 5.555263432477492 -0.20984030157904146]
