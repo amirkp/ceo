@@ -1,0 +1,223 @@
+% arara: biber
+\documentclass[letterpaper,12pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\linespread{1.3}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm }
+\usepackage[english]{babel}
+%\usepackage[style=authoryear]{biblatex}
+\usepackage{bbm}
+\usepackage{braket} %multiline braces
+%\addbibresource{ref.bib}
+\usepackage[english]{babel}
+\usepackage[round]{natbib}
+\bibliographystyle{unsrtnat}
+\usepackage{graphicx}
+\usepackage{palatino}
+\usepackage{mathtools} % For under braces
+\usepackage{leftidx}
+
+
+\usepackage{bm}
+
+
+\newenvironment{nalign}{
+    \begin{equation}
+    \begin{aligned}
+}{
+    \end{aligned}
+    \end{equation}
+    \ignorespacesafterend
+}
+
+
+
+
+\newcommand{\E}{{\rm I\kern-.3em E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\supp}{\text{supp}}
+\newcommand{\ptil}{\tilde{p}}
+\newcommand{\Etil}{\tilde{E}}
+\newcommand{\Gtil}{\tilde{G}}
+\newcommand{\Ptil}{\tilde{P}}
+\newcommand{\Pbar}{\bar{P}}
+\newcommand{\pbar}{\bar{p}}
+\newcommand{\Pbarb}{\bar{\bar{P}}}
+\newcommand{\pbarb}{\bar{\bar{p}}}
+\newcommand{\xtil}{\tilde{x}}
+\newcommand{\calutil}{\tilde{\calu}}
+\newcommand{\caldtil}{\tilde{\cald}}
+
+
+
+\newcommand{\punder}{\underline{p}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\etil}{\tilde{e}}
+\newcommand{\one}{\mathbbm{1}}
+\newcommand{\calm}{\mathcal{M}}
+\newcommand{\uunder}{\underline{u}}
+\newcommand{\vunder}{\underline{v}}
+\newcommand{\ubar}{\bar{u}}
+\newcommand{\vbar}{\bar{v}}
+\newcommand{\uopt}{$\calu$-optimal }
+\newcommand{\dopt}{$\cald$-optimal }
+\newcommand{\pibar}{\bar{\pi}}
+\newcommand{\piunder}{\underline{\pi}}
+
+
+
+
+
+\newcommand{\calu}{\mathcal{U}}
+\newcommand{\cald}{\mathcal{D}}
+\newcommand{\cala}{\mathcal{A}}
+\newcommand{\calc}{\mathcal{C}}
+\newcommand{\cale}{\mathcal{E}}
+\newcommand{\calt}{\mathcal{T}}
+\newcommand{\calr}{\mathcal{R}}
+\newcommand{\caly}{\mathcal{Y}}
+\newcommand{\calf}{\mathcal{F}}
+\newcommand{\calg}{\mathcal{G}}
+\newcommand{\cals}{\mathcal{S}}
+\newcommand{\caln}{\mathcal{N}}
+
+\newcommand{\sfu}{\mathsf{U}}
+\newcommand{\ssfu}{\mathsf{U}^{\cals}}
+\newcommand{\sfus}{\mathsf{U}^{*}}
+\newcommand{\sfq}{\mathsf{Q}}
+
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\sfs}{\mathsf{S}}
+
+
+
+\newcommand{\piun}{\underline{\pi}}
+\newcommand{\piup}{\overline{\pi}}
+
+\DeclareMathOperator{\rank}{rank}
+
+
+
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
+
+\newtheorem{ass}{A}
+\newtheorem{assb}{B}
+\newtheorem{assm}{AMtO}
+
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}{Lemma}
+\newtheorem{selrule}{Equilibrium Selection Rule}
+\newtheorem{theorem}{Theorem}
+\newtheorem{selection}{Price selection rule}
+\newtheorem{remark}{Remark}
+\newtheorem{preferences}{Preference Assumption}
+\newtheorem{proposition}{Proposition}
+\newtheorem{summary}{Summary}
+\newtheorem{example}{Example}
+\newtheorem{notation}{Notation}
+
+\newtheorem{mistake}{Mistake}
+
+%\usepackage{fullpage}
+
+\title{Two-Sided Matching}
+\author{\\
+Rice University}
+\date{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\long\def\/*#1*/{}
+\/*
+COMMENT GOES HERE
+*/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+\section{The Model} 
+A \emph{market} is defined by a set of upstream firms $\calu$, a set of downstream firms $\cald$, and a matrix of pairwise productions denoted by $A$. For now we will focus on markets with equal number of upstream and downstream firms. When an upstream firm $u\in \calu$ \emph{matches} with a downstream firm $d \in \cald$, their pairwise match production $\pi_{u,d}$ is given by 
+\begin{align*}
+  \pi_{u,d} = z_{u,d}^U + e_{u,d}^U + z_{u,d}^D + e_{u,d}^D. 
+\end{align*}
+
+We call $z_{u,d}^U$ and $z_{u,d}^D$ observable match-level characteristics of $u$ and $d$ respectively. Similarly, we refer to $e_{u,d}^U$ and $e_{u,d}^D$ as unobservable match-level characteristics of $u$ and $d$. For now consider each of these term to be a real number.  
+
+Upon matching, the two firms divide the pairwise match production by transferring money. Informally, you can think that the upstream firm $u$ owns $z_{u,d}^U + e_{u,d}^U$ units of the match production and the downstream firm owns $z_{u,d}^D + e_{u,d}^D$. When matched, according to some sharing rule, the downstream firm transfers $p_{u,d} \in \R$ units of the production to the upstream firm. Thus, after the transfer is made, the profit of the upstream firm is given by $\pi_{u,d}^U \equiv z_{u,d}^U + e_{u,d}^U + p_{u,d}$ and the profit of the downstream firm is given by $\pi_{u,d}^D \equiv z_{u,d}^D + e_{u,d}^D - p_{u,d}$. We refer to $p_{u,d}$ as transfer or price and $\pi_{u,d}^U$ or $\pi_{u,d}^D$ as individual profits.
+
+An \emph{assignment} is an object that specifies which upstream firm is matched with which downstream firm. A one-to-one assignment or matching is such that each upstream (downstream) firm is matched to at most one downstream (upstream) firm. Since we restricted attention to markets with equal number of upstream and downstream firms, a class of one-to-one matchings where each firm is part of exactly one match is feasible. We will focus on this class of matchings. Note that an assignment in an $N$ by $N$ market can be denoted by an $N \times N$ matrix of zeros and ones $X$, where $ x_{i,j} =1 $ if and only if upstream firm $i$ is matched with downstream firm $j$. 
+
+An outcome is a pair of a one-to-one assignment and a vector of individual profits for each upstream and downstream firm. For further reading on pairwise stable assignments and rigorous definition of these term see \citet{roth1990two}.
+
+\section{Simulation Exercise $1$} 
+The goal is to simulate data on the outcomes from many markets. 
+
+For each market $m$, let $(Z_m^U, Z_m^D)$ be a realization of a pair of $N \times N$ random matrices that are jointly distributed according to some distribution; this could be a parametric distribution such as  Normal distribution. Similarly, draw $(E_m^U, E_m^D)$ according to another joint distribution. The code should allow us to easily modify the underlying distribution. 
+
+Given the random draws for the market $m$, find the optimal one-to-one assignment such that every firm is part of exactly one match. The optimal assignment is an assignment  that maximizes (within the class of assignments considered) the sum of the pairwise match production of all \emph{matched} firms. You may use the Gurobi package to solve the linear programming problem. One way to store this assignment would be a matrix of zeros and ones. 
+
+\subsection*{Individual Profits} 
+To compute the individual profit of the upstream firm $i$ follow these steps: 
+\begin{enumerate}
+  \item Compute the sum of the pairwise match production of all \emph{matched} firms according to the \emph{optimal} assignment above. We refer to this as the optimal matching production .
+  \item Find the optimal assignment in the class of assignments where every upstream firm except  $i$ is matched with a downstream firm. Only one downstream firm is  to remain unmatched. Again the optimal assignment would maximize the sum of pairwise match production of matched firms. In this case it is the sum of $N-1$ terms. 
+\end{enumerate}
+Store the profit for upstream firm $i$ as the difference between (1) and (2). 
+
+Your code should report for each market:
+\begin{itemize}
+  \item The optimal one-to-one assignment.
+  \item The vector of $N$ individual profits, one for each upstream firm calculated according to the steps above.
+  \item The matrices of observable characteristics. 
+  \item The matrices of unobservable characteristics. 
+\end{itemize}
+
+\section*{The Continuous Model}
+We modify the model above in the following manner. The notation is modified slightly. Each firm on each side of the market is now characterized by a scalar observable type. Unlike the previous model that we were dealing with a finite number of firms on each side, we assume the true model involves a continuum of firms (infinitely and uncountably many) on each side. Definition $2.1$ for the definition of coupling (matching assignment as we called it previously). Let $P$ and $Q$ denote the distribution of \textbf{observed} characteristics of upstream and downstream firms respectively. For now suppose that these are parametric distributions over $\R$ or subsets of $\R$. Similarly, let the unobservable type of upstream and downstream firms, $\epsilon$ and $\eta$ to be distributed according to $\tilde{P}$ and $\tilde{Q}$. This time, let's pass the distributions as an argument to the function.  For now let's use use uniform distributions with support on a compact subset of $\R$, just a simple interval of the form $[\underline{a}, \bar{a}]$. 
+
+
+Unlike the previous pairwise match production that was linear in observable and unobservable types, let the direct net revenue of an upstream firm with the type $(x, \epsilon)$ from matching to a downstream firm with type $(y, \eta)$ is given by 
+\begin{align*}
+  \pi^u(x,y, \epsilon, \eta) = \Phi^u(x,y) + \phi^u(\epsilon, \eta) + p(x,y, \epsilon, \eta)
+\end{align*}
+Simalarly, define $\pi^u(x,y, \epsilon, \eta)$ just with a minus sign on the transfer. Thus, the match production is given by 
+\begin{align*}
+  \Phi(x,y) + \phi(\epsilon , \eta) = \Phi^u(x,y) + \phi^u(\epsilon, \eta) + \Phi^d(x,y) + \phi^d(\epsilon, \eta).
+\end{align*}
+
+Functions $\Phi$ and $\phi$ are unknown to econometrician, however, to simulate the data we pass  these functions as an argument. Use examples for the surplus function provided in the attached file to test your code, these functions satisfy the supermodularity condition.
+
+
+
+\bibliography{library}
+\end{document}
+
+
+
+
+
+

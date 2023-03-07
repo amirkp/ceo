@@ -384,7 +384,7 @@ x:\quad\text{GAI; }\quad y_{1}:\quad\text{HHI;}\quad y_{2}:\quad\text{Size;}
 CEO's Valuation
 \begin_inset Formula 
 \[
-\beta_{xy_{2}}^{u}xy_{2}+\beta_{x\eta}^{u}x\eta
+\beta_{xy_{2}}^{u}xy_{2}+\beta_{y_{2}\varepsilon}^{u}y_{2}\varepsilon\quad\text{OR }\quad\beta_{xy_{2}}^{u}xy_{2}+\beta_{x\eta}^{u}x\eta
 \]
 
 \end_inset
@@ -396,7 +396,7 @@ CEO's Valuation
 Firm's Valuation
 \begin_inset Formula 
 \[
-\beta_{y_{1}}^{d}y_{1}+\beta_{y_{2}}^{d}y_{2}+\beta_{xy_{1}}^{d}xy_{1}+\beta_{xy_{2}}^{d}xy_{2}+\beta_{\varepsilon\eta}^{d}\varepsilon\eta
+\beta_{x}^{d}x+\beta_{xy_{1}}^{d}xy_{1}+\beta_{xy_{2}}^{d}xy_{2}+\beta_{\varepsilon\eta}^{d}\varepsilon\eta
 \]
 
 \end_inset

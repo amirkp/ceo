@@ -273,35 +273,63 @@ Optim.minimum(opt)
 
 
 ############## Most ambitious identification
+############ DO the DGP again 
 
 
+
+b=rand(1:100, 9)*0.01
+rand(9)
+bup= [
+    vcat(b[1], b[2], b[5])';
+    vcat(0, 0, 0.)';
+]
+
+bdown = [
+vcat(b[3], b[4], 0)';
+vcat(0 , 0 , b[6])';
+]
+
+up, down, pr, uprof, dprof = sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 1234, true, up_data,down_data[1:2,:],b[7], sel_mode, [0., 0.],b[8],b[9])
+
+
+
+
+scatter(up[1,:], down[1,:])
+
+scatter(down[1,:], pr)
 
 
 
 ################################
 function pdist(pars)
     bup = [
-        vcat(pars[9], pars[1], pars[4])';
+        vcat(pars[1], pars[2], pars[5])';
         vcat(0, 0, 0.)';
     ]
 
     bdown = [
-        vcat(pars[2], pars[3], 0)';
-        vcat(0 , 0 , pars[5])';
+        vcat(pars[3], pars[4], 0)';
+        vcat(0 , 0 , pars[6])';
     ]
 
-    up1, down1, pr1, uprof1, dprof1 = sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 1234, true, up_data,down_data[1:2,:],pars[6], sel_mode, b[7:8],pars[7],pars[8]);
+    up1, down1, pr1, uprof1, dprof1 = sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 1234, true, up_data,down_data[1:2,:],pars[7], sel_mode, [0.,0.],pars[8],pars[9]);
     
-    return sum((pr-pr1).^2)
+    return sum((pr-pr1).^2 )+ sum(down_data[1:2,:] - down1[1:2,:]).^2
 end
-
-pdist[vcat(b[])]
-
+sum((rand(3,3) - rand(3,3)).^2)
 
 
-spoints = rand(10,2)*4
-opt = Optim.optimize(pdist, spoints[3,:], show_trace=true);
-[2. b[6]] - Optim.minimizer(opt)'
+st_point = b+rand(Random.seed!(),9)*0.1
+pdist(st_point)
+
+
+
+opt = Optim.optimize(pdist, st_point, show_trace=true);
+
+
+
+b - Optim.minimizer(opt)
+opt = Optim.optimize(pdist, Optim.minimizer(opt), show_trace=true);
 
 spoints = rand(10,4)*4
 

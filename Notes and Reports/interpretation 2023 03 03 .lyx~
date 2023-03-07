@@ -1,0 +1,294 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\E}{E}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblatex_bibstyle authoryear
+\biblatex_citestyle authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Interpretations
+\end_layout
+
+\begin_layout Standard
+The CEO and firm valuation functions are 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta_{xy_{2}}^{u}xy_{2}+\beta_{x\varepsilon}^{u}x\eta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Firm's Valuation
+\begin_inset Formula 
+\[
+\beta_{x}^{d}x+\beta_{xy_{1}}^{d}xy_{1}+\beta_{xy_{2}}^{d}xy_{2}+\beta_{\varepsilon\eta}\varepsilon\eta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a CEO with GAI = 2 which is the average GAI in the sample, and
+ a firm with HHI = 0.25 and size =3.
+ Let 
+\begin_inset Formula $\varepsilon=0.5$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider an increase of one unit (also the same as one standard deviation)
+ in CEOs ability, GAI, from 
+\begin_inset Formula $2$
+\end_inset
+
+ to 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Median downstream profit, 
+\begin_inset Formula $\kappa$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the following vector of parameters estimated from the data:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bm{\hat{\theta}=}[0.2,0.0,-0.2,-3.4,-3.7,-1.5,4.9,0.6].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This implies the following parameterization of the valuation functions for
+ the CEO and firm.
+ CEO's valuation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0.2xy_{2}-3.4x\eta,
+\]
+
+\end_inset
+
+and, firm's valuation: 
+\begin_inset Formula 
+\[
+4.9x+0xy_{1}-0.2xy_{2}-3.7\varepsilon\eta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The standard deviation of the normally distributed 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is estimated to be 
+\begin_inset Formula $0.6$
+\end_inset
+
+, and the median downstream firm's profit is estimated to be 
+\begin_inset Formula $-1.5$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now let's say a firm with average size and HHI is matched to a CEO with
+ mean GAI.
+ This means the upstream valuation is 
+\begin_inset Formula 
+\[
+\left(0.2\times2\times3\right)-\left(3.4\times2\times\eta\right).
+\]
+
+\end_inset
+
+The firm's valuation is 
+\begin_inset Formula 
+\[
+\left(4.9\times2\right)+\left(0\right)-\left(0.2\times2\times3\right)-\left(3.7\times\varepsilon\times\eta\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if firm has 
+\begin_inset Formula $\varepsilon=0$
+\end_inset
+
+, which is the median and mean value of the unobserved characteristic, then,
+ CEO's valuation is 
+\begin_inset Formula $1.2$
+\end_inset
+
+, and the firm's valuation is 
+\begin_inset Formula $8.6$
+\end_inset
+
+.
+ This is slightly lower than the mean and median price of 
+\begin_inset Formula $9.10$
+\end_inset
+
+.
+ The median downstream profit is estimated to be a negative value of 
+\begin_inset Formula $-1.5$
+\end_inset
+
+.
+ Let's suppose this firm is receiving the median profit, this would imply
+ that 
+\begin_inset Formula 
+\[
+p=8.6-(-1.5)=10.1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An increase of one standard deviation in CEO's GAI, i.e.
+ 
+\end_layout
+
+\end_body
+\end_document

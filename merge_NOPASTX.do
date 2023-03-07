@@ -1,5 +1,5 @@
 * Version 2: February 19, 2023
-
+* Version 3 : March 6, random sample instead of S&P 500
 
 
 
@@ -122,15 +122,20 @@ gen pGAI = GAI - minGAI
 gen negsale = -sale
 bys year (negsale): gen salesrank = _n
 
-keep if salesrank<350 |SP500 ==1
+// keep if salesrank<350 |SP500 ==1
 
 keep if year ==2013 
-
 
 keep if logsize5>0
 keep if logtdc1>0 
 
-keep gvkey logsize5 logtdc1 HHI pGAI 
+
+replace HHI = 1- HHI
+generate random = runiform()
+sort random
+generate insample = _n <= 500
+
+keep gvkey logsize5 logsize1 logtdc1 HHI pGAI insample
 
 
 save estData, replace

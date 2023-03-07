@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Roth and Sotomayor(1990)]{roth1990two}
+Alvin~E Roth and Marilda A~Oliveira Sotomayor.
+\newblock {Two-sided matching, volume 18 of Econometric Society Monographs}.
+\newblock 1990.
+
+\end{thebibliography}

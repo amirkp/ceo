@@ -6,8 +6,13 @@
 ### Segment data: COMPUSTAT HISTORICAL SEGMENTS
 ### Firm's fundamentals: CRSP
 
-### Version 1, Feb 15, 2023 
+### Version 2, March 2, 2023
 ### Amir Kazempour, amirkp@gmail.com
+
+############################################
+###########################################
+### New Specification 
+### New Size data
 
 ## uncomment for running on Rice cluster
 using Distributed, ClusterManagers 
@@ -46,16 +51,17 @@ end
     sel_mode="median"; 
 
     # Optimization parameters
-    globT=3*3600; locT=1800; data_mode=3;
+    globT=3*3600; locT=1800/2; data_mode=3;
+    # globT=30; locT=10; data_mode=3;
 
     bbo_population_size =100
     bbo_max_time=globT; bbo_ndim = 9;
-    bbo_search_range =vcat(repeat([(-5.0, 5.0)],5),[(.000001, 5.)],[(-5.0, 5.0)],[(-5.0, 5.0)], [(.01, 5.)])
+    bbo_search_range =vcat(repeat([(-5.0, 5.0)],5),[(.000001, 5.)],[(.000001, 5.)],[(-5.0, 5.0)], [(.01, 5.)])
     cbf = x-> println("parameter: ", round.(best_candidate(x), digits=3), " fitness: ", best_fitness(x) )
 
     # loading data
     data = CSV.read("/home/ak68/est_data.csv", DataFrame)
-    # data = CSV.read("/Users/amir/github/ceo/ceo-estimation/estimator/est_data_NOTS/est_data.csv", DataFrame)
+    # data = CSV.read("/Users/amir/Data/est_data.csv", DataFrame)
     data = Matrix(data)
     up_data = data[:,5]
     down_data = data[:,2:3]'
@@ -63,6 +69,7 @@ end
     n_firms = length(price_data)
 
 end
+
 # Partitioning the pool of available cores 
 # @everywhere pool_a =  WorkerPool(collect(2:n_sim+1))
 # @everywhere pool_b =  WorkerPool(collect(n_sim+2:nworkers()+1))
@@ -110,16 +117,16 @@ end
 
     function loglike(b)
         bup = [
-            vcat(0, b[1], b[4])';
+            vcat(b[1], b[2], b[5])';
             vcat(0, 0, 0.)';
         ]
 
         bdown = [
-            vcat(b[2], b[3], 0)';
-            vcat(0 , 0 , b[5])';
+            vcat(b[3], b[4], 0)';
+            vcat(0 , 0 , b[6])';
         ]
 
-        solve_draw =  x->sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 3165160+x, true, up_data,down_data[1:2,:],b[6], sel_mode, b[7:8],b[9])
+        solve_draw =  x->sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 3165160+x, true, up_data,down_data[1:2,:],b[7], sel_mode,  b[8], b[9])
         sim_dat = pmap(solve_draw, 1:n_sim)
         ll=zeros(n_firms)
         n_zeros = 0
@@ -146,7 +153,7 @@ end
         #drop 0.04 * n_firms of least likely observations
         drop_thres = max(2, Int(floor(0.04*n_firms)))
         out = mean(ll[drop_thres:end])
-        if mod(time(),10)<2
+        if mod(time(),10)<10
             println("worker number $(myid()) parameter: ", round.(b, digits=4), " function value: ",out, " Number of zeros: ", n_zeros)
         end
         Random.seed!()
@@ -155,8 +162,7 @@ end
 end
 
 # opt_mat =zeros(nopts,length(par_ind)+1)
-
-opt1 = bbsetup(loglike;  
+opt1 = bbsetup(loglike ;  
     MaxTime=globT ,SearchRange = bbo_search_range, 
     NumDimensions =bbo_ndim, PopulationSize = bbo_population_size, 
     Method = :adaptive_de_rand_1_bin_radiuslimited, 
@@ -164,7 +170,10 @@ opt1 = bbsetup(loglike;
     CallbackInterval=100
 );
 
-res_global = bboptimize(opt1)
+
+
+
+res_global = bboptimize(opt1, rand(Random.seed!(), 9))
 
 globe_best_cand = best_candidate(res_global)
 globe_best_value = best_fitness(res_global)
@@ -176,7 +185,8 @@ loc_best_cand = Optim.minimizer(loc_res)
 loc_best_value = Optim.minimum(loc_res)
 
 
-gen = 1; iter = 1;
+
+gen = 1; iter =  Base.parse(Int, ENV["SLURM_ARRAY_TASK_ID"]);
 
 estimation_result = Dict()
 push!(estimation_result, "optimizer" => opt1)
@@ -192,8 +202,6 @@ push!(light_res, "GV" => globe_best_value)
 push!(light_res, "L" => loc_best_cand)
 push!(light_res, "LV" => loc_best_value)
 bson("/home/ak68/output/light_res_$(gen)_$(iter).bson", light_res)
-
-
 
 
 
