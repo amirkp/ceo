@@ -1,7 +1,6 @@
 
-
-gen = "RANDOM-SAMPLE-DOLLAR_PRICE"
-folder= "out-DOLLAR-1"
+gen = "RANDOM-SAMPLE-DOLLAR_PRICE-scaledxi"
+folder= "out-DOLLAR-2"
 niter = 5;
 ndim = 11;
 res = zeros(niter,ndim+1);
@@ -16,9 +15,9 @@ for i = 1:niter
     end    
 end
 
-display("text/plain", (res))
+display("text/plain", (res[2,1:11]))
 
-
+println(round.(res[2,1:11], digits = 2))
 
 
 gen = "NORMAL_S200-pos-dprofmed"

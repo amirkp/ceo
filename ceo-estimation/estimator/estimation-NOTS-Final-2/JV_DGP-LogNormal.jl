@@ -25,11 +25,11 @@ function sim_data_JV_up_obs(β_up, β_down, Σ_up, Σ_down, n_firms,i, flag, obs
         
         down_data = Array{Float64, 2}(undef, 3, n_firms)
         down_data[1:2,:] = obs_down
-        down_data[3,:] = rand(Random.seed!(1234+6i), Normal(0,abs(scale_unobs)), n_firms)
+        down_data[3,:] = rand(Random.seed!(1234+6i), Normal(5.,abs(scale_unobs)), n_firms)
     end
     
     #unobservable error term for upstream valuation
-    down_unobs = rand(Random.seed!(94923403+6i), LogNormal(0,abs(scale_down_unobs)), n_firms)
+    down_unobs = scale_down_unobs* rand(Random.seed!(94923403+6i), LogNormal(0.,1.), n_firms)
     
     A_mat = β_up + β_down
     C = -1*Transpose(up_data)*A_mat*down_data #pairwise surplus
@@ -38,7 +38,7 @@ function sim_data_JV_up_obs(β_up, β_down, Σ_up, Σ_down, n_firms,i, flag, obs
     end
 
     for j = 1:n_firms
-        C[:,j] .-=  y_coeffs[1] * down_data[1,j] + y_coeffs[2] * down_data[2,j] + down_unobs[j]
+        C[:,j] .-=  y_coeffs[1] * down_data[1,j] + y_coeffs[2] * down_data[2,j] - down_unobs[j]
     end
 
     
@@ -76,6 +76,7 @@ function sim_data_JV_up_obs(β_up, β_down, Σ_up, Σ_down, n_firms,i, flag, obs
     down_prices = down_valuation - down_match_profit_data 
   
     return up_data, down_match_data, down_prices
+end
 
 
 

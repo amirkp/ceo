@@ -1,8 +1,7 @@
 
-
-gen = "RANDOM-SAMPLE-DOLLAR_PRICE"
-folder= "out-DOLLAR-1"
-niter = 5;
+gen = "FINAL-ESTIMATION-2-smaller-search-S_200_larger_bw"
+folder= "out-Final-2"
+niter = 10;
 ndim = 11;
 res = zeros(niter,ndim+1);
 resG = zeros(niter,ndim+1);

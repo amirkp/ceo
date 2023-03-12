@@ -1,0 +1,240 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{nicefrac}
+\usepackage{bbm}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblatex_bibstyle authoryear
+\biblatex_citestyle authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+The upstream profit is given by 
+\begin_inset Formula 
+\[
+\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)=\max_{\left(\bm{y},\bm{\eta}\right)\in\mathcal{Y}}\left\{ \zeta\left(\bm{x},\bm{y}\right)+\Xi\left(\bm{\varepsilon},\bm{\eta}\right)-\pi^{d}\left(\bm{y},\eta\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{\partial\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)}{\partial x_{k}} & =\left.\frac{\partial\left[\zeta\left(\bm{x},\bm{y}\right)+\xi\left(\bm{\varepsilon},\bm{\eta}\right)-\pi^{d}\left(\bm{y},\bm{\eta}\right)\right]}{\partial x_{k}}\right|_{_{\left(\bm{y},\bm{\eta}\right)=\left(T^{u}\left(\tilde{\bm{x}}\right),S^{u}\left(\tilde{\bm{x}}\right)\right)}}\nonumber \\
+ & =\zeta_{x_{k}}\left(\bm{x},T^{u}\left(\bm{x},\bm{\varepsilon}\right)\right).\label{eq:proof_theorem_no_monotonicity}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking expectation of both sides of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:proof_theorem_no_monotonicity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with respect to the conditional distribution of 
+\begin_inset Formula $\bm{\varepsilon}$
+\end_inset
+
+ gives 
+\begin_inset Formula 
+\[
+E_{F_{\varepsilon|x}^{u}}\left[\frac{\partial}{\partial x_{k}}\pi^{u}\left(\bm{X},\bm{\varepsilon}\right)|\boldsymbol{X}=\boldsymbol{x}\right]=E_{F_{\varepsilon|x}^{u}}\left[\zeta_{x_{k}}\left(\bm{X},T^{u}\left(\bm{X},\bm{\varepsilon}\right)\right)|\bm{X}=\bm{x}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The left-hand side can be written as 
+\begin_inset Formula 
+\begin{align}
+E_{F_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}}\left[\frac{\partial\pi^{u}\left(\bm{X},\bm{\varepsilon}\right)}{\partial x_{k}}|\boldsymbol{X}=\boldsymbol{x}\right] & =\int_{\mathcal{E}}\frac{\partial\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)}{\partial x_{k}}f_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}\left(\boldsymbol{\varepsilon}|\boldsymbol{x}\right)\:d\boldsymbol{\varepsilon}\nonumber \\
+ & =\frac{\partial}{\partial x_{k}}\int_{\varepsilon\in\mathcal{E}}\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)f_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}\left(\boldsymbol{\varepsilon}|\boldsymbol{x}\right)\:d\boldsymbol{\varepsilon}\nonumber \\
+ & =\frac{\partial E\text{\left[\pi^{u}\left(\bm{X},\bm{\varepsilon}\right)|\boldsymbol{X}=\boldsymbol{x}\right]}}{\partial x_{k}}.
+\end{align}
+
+\end_inset
+
+The last equality is using the Leibniz integral rule to change the order
+ of integration and differentiation.
+ Thus, 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial E\text{\left[\pi^{u}\left(\bm{X},\bm{\varepsilon}\right)|\boldsymbol{X}=\boldsymbol{x}\right]}}{\partial x_{k}}=E_{F_{\varepsilon|x}^{u}}\left[\zeta_{x_{k}}\left(\bm{X},T^{u}\left(\bm{X},\bm{\varepsilon}\right)\right)|\bm{X}=\bm{x}\right].\label{eq:expectation_zeta_wrt_xk}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula 
+\[
+\zeta\left(x,y_{1},y_{2}\right)=\beta_{0}+\beta_{1}x+\beta_{2}x^{2}+\beta_{3}xy_{1}+\beta_{3}xy_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, 
+\begin_inset Formula 
+\begin{align}
+E_{F_{\varepsilon|x}^{u}}\left[\zeta_{x}\left(X,T^{u}\left(X,\bm{\varepsilon}\right)\right)|X=x\right] & =E\left[\beta_{1}+2\beta_{2}x+\beta_{3}T^{y_{1},u}\left(X,\bm{\varepsilon}\right)+\beta_{4}T^{y_{2},u}\left(X,\bm{\varepsilon}\right)|X=x\right]\nonumber \\
+ & =\beta_{1}+2\beta_{2}x+\beta_{3}E\left[T^{y_{1},u}\left(X,\bm{\varepsilon}\right)|X=x\right]+\beta_{4}E\left[T^{y_{2}u}\left(X,\bm{\varepsilon}\right)|X=x\right]\nonumber \\
+ & =\beta_{1}+2\beta_{2}x+\beta_{3}\bar{y}_{1}^{*}(x)+\beta_{4}\bar{y}_{2}^{*}(x).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial E\left[\pi^{u}\left(X,\bm{\varepsilon}\right)|X=x\right]}{\partial x}=\beta_{1}+2\beta_{2}x+\beta_{3}\bar{y}_{1}^{*}(x)+\beta_{4}\bar{y}_{2}^{*}(x).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+scratch
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+E_{F_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}}\left[\frac{\partial\pi^{u}\left(\bm{X},\bm{\varepsilon}\right)}{\partial x_{k}}|\boldsymbol{X}=\boldsymbol{x}\right] & =\int_{\mathcal{E}}\frac{\partial\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)}{\partial x_{k}}f_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}\left(\boldsymbol{\varepsilon}|\boldsymbol{x}\right)\:d\boldsymbol{\varepsilon}\nonumber \\
+ & =\int_{\varepsilon\in\mathcal{E}}\left[\frac{\partial}{\partial x_{k}}\left[\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)f_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}\left(\boldsymbol{\varepsilon}|\boldsymbol{x}\right)\right]-\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)\frac{\partial}{\partial x_{k}}f_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}\left(\boldsymbol{\varepsilon}|\boldsymbol{x}\right)\right]\:d\boldsymbol{\varepsilon}\nonumber \\
+ & =\frac{\partial}{\partial x_{k}}\int_{\varepsilon\in\mathcal{E}}\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)f_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}\left(\boldsymbol{\varepsilon}|\boldsymbol{x}\right)\:d\boldsymbol{\varepsilon}-\int_{\varepsilon\in\mathcal{E}}\pi^{u}\left(\bm{x},\bm{\varepsilon}\right)\frac{\partial}{\partial x_{k}}f_{\boldsymbol{\epsilon}|\boldsymbol{X}}^{u}\left(\boldsymbol{\varepsilon}|\boldsymbol{x}\right)\:d\boldsymbol{\varepsilon}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
