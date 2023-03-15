@@ -7,7 +7,7 @@ scatter(randn(10))
 # @everywhere begin 
 ##### SETUP #####
 
-b= res[2, 1:12];
+b= res[5, 1:12];
 
 println(round.(b, digits=1))
 bup = [
@@ -47,32 +47,39 @@ mean(pr)
 mean(price_data)
 
 
-p1 = scatter(up[1,:], down[1,:], markersize=1,legend=false, smooth = true, title="Simulated Data", xlabel = "x", ylabel ="y1")
-p2 = scatter(up_data, down_data[1,:], markersize=1, legend = false, smooth = true, title="Real Data", xlabel = "x", ylabel ="y1")
+p1 = scatter(up[1,:], down[1,:], markersize=1,legend=false, smooth = true, title="Simulated Data", xlabel = "CEO Ability", ylabel ="Firm HHI", dpi=300)
+p2 = scatter(up_data, down_data[1,:], markersize=1, legend = false, smooth = true, title="Real Data", xlabel = "CEO Ability", ylabel ="Firm HHI", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false)
+savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/ability_HHI")
+
 cor(up[1,:], down[1,:])
 cor(up_data, down_data[1,:])
 
 
-p1 = scatter(up[1,:], down[2,:], markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "x", ylabel ="y2")
-p2 = scatter(up_data, down_data[2,:], markersize=1, legend = false, smooth=true,  title="Real Data", xlabel = "x", ylabel ="y2")
+p1 = scatter(up[1,:], down[2,:], markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "CEO Ability", ylabel ="Firm Size", dpi=300)
+p2 = scatter(up_data, down_data[2,:], markersize=1, legend = false, smooth=true,  title="Real Data", xlabel = "CEO Ability", ylabel ="Firm Size", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false)
+savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/ability_size")
+
 
 cor(up[1,:], down[2,:])
 cor(up_data, down_data[2,:])
 
-p1 = scatter(up[1,:], pr, markersize=1,legend=false, smooth=true,title="Simulated Data", xlabel = "x", ylabel ="Price" )
-p2 = scatter(up_data, price_data, markersize=1, legend = false, smooth=true, title="Real Data", xlabel = "x", ylabel ="Price")
+p1 = scatter(up[1,:], pr, markersize=1,legend=false, smooth=true,title="Simulated Data", xlabel = "CEO Ability", ylabel ="Compensation", dpi=300 )
+p2 = scatter(up_data, price_data, markersize=1, legend = false, smooth=true, title="Real Data", xlabel = "CEO Ability", ylabel ="Compensation", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false, ylims=(0,30))
+savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/ability_compensation")
+
 
 cor(up[1,:], pr)
 cor(up_data, price_data)
 cor(up_data, log.(price_data))
 
 
-p1 = scatter(down[1,:], pr, markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "y1", ylabel ="Price" )
-p2 = scatter(down_data[1,:], price_data, markersize=1, legend = false, smooth=true, title="Real Data",  xlabel = "y1", ylabel ="Price")
+p1 = scatter(down[1,:], pr, markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "Firm HHI", ylabel ="Compensation", dpi=300 )
+p2 = scatter(down_data[1,:], price_data, markersize=1, legend = false, smooth=true, title="Real Data",  xlabel = "Firm HHI", ylabel ="Compensation", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false, ylims=(0,30))
+savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/HHI_compensation")
 
 cor(down[1,:], pr)
 cor(down_data[1,:], price_data)
@@ -82,12 +89,67 @@ cor(down_data[1,:], price_data)
 
 
 
-p1 = scatter(down[2,:], pr, markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "y2", ylabel ="Price" )
-p2 = scatter(down_data[2,:], price_data, markersize=1, legend = false, smooth=true, title="Real Data",  xlabel = "y2", ylabel ="Price")
+p1 = scatter(down[2,:], pr, markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "Firm Size", ylabel ="Compensation", dpi=300 )
+p2 = scatter(down_data[2,:], price_data, markersize=1, legend = false, smooth=true, title="Real Data",  xlabel = "Firm Size", ylabel ="Compensation", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false , ylims=(0,30))
+savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/size_compensation")
 
 cor(down[2,:], pr)
 cor(down_data[2,:], price_data)
+
+
+
+
+
+sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 3165161+x, true, up_data,down_data[1:2,:],b[6], sel_mode,  b[7],b[8:9], b[10],b[11]);
+
+
+function up_valuation(b, x, y, eps, xi, n_opt)
+    b = res[n_opt,1:11]
+    b[8] * y[1] + b[9] *y[2] +b[1]*x - b[11]* 1
+end
+
+function down_valuation(b, x, y, eps, xi, n_opt)
+    b = res[n_opt,1:11]
+    b[7] * x + b[2] *x*y[1]+b[3]*x*y[2]
+end
+
+x= 1.5; y=[0.25,2]; eps= 0.5; xi = -4.7;
+
+up_valuation(b,x,y, eps,xi,1 )
+
+upvals = [up_valuation(b,x,y, eps,xi,i ) for i=1:10]
+downvals = [down_valuation(b,x,y, eps,xi,i ) for i=1:10]
+
+udelx =  [up_valuation(b,x+ 0.9,y, eps,xi,i ) for i=1:10];
+ddelx = [down_valuation(b,x+0.9,y, eps,xi,i ) for i=1:10];
+udelx - upvals
+ddelx - downvals
+
+
+
+udely1 =  [up_valuation(b,x,y+[0.2,0], eps,xi,i ) for i=1:10];
+ddely1 = [down_valuation(b,x,y+[0.2,0], eps,xi,i ) for i=1:10];
+
+udely1- upvals
+ddely1 - downvals
+
+
+
+
+
+udely2 =  [up_valuation(b,x,y+[0,1.3], eps,xi,i ) for i=1:10]
+ddely2 = [down_valuation(b,x,y+[0,1.3], eps,xi,i ) for i=1:10]
+
+udely2- upvals
+ddely2 - downvals
+
+
+
+
+
+
+
 
 
 

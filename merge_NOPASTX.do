@@ -131,15 +131,22 @@ keep if logtdc1>0
 
 
 replace HHI = 1- HHI
+
+set seed 123456
 generate random = runiform()
 sort random
 generate insample = _n <= 500
 
 keep gvkey logsize5 logsize1 logtdc1 HHI pGAI insample
 
+la var HHI HHI
+la var logsize5 Size
+la var pGAI GAI 
+la var logtdc1 Compensation
 
 save estData, replace
 
+keep if insample==1
 export delimited using "/Users/amir/Data/est_data.csv", replace
  
  

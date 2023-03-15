@@ -125,6 +125,8 @@ arrn =  Base.parse(Int, ENV["SLURM_ARRAY_TASK_ID"])
 
 # Loss function to be minimized 
 @everywhere begin 
+
+
     function bcv2_fun(h, down_data, price_data)
         h=abs.(h)
         ll = 0.0
@@ -236,7 +238,11 @@ arrn =  Base.parse(Int, ENV["SLURM_ARRAY_TASK_ID"])
         end
 
         sort!(ll)
-        #drop 0.04 * n_firms of least likely observations
+        # Trim the 4% of the least likely observations
+        # The Fermanian and Salanie (2004) trims 5% in the application 
+        # We do not otherwise deal with dropping `outliers' in the data
+        
+        drop 0.04 * n_firms of least likely observations
         drop_thres = max(2, Int(floor(0.04*n_firms)))
         
         out = mean(ll[drop_thres:end])
