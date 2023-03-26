@@ -240,4 +240,4 @@ b[7]*0.9 +b[2]*0.9*y1 +b[3]*0.9*y2
 
 
 
-
+HHI=\frac{1}{2}\left[\sum_{i=1}^{n_{Segments}}\left(\frac{\text{Revenue from segment \$i\$ }}{\text{Total Revenue}}\right)^{2}\right]+\frac{1}{2}\left[\left(\frac{\text{Domestic Revenue}}{\text{Total Revenue}}\right)^{2}+\left(\frac{\text{Foreign Revenue}}{\text{Total Revenue}}\right)^{2}\right]

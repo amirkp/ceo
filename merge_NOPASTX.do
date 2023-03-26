@@ -127,6 +127,7 @@ bys year (negsale): gen salesrank = _n
 keep if year ==2013 
 
 keep if logsize5>0
+keep if !missing(logsize5)
 keep if logtdc1>0 
 
 
@@ -135,9 +136,9 @@ replace HHI = 1- HHI
 set seed 123456
 generate random = runiform()
 sort random
-generate insample = _n <= 500
+generate insample = _n <= 250
 
-keep gvkey logsize5 logsize1 logtdc1 HHI pGAI insample
+keep gvkey logsize5 logtdc1 HHI pGAI insample
 
 la var HHI HHI
 la var logsize5 Size
@@ -147,7 +148,8 @@ la var logtdc1 Compensation
 save estData, replace
 
 keep if insample==1
-export delimited using "/Users/amir/Data/est_data.csv", replace
+drop insample
+export delimited using "/Users/amir/Data/est_data_250_RANDOM.csv", replace
  
  
 // *For Jeremy's email
