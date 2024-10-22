@@ -47,28 +47,29 @@ mean(pr)
 mean(price_data)
 
 
-p1 = scatter(up[1,:], down[1,:], markersize=1,legend=false, smooth = true, title="Simulated Data", xlabel = "CEO Ability", ylabel ="Firm HHI", dpi=300)
-p2 = scatter(up_data, down_data[1,:], markersize=1, legend = false, smooth = true, title="Real Data", xlabel = "CEO Ability", ylabel ="Firm HHI", dpi=300)
+p1 = scatter(up[1,:], down[1,:], markersize=1,legend=false, smooth = true, title="Simulated Data", xlabel = "CEO Experience", ylabel ="Firm Scope", dpi=300)
+p2 = scatter(up_data, down_data[1,:], markersize=1, legend = false, smooth = true, title="Real Data", xlabel = "CEO Experience", ylabel ="Firm Scope", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false)
-savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/ability_HHI")
+# savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/ability_HHI")
+savefig( "/Users/amir/github/paper/figures/ability_HHI")
 
 cor(up[1,:], down[1,:])
 cor(up_data, down_data[1,:])
 
 
-p1 = scatter(up[1,:], down[2,:], markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "CEO Ability", ylabel ="Firm Size", dpi=300)
-p2 = scatter(up_data, down_data[2,:], markersize=1, legend = false, smooth=true,  title="Real Data", xlabel = "CEO Ability", ylabel ="Firm Size", dpi=300)
+p1 = scatter(up[1,:], down[2,:], markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "CEO Experience", ylabel ="Firm Size", dpi=300)
+p2 = scatter(up_data, down_data[2,:], markersize=1, legend = false, smooth=true,  title="Real Data", xlabel = "CEO Experience", ylabel ="Firm Size", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false)
-savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/ability_size")
+savefig( "/Users/amir/github/paper/figures/ability_size")
 
 
 cor(up[1,:], down[2,:])
 cor(up_data, down_data[2,:])
 
-p1 = scatter(up[1,:], pr, markersize=1,legend=false, smooth=true,title="Simulated Data", xlabel = "CEO Ability", ylabel ="Compensation", dpi=300 )
-p2 = scatter(up_data, price_data, markersize=1, legend = false, smooth=true, title="Real Data", xlabel = "CEO Ability", ylabel ="Compensation", dpi=300)
+p1 = scatter(up[1,:], pr, markersize=1,legend=false, smooth=true,title="Simulated Data", xlabel = "CEO Experience", ylabel ="Compensation", dpi=300 )
+p2 = scatter(up_data, price_data, markersize=1, legend = false, smooth=true, title="Real Data", xlabel = "CEO Experience", ylabel ="Compensation", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false, ylims=(0,30))
-savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/ability_compensation")
+savefig( "/Users/amir/github/paper/figures/ability_compensation")
 
 
 cor(up[1,:], pr)
@@ -76,10 +77,10 @@ cor(up_data, price_data)
 cor(up_data, log.(price_data))
 
 
-p1 = scatter(down[1,:], pr, markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "Firm HHI", ylabel ="Compensation", dpi=300 )
-p2 = scatter(down_data[1,:], price_data, markersize=1, legend = false, smooth=true, title="Real Data",  xlabel = "Firm HHI", ylabel ="Compensation", dpi=300)
+p1 = scatter(down[1,:], pr, markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "Firm Size", ylabel ="Compensation", dpi=300 )
+p2 = scatter(down_data[1,:], price_data, markersize=1, legend = false, smooth=true, title="Real Data",  xlabel = "Firm Size", ylabel ="Compensation", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false, ylims=(0,30))
-savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/HHI_compensation")
+savefig( "/Users/amir/github/paper/figures/HHI_compensation")
 
 cor(down[1,:], pr)
 cor(down_data[1,:], price_data)
@@ -92,7 +93,7 @@ cor(down_data[1,:], price_data)
 p1 = scatter(down[2,:], pr, markersize=1,legend=false, smooth=true, title="Simulated Data", xlabel = "Firm Size", ylabel ="Compensation", dpi=300 )
 p2 = scatter(down_data[2,:], price_data, markersize=1, legend = false, smooth=true, title="Real Data",  xlabel = "Firm Size", ylabel ="Compensation", dpi=300)
 plot(p1,p2, layout=(1,2), legends=false , ylims=(0,30))
-savefig( "/Users/amir/github/ceo/Notes and Reports/results_Jeremy 2023 03 12/Figures/size_compensation")
+savefig( "/Users/amir/github/paper/figures/size_compensation")
 
 cor(down[2,:], pr)
 cor(down_data[2,:], price_data)

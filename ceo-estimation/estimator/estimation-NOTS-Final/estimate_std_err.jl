@@ -6,10 +6,10 @@
 ### Segment data: COMPUSTAT HISTORICAL SEGMENTS
 ### Firm's fundamentals: CRSP
 
-###  March 12, 2023
+###  March 28, 2023
 ### Amir Kazempour, amirkp@gmail.com
 ############################################
-
+# We estimate the standard errors for price estimation results
 
 ## uncomment for running on Rice cluster
 
@@ -20,7 +20,7 @@ pids = addprocs_slurm(parse(Int, ENV["SLURM_NTASKS"]))
 
 ## comment the following when running on Rice Cluster
 using Distributed
-addprocs(4)
+addprocs(8)
 
 @everywhere begin
     using BSON, CSV    # BSON for storing optimization results, CSV for reading data file
@@ -284,6 +284,113 @@ arrn =  Base.parse(Int, ENV["SLURM_ARRAY_TASK_ID"])
 end
 
 
+@everywhere function score_k(b,  tol)
+    bup = [
+            vcat(0, b[1], b[4])';
+            vcat(0., 0. , 0.)';
+    ]
+
+        bdown = [
+            vcat(b[2], b[3], 0)';
+            vcat(0 , 0 , b[5])';
+    ]
+
+
+    solve_draw =  x->sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 3165160+x, true, up_data,down_data[1:2,:],b[6], sel_mode,  b[7], b[8:9], b[10],b[11])
+
+    sim_dat = pmap(solve_draw, 1:n_sim)
+
+ 
+
+    ll=zeros(n_firms)
+    ll_k=zeros(n_firms)
+    n_zeros = 0
+    Sfirms = zeros(n_firms, 11 )
+
+
+    for k =1:11
+        c= copy(b)
+        c[k] =c[k]+tol
+        
+        bup = [
+            vcat(0., c[1], c[4])';
+            vcat(0, 0., 0.)';
+        ]
+        
+        bdown = [
+            vcat(c[2], c[3], 0)';
+            vcat(0 , 0 , c[5])';
+        ]
+
+        solve_draw =  x->sim_data_JV_up_obs(bup, bdown , 1., 1., n_firms, 3165160+x, 
+         true, up_data,down_data[1:2,:],c[6], sel_mode,  c[7], c[8:9], c[10],c[11]
+        )
+        sim_dat_k = pmap(solve_draw, 1:500)
+
+
+        for i =1:n_firms
+            like =0.
+            like_k =0.
+            for j =1:n_sim
+                like+=(
+                    pdf(Normal(),((down_data[1,i] - sim_dat[j][2][1,i])/h[1]))
+                    *pdf(Normal(),((down_data[2,i] - sim_dat[j][2][2,i])/h[2]))
+                    *pdf(Normal(),((price_data[i] - sim_dat[j][3][i])/h[3]))
+                )      
+                like_k+=(
+                    pdf(Normal(),((down_data[1,i] - sim_dat_k[j][2][1,i])/h[1]))
+                    *pdf(Normal(),((down_data[2,i] - sim_dat_k[j][2][2,i])/h[2]))
+                    *pdf(Normal(),((price_data[i] - sim_dat_k[j][3][i])/h[3]))
+                )            
+            end
+            if like == 0
+                ll[i] = log(pdf(Normal(),30))
+                n_zeros += 1
+            else
+                Sfirms[i,k ] =  (log(like_k/(n_sim*h[1]*h[2]*h[3])) - log(like/(n_sim*h[1]*h[2]*h[3])))/tol
+            end
+        end
+        println("k: ",k)
+    end    
+    Souter= zeros(11,11)
+    for i =1:n_firms
+        Souter += Sfirms[i,:]*Sfirms[i,:]'
+    end
+
+    # if mod(time(),10)<10
+    #     println("worker number $(myid()) parameter: ", round.(b, digits=4), " function value: ",mean(der), " Number of zeros: ", n_zeros)
+    # end
+    # Random.seed!()
+    return Souter/n_firms
+end
+
+
+omega = score_k(b,0.1)
+
+stderr1 = sqrt.(diag(inv(omega)))
+
+omega2 = score_k(b,0.2)
+
+stderr2 = sqrt.(diag(inv(omega2)))
+
+
+stderr1
+
+omega3 = score_k(b,0.05)
+stderr3 = sqrt.(diag(inv(omega3)))
+
+
+omega4 = score_k(b,0.01)
+stderr4 = sqrt.(diag(inv(omega4)))
+
+omega5 = score_k(b,0.001)
+stderr5 = sqrt.(diag(inv(omega5)))
+
+stderr4-stderr3
+stderr3-stderr2
+
+
+sum(stderr4.^2)
 
 # Solver's setup 
 opt1 = bbsetup(loglike;  

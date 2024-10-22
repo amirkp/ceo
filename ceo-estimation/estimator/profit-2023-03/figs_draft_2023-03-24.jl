@@ -35,3 +35,27 @@ scatter!(up[1,:], der_vec, markersize=2, xlims=(0,4), xlabel="x", ylabel=ylab, l
 )
     
 savefig("/Users/amir/github/paper/figures/ders_vs_ests.png")
+
+
+
+
+
+#### DATA FIGS
+
+xlab="CEO Experience"
+ylab = L"\hat{\alpha}_\varepsilon"
+p1 = scatter(up, epsbar_vec, markersize=1, xlims=(0,4),legend=false,dpi=300,
+    xlabel=xlab, ylabel =ylab  
+)
+savefig("/Users/amir/github/paper/figures/DATA_alphaepshat.png")
+
+
+
+
+
+ylab = L"\bar{\Phi}_x(Exper_i, \bar{\varepsilon}_i, Scope_{i}, Size_{2,i})"
+scatter(up, der_vec, markersize=2, xlims=(0,4), xlabel="x", ylabel=ylab, legend=false, ylims=(-10,10), dpi=300,
+    color=:black)
+# scatter(up[1,:], ders_truth, markersize=3, xlims=(0,4), xlabel="x", ylabel=ylab, legend=false, dpi=300,
+#      color=:black, ylims=(0,10)
+)

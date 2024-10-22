@@ -518,11 +518,7 @@ An increase of 1 standard deviation(
 \begin_inset Formula $\approx0.9)$
 \end_inset
 
- in 
-\begin_inset Formula $x$
-\end_inset
-
-: 
+ in GAI: 
 \begin_inset Formula $\downarrow$
 \end_inset
 
@@ -546,11 +542,7 @@ An increase of 1 standard deviation(
 \begin_inset Formula $\approx0.2)$
 \end_inset
 
- in 
-\begin_inset Formula $y_{1}$
-\end_inset
-
-: 
+ in HHI: 
 \begin_inset Formula $\uparrow$
 \end_inset
 
@@ -574,11 +566,7 @@ An increase of 1 standard deviation(
 \begin_inset Formula $\approx1.3)$
 \end_inset
 
- in 
-\begin_inset Formula $y_{2}$
-\end_inset
-
-: 
+ in SIZE: 
 \begin_inset Formula $\uparrow$
 \end_inset
 
